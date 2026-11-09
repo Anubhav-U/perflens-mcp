@@ -1,0 +1,4324 @@
+{
+ "lighthouseVersion": "12.8.2",
+ "requestedUrl": "https://developer.mozilla.org/en-US/",
+ "mainDocumentUrl": "https://developer.mozilla.org/en-US/",
+ "finalDisplayedUrl": "https://developer.mozilla.org/en-US/",
+ "finalUrl": "https://developer.mozilla.org/en-US/",
+ "fetchTime": "2026-11-07T16:58:17.584Z",
+ "gatherMode": "navigation",
+ "runWarnings": [],
+ "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+ "environment": {
+  "networkUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+  "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+  "benchmarkIndex": 3582.5,
+  "credits": {}
+ },
+ "audits": {
+  "viewport": {
+   "id": "viewport",
+   "title": "Has a `<meta name=\"viewport\">` tag with `width` or `initial-scale`",
+   "description": "A `<meta name=\"viewport\">` not only optimizes your app for mobile screen sizes, but also prevents [a 300 millisecond delay to user input](https://developer.chrome.com/blog/300ms-tap-delay-gone-away/). [Learn more about using the viewport meta tag](https://developer.chrome.com/docs/lighthouse/pwa/viewport/).",
+   "score": 1,
+   "scoreDisplayMode": "metricSavings",
+   "warnings": [],
+   "metricSavings": {
+    "INP": 0
+   },
+   "guidanceLevel": 3
+  },
+  "first-contentful-paint": {
+   "id": "first-contentful-paint",
+   "title": "First Contentful Paint",
+   "description": "First Contentful Paint marks the time at which the first text or image is painted. [Learn more about the First Contentful Paint metric](https://developer.chrome.com/docs/lighthouse/performance/first-contentful-paint/).",
+   "score": 1,
+   "scoreDisplayMode": "numeric",
+   "numericValue": 481.1874999999999,
+   "numericUnit": "millisecond",
+   "displayValue": "0.5 s",
+   "scoringOptions": {
+    "p10": 934,
+    "median": 1600
+   }
+  },
+  "largest-contentful-paint": {
+   "id": "largest-contentful-paint",
+   "title": "Largest Contentful Paint",
+   "description": "Largest Contentful Paint marks the time at which the largest text or image is painted. [Learn more about the Largest Contentful Paint metric](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-largest-contentful-paint/)",
+   "score": 0.95,
+   "scoreDisplayMode": "numeric",
+   "numericValue": 980.049,
+   "numericUnit": "millisecond",
+   "displayValue": "1.0 s",
+   "scoringOptions": {
+    "p10": 1200,
+    "median": 2400
+   }
+  },
+  "first-meaningful-paint": {
+   "id": "first-meaningful-paint",
+   "title": "First Meaningful Paint",
+   "description": "First Meaningful Paint measures when the primary content of a page is visible. [Learn more about the First Meaningful Paint metric](https://developer.chrome.com/docs/lighthouse/performance/first-meaningful-paint/).",
+   "score": null,
+   "scoreDisplayMode": "notApplicable"
+  },
+  "speed-index": {
+   "id": "speed-index",
+   "title": "Speed Index",
+   "description": "Speed Index shows how quickly the contents of a page are visibly populated. [Learn more about the Speed Index metric](https://developer.chrome.com/docs/lighthouse/performance/speed-index/).",
+   "score": 1,
+   "scoreDisplayMode": "numeric",
+   "numericValue": 608.2444956625977,
+   "numericUnit": "millisecond",
+   "displayValue": "0.6 s",
+   "scoringOptions": {
+    "p10": 1311,
+    "median": 2300
+   }
+  },
+  "screenshot-thumbnails": {
+   "id": "screenshot-thumbnails",
+   "title": "Screenshot Thumbnails",
+   "description": "This is what the load of your site looked like.",
+   "score": 1,
+   "scoreDisplayMode": "informative"
+  },
+  "final-screenshot": {
+   "id": "final-screenshot",
+   "title": "Final Screenshot",
+   "description": "The last screenshot captured of the pageload.",
+   "score": 1,
+   "scoreDisplayMode": "informative"
+  },
+  "total-blocking-time": {
+   "id": "total-blocking-time",
+   "title": "Total Blocking Time",
+   "description": "Sum of all time periods between FCP and Time to Interactive, when task length exceeded 50ms, expressed in milliseconds. [Learn more about the Total Blocking Time metric](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-total-blocking-time/).",
+   "score": 1,
+   "scoreDisplayMode": "numeric",
+   "numericValue": 0,
+   "numericUnit": "millisecond",
+   "displayValue": "0 ms",
+   "scoringOptions": {
+    "p10": 150,
+    "median": 350
+   }
+  },
+  "max-potential-fid": {
+   "id": "max-potential-fid",
+   "title": "Max Potential First Input Delay",
+   "description": "The maximum potential First Input Delay that your users could experience is the duration of the longest task. [Learn more about the Maximum Potential First Input Delay metric](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-max-potential-fid/).",
+   "score": 1,
+   "scoreDisplayMode": "numeric",
+   "numericValue": 16,
+   "numericUnit": "millisecond",
+   "displayValue": "20 ms"
+  },
+  "cumulative-layout-shift": {
+   "id": "cumulative-layout-shift",
+   "title": "Cumulative Layout Shift",
+   "description": "Cumulative Layout Shift measures the movement of visible elements within the viewport. [Learn more about the Cumulative Layout Shift metric](https://web.dev/articles/cls).",
+   "score": 0.99,
+   "scoreDisplayMode": "numeric",
+   "numericValue": 0.04987937920057495,
+   "numericUnit": "unitless",
+   "displayValue": "0.05",
+   "scoringOptions": {
+    "p10": 0.1,
+    "median": 0.25
+   }
+  },
+  "server-response-time": {
+   "id": "server-response-time",
+   "title": "Initial server response time was short",
+   "description": "Keep the server response time for the main document short because all other requests depend on it. [Learn more about the Time to First Byte metric](https://developer.chrome.com/docs/lighthouse/performance/time-to-first-byte/).",
+   "score": 1,
+   "scoreDisplayMode": "metricSavings",
+   "numericValue": 8.263000000000005,
+   "numericUnit": "millisecond",
+   "displayValue": "Root document took 10 ms",
+   "metricSavings": {
+    "FCP": 0,
+    "LCP": 0
+   },
+   "details": {
+    "type": "opportunity",
+    "headings": [
+     {
+      "key": "url",
+      "valueType": "url",
+      "label": "URL"
+     },
+     {
+      "key": "responseTime",
+      "valueType": "timespanMs",
+      "label": "Time Spent"
+     }
+    ],
+    "items": [
+     {
+      "url": "https://developer.mozilla.org/en-US/",
+      "responseTime": 8.263000000000005
+     }
+    ],
+    "overallSavingsMs": 0
+   },
+   "guidanceLevel": 1
+  },
+  "interactive": {
+   "id": "interactive",
+   "title": "Time to Interactive",
+   "description": "Time to Interactive is the amount of time it takes for the page to become fully interactive. [Learn more about the Time to Interactive metric](https://developer.chrome.com/docs/lighthouse/performance/interactive/).",
+   "score": 1,
+   "scoreDisplayMode": "numeric",
+   "numericValue": 980.049,
+   "numericUnit": "millisecond",
+   "displayValue": "1.0 s"
+  },
+  "user-timings": {
+   "id": "user-timings",
+   "title": "User Timing marks and measures",
+   "description": "Consider instrumenting your app with the User Timing API to measure your app's real-world performance during key user experiences. [Learn more about User Timing marks](https://developer.chrome.com/docs/lighthouse/performance/user-timings/).",
+   "score": null,
+   "scoreDisplayMode": "notApplicable",
+   "details": {
+    "type": "table",
+    "headings": [
+     {
+      "key": "name",
+      "valueType": "text",
+      "label": "Name"
+     },
+     {
+      "key": "timingType",
+      "valueType": "text",
+      "label": "Type"
+     },
+     {
+      "key": "startTime",
+      "valueType": "ms",
+      "granularity": 0.01,
+      "label": "Start Time"
+     },
+     {
+      "key": "duration",
+      "valueType": "ms",
+      "granularity": 0.01,
+      "label": "Duration"
+     }
+    ],
+    "items": []
+   },
+   "guidanceLevel": 2
+  },
+  "critical-request-chains": {
+   "id": "critical-request-chains",
+   "title": "Avoid chaining critical requests",
+   "description": "The Critical Request Chains below show you what resources are loaded with a high priority. Consider reducing the length of chains, reducing the download size of resources, or deferring the download of unnecessary resources to improve page load. [Learn how to avoid chaining critical requests](https://developer.chrome.com/docs/lighthouse/performance/critical-request-chains/).",
+   "score": 1,
+   "scoreDisplayMode": "informative",
+   "displayValue": "43 chains found",
+   "details": {
+    "type": "criticalrequestchain",
+    "chains": {
+     "8ACA781C64DAE2C33E8598B149C661C8": {
+      "request": {
+       "url": "https://developer.mozilla.org/en-US/",
+       "startTime": 854007.492246,
+       "endTime": 854007.593851,
+       "responseReceivedTime": 854007.5899159999,
+       "transferSize": 16259
+      },
+      "children": {
+       "34668.2": {
+        "request": {
+         "url": "https://developer.mozilla.org/static/client/styles-global.19cc0c980e463125.css",
+         "startTime": 854007.604891,
+         "endTime": 854007.6232470002,
+         "responseReceivedTime": 854007.6217419999,
+         "transferSize": 4531
+        },
+        "children": {
+         "34668.79": {
+          "request": {
+           "url": "https://developer.mozilla.org/static/client/inter-italic-latin.fd2627ec16333c05.woff2",
+           "startTime": 854007.731803,
+           "endTime": 854007.755673,
+           "responseReceivedTime": 854007.7493149999,
+           "transferSize": 116532
+          }
+         }
+        }
+       },
+       "34668.3": {
+        "request": {
+         "url": "https://developer.mozilla.org/static/client/styles-homepage.0980eec27925cc11.css",
+         "startTime": 854007.605089,
+         "endTime": 854007.623453,
+         "responseReceivedTime": 854007.622158,
+         "transferSize": 624
+        }
+       },
+       "34668.4": {
+        "request": {
+         "url": "https://developer.mozilla.org/static/client/styles-homepage-header.da8a69fafe1cfb00.css",
+         "startTime": 854007.605168,
+         "endTime": 854007.623371,
+         "responseReceivedTime": 854007.622035,
+         "transferSize": 1096
+        }
+       },
+       "34668.5": {
+        "request": {
+         "url": "https://developer.mozilla.org/static/client/styles-homepage-hero.61cf31e2c2f1b72c.css",
+         "startTime": 854007.605233,
+         "endTime": 854007.6238380001,
+         "responseReceivedTime": 854007.622538,
+         "transferSize": 1076
+        }
+       },
+       "34668.6": {
+        "request": {
+         "url": "https://developer.mozilla.org/static/client/styles-mandala.8fbfeb0567dbde40.css",
+         "startTime": 854007.605942,
+         "endTime": 854007.623614,
+         "responseReceivedTime": 854007.622252,
+         "transferSize": 1051
+        }
+       },
+       "34668.7": {
+        "request": {
+         "url": "https://developer.mozilla.org/static/client/styles-homepage-body.22274e9a4a78b7ae.css",
+         "startTime": 854007.606104,
+         "endTime": 854007.623695,
+         "responseReceivedTime": 854007.622349,
+         "transferSize": 496
+        }
+       },
+       "34668.8": {
+        "request": {
+         "url": "https://developer.mozilla.org/static/client/styles-featured-articles.770034368883a9ae.css",
+         "startTime": 854007.606183,
+         "endTime": 854007.62377,
+         "responseReceivedTime": 854007.622443,
+         "transferSize": 1013
+        }
+       },
+       "34668.9": {
+        "request": {
+         "url": "https://developer.mozilla.org/static/client/styles-latest-news.4e8f60fdbf19d588.css",
+         "startTime": 854007.606705,
+         "endTime": 854007.623916,
+         "responseReceivedTime": 854007.6226290001,
+         "transferSize": 1076
+        }
+       },
+       "34668.10": {
+        "request": {
+         "url": "https://developer.mozilla.org/static/client/styles-recent-contributions.ddcab7ad78446b98.css",
+         "startTime": 854007.606818,
+         "endTime": 854007.623996,
+         "responseReceivedTime": 854007.622709,
+         "transferSize": 1133
+        }
+       },
+       "34668.11": {
+        "request": {
+         "url": "https://developer.mozilla.org/static/client/styles-homepage-footer.5d6588cf8c9b4dc6.css",
+         "startTime": 854007.606894,
+         "endTime": 854007.624242,
+         "responseReceivedTime": 854007.6229499999,
+         "transferSize": 858
+        }
+       },
+       "34668.12": {
+        "request": {
+         "url": "https://developer.mozilla.org/static/client/3391.b611fbe2dc694a57.css",
+         "startTime": 854007.607448,
+         "endTime": 854007.624148,
+         "responseReceivedTime": 854007.622874,
+         "transferSize": 1437
+        }
+       },
+       "34668.13": {
+        "request": {
+         "url": "https://developer.mozilla.org/static/client/styles-homepage-contributor-spotlight.9d9b306c201f94e2.css",
+         "startTime": 854007.607624,
+         "endTime": 854007.624065,
+         "responseReceivedTime": 854007.6228010001,
+         "transferSize": 1036
+        }
+       },
+       "34668.14": {
+        "request": {
+         "url": "https://developer.mozilla.org/static/client/styles-page-layout.5a4354f33e894319.css",
+         "startTime": 854007.607756,
+         "endTime": 854007.624305,
+         "responseReceivedTime": 854007.6230360001,
+         "transferSize": 1048
+        }
+       },
+       "34668.15": {
+        "request": {
+         "url": "https://developer.mozilla.org/static/client/styles-a11y-menu.5796ee87cb69f93f.css",
+         "startTime": 854007.608439,
+         "endTime": 854007.63129,
+         "responseReceivedTime": 854007.630331,
+         "transferSize": 1039
+        }
+       },
+       "34668.16": {
+        "request": {
+         "url": "https://developer.mozilla.org/static/client/styles-navigation.c3ebf384e65df345.css",
+         "startTime": 854007.608609,
+         "endTime": 854007.631221,
+         "responseReceivedTime": 854007.630227,
+         "transferSize": 1133
+        }
+       },
+       "34668.17": {
+        "request": {
+         "url": "https://developer.mozilla.org/static/client/styles-logo.aea5ff6edf1b9cfb.css",
+         "startTime": 854007.60874,
+         "endTime": 854007.631353,
+         "responseReceivedTime": 854007.63043,
+         "transferSize": 707
+        }
+       },
+       "34668.18": {
+        "request": {
+         "url": "https://developer.mozilla.org/static/client/styles-menu.e2c5c8a53a8854c2.css",
+         "startTime": 854007.609438,
+         "endTime": 854007.631124,
+         "responseReceivedTime": 854007.629994,
+         "transferSize": 1733
+        }
+       },
+       "34668.19": {
+        "request": {
+         "url": "https://developer.mozilla.org/static/client/styles-breadcrumbs-bar.2d1bed1ab424b6b3.css",
+         "startTime": 854007.6096,
+         "endTime": 854007.631419,
+         "responseReceivedTime": 854007.630521,
+         "transferSize": 1030
+        }
+       },
+       "34668.20": {
+        "request": {
+         "url": "https://developer.mozilla.org/static/client/styles-breadcrumbs.87eb742f4e711dc3.css",
+         "startTime": 854007.609731,
+         "endTime": 854007.631482,
+         "responseReceivedTime": 854007.630615,
+         "transferSize": 841
+        }
+       },
+       "34668.21": {
+        "request": {
+         "url": "https://developer.mozilla.org/static/client/styles-footer.66072dd619a4ef50.css",
+         "startTime": 854007.610403,
+         "endTime": 854007.631543,
+         "responseReceivedTime": 854007.6308070001,
+         "transferSize": 1285
+        }
+       },
+       "34668.24": {
+        "request": {
+         "url": "https://developer.mozilla.org/static/client/runtime.c56f5acf3a106051.js",
+         "startTime": 854007.610565,
+         "endTime": 854007.64287,
+         "responseReceivedTime": 854007.630982,
+         "transferSize": 9058
+        }
+       },
+       "34668.25": {
+        "request": {
+         "url": "https://developer.mozilla.org/static/client/5909.43e719af6373c71b.js",
+         "startTime": 854007.610696,
+         "endTime": 854007.644175,
+         "responseReceivedTime": 854007.643353,
+         "transferSize": 10082
+        }
+       },
+       "34668.26": {
+        "request": {
+         "url": "https://developer.mozilla.org/static/client/4585.7535b1f199327a48.js",
+         "startTime": 854007.611446,
+         "endTime": 854007.643069,
+         "responseReceivedTime": 854007.6309000001,
+         "transferSize": 24030
+        }
+       },
+       "34668.27": {
+        "request": {
+         "url": "https://developer.mozilla.org/static/client/1216.adee8e88502c83c4.js",
+         "startTime": 854007.611659,
+         "endTime": 854007.635174,
+         "responseReceivedTime": 854007.630718,
+         "transferSize": 1076
+        }
+       },
+       "34668.28": {
+        "request": {
+         "url": "https://developer.mozilla.org/static/client/index.9a23287b67b7af93.js",
+         "startTime": 854007.611787,
+         "endTime": 854007.643626,
+         "responseReceivedTime": 854007.643176,
+         "transferSize": 15420
+        },
+        "children": {
+         "34668.59": {
+          "request": {
+           "url": "https://developer.mozilla.org/static/client/7489.879b548e785958fd.js",
+           "startTime": 854007.664217,
+           "endTime": 854007.708855,
+           "responseReceivedTime": 854007.707116,
+           "transferSize": 1415
+          }
+         },
+         "34668.60": {
+          "request": {
+           "url": "https://developer.mozilla.org/static/client/3708.c45faaa59ea2b8df.js",
+           "startTime": 854007.664361,
+           "endTime": 854007.70846,
+           "responseReceivedTime": 854007.706686,
+           "transferSize": 1132
+          }
+         },
+         "34668.61": {
+          "request": {
+           "url": "https://developer.mozilla.org/static/client/8280.886a46d50dae66d1.js",
+           "startTime": 854007.6647,
+           "endTime": 854007.709075,
+           "responseReceivedTime": 854007.707372,
+           "transferSize": 1888
+          }
+         },
+         "34668.62": {
+          "request": {
+           "url": "https://developer.mozilla.org/static/client/1477.dc89151137e79a91.js",
+           "startTime": 854007.665059,
+           "endTime": 854007.708783,
+           "responseReceivedTime": 854007.707021,
+           "transferSize": 1086
+          }
+         },
+         "34668.63": {
+          "request": {
+           "url": "https://developer.mozilla.org/static/client/4249.d2e47b0c02f472f9.js",
+           "startTime": 854007.665143,
+           "endTime": 854007.70914,
+           "responseReceivedTime": 854007.707449,
+           "transferSize": 1225
+          }
+         },
+         "34668.64": {
+          "request": {
+           "url": "https://developer.mozilla.org/static/client/9204.7371f8900325ee2c.js",
+           "startTime": 854007.665202,
+           "endTime": 854007.7083409999,
+           "responseReceivedTime": 854007.7064189999,
+           "transferSize": 2769
+          }
+         },
+         "34668.65": {
+          "request": {
+           "url": "https://developer.mozilla.org/static/client/3690.468d6d760cec108f.js",
+           "startTime": 854007.665601,
+           "endTime": 854007.708614,
+           "responseReceivedTime": 854007.706802,
+           "transferSize": 1445
+          }
+         },
+         "34668.66": {
+          "request": {
+           "url": "https://developer.mozilla.org/static/client/2868.94092d925ac2e38a.js",
+           "startTime": 854007.665742,
+           "endTime": 854007.708706,
+           "responseReceivedTime": 854007.7069199999,
+           "transferSize": 1391
+          }
+         },
+         "34668.67": {
+          "request": {
+           "url": "https://developer.mozilla.org/static/client/8121.e3543d8dfc473b9c.js",
+           "startTime": 854007.666611,
+           "endTime": 854007.698723,
+           "responseReceivedTime": 854007.697297,
+           "transferSize": 934
+          }
+         },
+         "34668.68": {
+          "request": {
+           "url": "https://developer.mozilla.org/static/client/3711.a02766cd28bfcb4e.js",
+           "startTime": 854007.666768,
+           "endTime": 854007.709005,
+           "responseReceivedTime": 854007.707295,
+           "transferSize": 2495
+          }
+         },
+         "34668.69": {
+          "request": {
+           "url": "https://developer.mozilla.org/static/client/5542.3348cd9e5b8dbf9a.js",
+           "startTime": 854007.666875,
+           "endTime": 854007.698855,
+           "responseReceivedTime": 854007.697567,
+           "transferSize": 2133
+          }
+         },
+         "34668.70": {
+          "request": {
+           "url": "https://developer.mozilla.org/static/client/9099.d3bea934e72e6ef1.js",
+           "startTime": 854007.667463,
+           "endTime": 854007.699138,
+           "responseReceivedTime": 854007.6976860001,
+           "transferSize": 1379
+          }
+         },
+         "34668.71": {
+          "request": {
+           "url": "https://developer.mozilla.org/static/client/9647.d13ab8d865cfc6dc.js",
+           "startTime": 854007.667598,
+           "endTime": 854007.699334,
+           "responseReceivedTime": 854007.697822,
+           "transferSize": 880
+          }
+         },
+         "34668.72": {
+          "request": {
+           "url": "https://developer.mozilla.org/static/client/8926.5408b5db99481d0e.js",
+           "startTime": 854007.667689,
+           "endTime": 854007.708925,
+           "responseReceivedTime": 854007.707209,
+           "transferSize": 991
+          }
+         },
+         "34668.73": {
+          "request": {
+           "url": "https://developer.mozilla.org/static/client/1996.78831cf29443bcb5.js",
+           "startTime": 854007.668221,
+           "endTime": 854007.699475,
+           "responseReceivedTime": 854007.6979599999,
+           "transferSize": 2542
+          }
+         },
+         "34668.74": {
+          "request": {
+           "url": "https://developer.mozilla.org/static/client/7678.78c0e251c48d8f5a.js",
+           "startTime": 854007.668365,
+           "endTime": 854007.6995869998,
+           "responseReceivedTime": 854007.698053,
+           "transferSize": 1453
+          }
+         },
+         "34668.75": {
+          "request": {
+           "url": "https://developer.mozilla.org/static/client/4759.54979af6d4fd4f4f.js",
+           "startTime": 854007.668463,
+           "endTime": 854007.699699,
+           "responseReceivedTime": 854007.698145,
+           "transferSize": 1680
+          }
+         },
+         "34668.76": {
+          "request": {
+           "url": "https://developer.mozilla.org/static/client/4060.c4381d5ebc6cacea.js",
+           "startTime": 854007.668917,
+           "endTime": 854007.699803,
+           "responseReceivedTime": 854007.698229,
+           "transferSize": 1721
+          }
+         }
+        }
+       },
+       "34668.57": {
+        "request": {
+         "url": "https://developer.mozilla.org/manifest.json",
+         "startTime": 854007.612604,
+         "endTime": 854007.689375,
+         "responseReceivedTime": 854007.689128,
+         "transferSize": 973
+        }
+       }
+      }
+     }
+    },
+    "longestChain": {
+     "duration": 263.42700004577637,
+     "length": 3,
+     "transferSize": 116532
+    }
+   },
+   "guidanceLevel": 1
+  },
+  "redirects": {
+   "id": "redirects",
+   "title": "Avoid multiple page redirects",
+   "description": "Redirects introduce additional delays before the page can be loaded. [Learn how to avoid page redirects](https://developer.chrome.com/docs/lighthouse/performance/redirects/).",
+   "score": 1,
+   "scoreDisplayMode": "metricSavings",
+   "numericValue": 0,
+   "numericUnit": "millisecond",
+   "displayValue": "",
+   "metricSavings": {
+    "LCP": 0,
+    "FCP": 0
+   },
+   "details": {
+    "type": "opportunity",
+    "headings": [],
+    "items": [],
+    "overallSavingsMs": 0
+   },
+   "guidanceLevel": 2
+  },
+  "mainthread-work-breakdown": {
+   "id": "mainthread-work-breakdown",
+   "title": "Minimizes main-thread work",
+   "description": "Consider reducing the time spent parsing, compiling and executing JS. You may find delivering smaller JS payloads helps with this. [Learn how to minimize main-thread work](https://developer.chrome.com/docs/lighthouse/performance/mainthread-work-breakdown/)",
+   "score": 1,
+   "scoreDisplayMode": "metricSavings",
+   "numericValue": 260.1780000000005,
+   "numericUnit": "millisecond",
+   "displayValue": "0.3 s",
+   "metricSavings": {
+    "TBT": 0
+   },
+   "details": {
+    "type": "table",
+    "headings": [
+     {
+      "key": "groupLabel",
+      "valueType": "text",
+      "label": "Category"
+     },
+     {
+      "key": "duration",
+      "valueType": "ms",
+      "granularity": 1,
+      "label": "Time Spent"
+     }
+    ],
+    "items": [
+     {
+      "group": "styleLayout",
+      "groupLabel": "Style & Layout",
+      "duration": 84.805
+     },
+     {
+      "group": "other",
+      "groupLabel": "Other",
+      "duration": 82.52700000000037
+     },
+     {
+      "group": "scriptEvaluation",
+      "groupLabel": "Script Evaluation",
+      "duration": 54.290000000000134
+     },
+     {
+      "group": "paintCompositeRender",
+      "groupLabel": "Rendering",
+      "duration": 20.580999999999992
+     },
+     {
+      "group": "garbageCollection",
+      "groupLabel": "Garbage Collection",
+      "duration": 10.692999999999987
+     },
+     {
+      "group": "parseHTML",
+      "groupLabel": "Parse HTML & CSS",
+      "duration": 6.69
+     },
+     {
+      "group": "scriptParseCompile",
+      "groupLabel": "Script Parsing & Compilation",
+      "duration": 0.5920000000000002
+     }
+    ],
+    "sortedBy": [
+     "duration"
+    ]
+   },
+   "guidanceLevel": 1
+  },
+  "bootup-time": {
+   "id": "bootup-time",
+   "title": "JavaScript execution time",
+   "description": "Consider reducing the time spent parsing, compiling, and executing JS. You may find delivering smaller JS payloads helps with this. [Learn how to reduce Javascript execution time](https://developer.chrome.com/docs/lighthouse/performance/bootup-time/).",
+   "score": 1,
+   "scoreDisplayMode": "metricSavings",
+   "numericValue": 5.363999999999998,
+   "numericUnit": "millisecond",
+   "displayValue": "0.0 s",
+   "metricSavings": {
+    "TBT": 0
+   },
+   "details": {
+    "type": "table",
+    "headings": [
+     {
+      "key": "url",
+      "valueType": "url",
+      "label": "URL"
+     },
+     {
+      "key": "total",
+      "granularity": 1,
+      "valueType": "ms",
+      "label": "Total CPU Time"
+     },
+     {
+      "key": "scripting",
+      "granularity": 1,
+      "valueType": "ms",
+      "label": "Script Evaluation"
+     },
+     {
+      "key": "scriptParseCompile",
+      "granularity": 1,
+      "valueType": "ms",
+      "label": "Script Parse"
+     }
+    ],
+    "items": [
+     {
+      "url": "https://developer.mozilla.org/en-US/",
+      "total": 118.96499999999997,
+      "scripting": 1.4919999999999998,
+      "scriptParseCompile": 0.201
+     },
+     {
+      "url": "Unattributable",
+      "total": 76.81100000000016,
+      "scripting": 3.6709999999999985,
+      "scriptParseCompile": 0
+     }
+    ],
+    "summary": {
+     "wastedMs": 5.363999999999998
+    },
+    "sortedBy": [
+     "total"
+    ]
+   },
+   "guidanceLevel": 1
+  },
+  "uses-rel-preconnect": {
+   "id": "uses-rel-preconnect",
+   "title": "Preconnect to required origins",
+   "description": "Consider adding `preconnect` or `dns-prefetch` resource hints to establish early connections to important third-party origins. [Learn how to preconnect to required origins](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/).",
+   "score": 0,
+   "scoreDisplayMode": "metricSavings",
+   "numericValue": 68.85700009536743,
+   "numericUnit": "millisecond",
+   "displayValue": "Est savings of 70 ms",
+   "warnings": [],
+   "metricSavings": {
+    "LCP": 50,
+    "FCP": 0
+   },
+   "details": {
+    "type": "opportunity",
+    "headings": [
+     {
+      "key": "url",
+      "valueType": "url",
+      "label": "URL"
+     },
+     {
+      "key": "wastedMs",
+      "valueType": "timespanMs",
+      "label": "Est Savings"
+     }
+    ],
+    "items": [
+     {
+      "url": "https://incoming.telemetry.mozilla.org",
+      "wastedMs": 68.85700009536743
+     }
+    ],
+    "overallSavingsMs": 68.85700009536743,
+    "sortedBy": [
+     "wastedMs"
+    ]
+   },
+   "guidanceLevel": 3
+  },
+  "font-display": {
+   "id": "font-display",
+   "title": "All text remains visible during webfont loads",
+   "description": "Leverage the `font-display` CSS feature to ensure text is user-visible while webfonts are loading. [Learn more about `font-display`](https://developer.chrome.com/docs/lighthouse/performance/font-display/).",
+   "score": 1,
+   "scoreDisplayMode": "metricSavings",
+   "warnings": [],
+   "details": {
+    "type": "table",
+    "headings": [
+     {
+      "key": "url",
+      "valueType": "url",
+      "label": "URL"
+     },
+     {
+      "key": "wastedMs",
+      "valueType": "ms",
+      "label": "Est Savings"
+     }
+    ],
+    "items": []
+   },
+   "guidanceLevel": 3
+  },
+  "diagnostics": {
+   "id": "diagnostics",
+   "title": "Diagnostics",
+   "description": "Collection of useful page vitals.",
+   "score": 1,
+   "scoreDisplayMode": "informative"
+  },
+  "network-requests": {
+   "id": "network-requests",
+   "title": "Network Requests",
+   "description": "Lists the network requests that were made during page load.",
+   "score": 1,
+   "scoreDisplayMode": "informative",
+   "details": {
+    "type": "table",
+    "headings": [
+     {
+      "key": "url",
+      "valueType": "url",
+      "label": "URL"
+     },
+     {
+      "key": "protocol",
+      "valueType": "text",
+      "label": "Protocol"
+     },
+     {
+      "key": "networkRequestTime",
+      "valueType": "ms",
+      "granularity": 1,
+      "label": "Network Request Time"
+     },
+     {
+      "key": "networkEndTime",
+      "valueType": "ms",
+      "granularity": 1,
+      "label": "Network End Time"
+     },
+     {
+      "key": "transferSize",
+      "valueType": "bytes",
+      "displayUnit": "kb",
+      "granularity": 1,
+      "label": "Transfer Size"
+     },
+     {
+      "key": "resourceSize",
+      "valueType": "bytes",
+      "displayUnit": "kb",
+      "granularity": 1,
+      "label": "Resource Size"
+     },
+     {
+      "key": "statusCode",
+      "valueType": "text",
+      "label": "Status Code"
+     },
+     {
+      "key": "mimeType",
+      "valueType": "text",
+      "label": "MIME Type"
+     },
+     {
+      "key": "resourceType",
+      "valueType": "text",
+      "label": "Resource Type"
+     }
+    ],
+    "items": [
+     {
+      "url": "https://developer.mozilla.org/en-US/",
+      "sessionTargetType": "page",
+      "protocol": "h2",
+      "rendererStartTime": 0,
+      "networkRequestTime": 0.6669999361038208,
+      "networkEndTime": 102.27199995517731,
+      "finished": true,
+      "transferSize": 16259,
+      "resourceSize": 121798,
+      "statusCode": 200,
+      "mimeType": "text/html",
+      "resourceType": "Document",
+      "priority": "VeryHigh",
+      "experimentalFromMainFrame": true,
+      "entity": "Mozilla"
+     },
+     {
+      "url": "https://developer.mozilla.org/static/client/styles-global.19cc0c980e463125.css",
+      "sessionTargetType": "page",
+      "protocol": "h2",
+      "rendererStartTime": 109.49199998378754,
+      "networkRequestTime": 113.31199991703033,
+      "networkEndTime": 131.66800010204315,
+      "finished": true,
+      "transferSize": 4531,
+      "resourceSize": 25147,
+      "statusCode": 200,
+      "mimeType": "text/css",
+      "resourceType": "Stylesheet",
+      "priority": "VeryHigh",
+      "experimentalFromMainFrame": true,
+      "entity": "Mozilla"
+     },
+     {
+      "url": "https://developer.mozilla.org/static/client/styles-homepage.0980eec27925cc11.css",
+      "sessionTargetType": "page",
+      "protocol": "h2",
+      "rendererStartTime": 109.87199997901917,
+      "networkRequestTime": 113.50999999046326,
+      "networkEndTime": 131.87399995326996,
+      "finished": true,
+      "transferSize": 624,
+      "resourceSize": 381,
+      "statusCode": 200,
+      "mimeType": "text/css",
+      "resourceType": "Stylesheet",
+      "priority": "VeryHigh",
+      "experimentalFromMainFrame": true,
+      "entity": "Mozilla"
+     },
+     {
+      "url": "https://developer.mozilla.org/static/client/styles-homepage-header.da8a69fafe1cfb00.css",
+      "sessionTargetType": "page",
+      "protocol": "h2",
+      "rendererStartTime": 109.92299997806549,
+      "networkRequestTime": 113.58899998664856,
+      "networkEndTime": 131.7920000553131,
+      "finished": true,
+      "transferSize": 1096,
+      "resourceSize": 522,
+      "statusCode": 200,
+      "mimeType": "text/css",
+      "resourceType": "Stylesheet",
+      "priority": "VeryHigh",
+      "experimentalFromMainFrame": true,
+      "entity": "Mozilla"
+     },
+     {
+      "url": "https://developer.mozilla.org/static/client/styles-homepage-hero.61cf31e2c2f1b72c.css",
+      "sessionTargetType": "page",
+      "protocol": "h2",
+      "rendererStartTime": 109.9650000333786,
+      "networkRequestTime": 113.65400004386902,
+      "networkEndTime": 132.2590000629425,
+      "finished": true,
+      "transferSize": 1076,
+      "resourceSize": 751,
+      "statusCode": 200,
+      "mimeType": "text/css",
+      "resourceType": "Stylesheet",
+      "priority": "VeryHigh",
+      "experimentalFromMainFrame": true,
+      "entity": "Mozilla"
+     },
+     {
+      "url": "https://developer.mozilla.org/static/client/styles-mandala.8fbfeb0567dbde40.css",
+      "sessionTargetType": "page",
+      "protocol": "h2",
+      "rendererStartTime": 110.00699996948242,
+      "networkRequestTime": 114.36300003528595,
+      "networkEndTime": 132.0350000858307,
+      "finished": true,
+      "transferSize": 1051,
+      "resourceSize": 495,
+      "statusCode": 200,
+      "mimeType": "text/css",
+      "resourceType": "Stylesheet",
+      "priority": "VeryHigh",
+      "experimentalFromMainFrame": true,
+      "entity": "Mozilla"
+     },
+     {
+      "url": "https://developer.mozilla.org/static/client/styles-homepage-body.22274e9a4a78b7ae.css",
+      "sessionTargetType": "page",
+      "protocol": "h2",
+      "rendererStartTime": 110.05200004577637,
+      "networkRequestTime": 114.52499997615814,
+      "networkEndTime": 132.1159999370575,
+      "finished": true,
+      "transferSize": 496,
+      "resourceSize": 136,
+      "statusCode": 200,
+      "mimeType": "text/css",
+      "resourceType": "Stylesheet",
+      "priority": "VeryHigh",
+      "experimentalFromMainFrame": true,
+      "entity": "Mozilla"
+     },
+     {
+      "url": "https://developer.mozilla.org/static/client/styles-featured-articles.770034368883a9ae.css",
+      "sessionTargetType": "page",
+      "protocol": "h2",
+      "rendererStartTime": 110.08599996566772,
+      "networkRequestTime": 114.60399997234344,
+      "networkEndTime": 132.1909999847412,
+      "finished": true,
+      "transferSize": 1013,
+      "resourceSize": 1406,
+      "statusCode": 200,
+      "mimeType": "text/css",
+      "resourceType": "Stylesheet",
+      "priority": "VeryHigh",
+      "experimentalFromMainFrame": true,
+      "entity": "Mozilla"
+     }
+    ]
+   }
+  },
+  "network-rtt": {
+   "id": "network-rtt",
+   "title": "Network Round Trip Times",
+   "description": "Network round trip times (RTT) have a large impact on performance. If the RTT to an origin is high, it's an indication that servers closer to the user could improve performance. [Learn more about the Round Trip Time](https://hpbn.co/primer-on-latency-and-bandwidth/).",
+   "score": 1,
+   "scoreDisplayMode": "informative",
+   "numericValue": 6.382999999999996,
+   "numericUnit": "millisecond",
+   "displayValue": "10 ms",
+   "details": {
+    "type": "table",
+    "headings": [
+     {
+      "key": "origin",
+      "valueType": "text",
+      "label": "URL"
+     },
+     {
+      "key": "rtt",
+      "valueType": "ms",
+      "granularity": 1,
+      "label": "Time Spent"
+     }
+    ],
+    "items": [
+     {
+      "origin": "https://developer.mozilla.org",
+      "rtt": 6.382999999999996
+     },
+     {
+      "origin": "https://incoming.telemetry.mozilla.org",
+      "rtt": 0
+     }
+    ],
+    "sortedBy": [
+     "rtt"
+    ]
+   }
+  },
+  "network-server-latency": {
+   "id": "network-server-latency",
+   "title": "Server Backend Latencies",
+   "description": "Server latencies can impact web performance. If the server latency of an origin is high, it's an indication the server is overloaded or has poor backend performance. [Learn more about server response time](https://hpbn.co/primer-on-web-performance/#analyzing-the-resource-waterfall).",
+   "score": 1,
+   "scoreDisplayMode": "informative",
+   "numericValue": 322.053,
+   "numericUnit": "millisecond",
+   "displayValue": "320 ms",
+   "details": {
+    "type": "table",
+    "headings": [
+     {
+      "key": "origin",
+      "valueType": "text",
+      "label": "URL"
+     },
+     {
+      "key": "serverResponseTime",
+      "valueType": "ms",
+      "granularity": 1,
+      "label": "Time Spent"
+     }
+    ],
+    "items": [
+     {
+      "origin": "https://incoming.telemetry.mozilla.org",
+      "serverResponseTime": 322.053
+     },
+     {
+      "origin": "https://developer.mozilla.org",
+      "serverResponseTime": 13.315000000000005
+     }
+    ],
+    "sortedBy": [
+     "serverResponseTime"
+    ]
+   }
+  },
+  "main-thread-tasks": {
+   "id": "main-thread-tasks",
+   "title": "Tasks",
+   "description": "Lists the toplevel main thread tasks that executed during page load.",
+   "score": 1,
+   "scoreDisplayMode": "informative",
+   "details": {
+    "type": "table",
+    "headings": [
+     {
+      "key": "startTime",
+      "valueType": "ms",
+      "granularity": 1,
+      "label": "Start Time"
+     },
+     {
+      "key": "duration",
+      "valueType": "ms",
+      "granularity": 1,
+      "label": "End Time"
+     }
+    ],
+    "items": [
+     {
+      "duration": 7.696,
+      "startTime": 106.311
+     },
+     {
+      "duration": 79.54,
+      "startTime": 161.043
+     },
+     {
+      "duration": 13.416,
+      "startTime": 258.177
+     },
+     {
+      "duration": 27.077,
+      "startTime": 272.495
+     },
+     {
+      "duration": 5.958,
+      "startTime": 304.33
+     },
+     {
+      "duration": 6.891,
+      "startTime": 314.157
+     },
+     {
+      "duration": 10.896,
+      "startTime": 1193.69
+     }
+    ]
+   }
+  },
+  "metrics": {
+   "id": "metrics",
+   "title": "Metrics",
+   "description": "Collects all available metrics.",
+   "score": 1,
+   "scoreDisplayMode": "informative",
+   "numericValue": 980,
+   "numericUnit": "millisecond"
+  },
+  "resource-summary": {
+   "id": "resource-summary",
+   "title": "Resources Summary",
+   "description": "Aggregates all network requests and groups them by type",
+   "score": 1,
+   "scoreDisplayMode": "informative",
+   "details": {
+    "type": "table",
+    "headings": [
+     {
+      "key": "label",
+      "valueType": "text",
+      "label": "Resource Type"
+     },
+     {
+      "key": "requestCount",
+      "valueType": "numeric",
+      "label": "Requests"
+     },
+     {
+      "key": "transferSize",
+      "valueType": "bytes",
+      "label": "Transfer Size"
+     }
+    ],
+    "items": [
+     {
+      "resourceType": "total",
+      "label": "Total",
+      "requestCount": 77,
+      "transferSize": 527020
+     },
+     {
+      "resourceType": "font",
+      "label": "Font",
+      "requestCount": 3,
+      "transferSize": 251797
+     },
+     {
+      "resourceType": "image",
+      "label": "Image",
+      "requestCount": 17,
+      "transferSize": 137540
+     },
+     {
+      "resourceType": "script",
+      "label": "Script",
+      "requestCount": 23,
+      "transferSize": 88225
+     },
+     {
+      "resourceType": "stylesheet",
+      "label": "Stylesheet",
+      "requestCount": 20,
+      "transferSize": 24243
+     },
+     {
+      "resourceType": "document",
+      "label": "Document",
+      "requestCount": 1,
+      "transferSize": 16259
+     },
+     {
+      "resourceType": "other",
+      "label": "Other",
+      "requestCount": 13,
+      "transferSize": 8956
+     },
+     {
+      "resourceType": "media",
+      "label": "Media",
+      "requestCount": 0,
+      "transferSize": 0
+     }
+    ]
+   }
+  },
+  "third-party-summary": {
+   "id": "third-party-summary",
+   "title": "Minimize third-party usage",
+   "description": "Third-party code can significantly impact load performance. Limit the number of redundant third-party providers and try to load third-party code after your page has primarily finished loading. [Learn how to minimize third-party impact](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/).",
+   "score": null,
+   "scoreDisplayMode": "notApplicable",
+   "metricSavings": {
+    "TBT": 0
+   },
+   "guidanceLevel": 1
+  },
+  "third-party-facades": {
+   "id": "third-party-facades",
+   "title": "Lazy load third-party resources with facades",
+   "description": "Some third-party embeds can be lazy loaded. Consider replacing them with a facade until they are required. [Learn how to defer third-parties with a facade](https://developer.chrome.com/docs/lighthouse/performance/third-party-facades/).",
+   "score": null,
+   "scoreDisplayMode": "notApplicable",
+   "metricSavings": {
+    "TBT": 0
+   },
+   "guidanceLevel": 3
+  },
+  "largest-contentful-paint-element": {
+   "id": "largest-contentful-paint-element",
+   "title": "Largest Contentful Paint element",
+   "description": "This is the largest contentful element painted within the viewport. [Learn more about the Largest Contentful Paint element](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-largest-contentful-paint/)",
+   "score": 1,
+   "scoreDisplayMode": "informative",
+   "displayValue": "980 ms",
+   "metricSavings": {
+    "LCP": 0
+   },
+   "details": {
+    "type": "list",
+    "items": [
+     {
+      "type": "table",
+      "headings": [
+       {
+        "key": "node",
+        "valueType": "node",
+        "label": "Element"
+       }
+      ],
+      "items": [
+       {
+        "node": {
+         "type": "node",
+         "lhId": "page-0-IMG",
+         "path": "1,HTML,1,BODY,3,DIV,1,DIV,0,MDN-PLACEMENT-HP-MAIN,a,#document-fragment,1,DIV,0,SECTION,0,A,0,IMG",
+         "selector": "div.hp-main-placement > section.placement-container > a.placement-link > img",
+         "boundingRect": {
+          "top": 509,
+          "bottom": 759,
+          "left": 142,
+          "right": 1112,
+          "width": 970,
+          "height": 250
+         },
+         "snippet": "<img width=\"970\" height=\"250\" src=\"/pimg/aHR0cHM6Ly9zdGF0aWM0LmJ1eXNlbGxhZHMubmV0L3V1LzIvMTc5MTY0LzE3OTM0NTk2…\" aria-hidden=\"false\" alt=\"MongoDB\">",
+         "nodeLabel": "MongoDB"
+        }
+       }
+      ]
+     },
+     {
+      "type": "table",
+      "headings": [
+       {
+        "key": "phase",
+        "valueType": "text",
+        "label": "Phase"
+       },
+       {
+        "key": "percent",
+        "valueType": "text",
+        "label": "% of LCP"
+       },
+       {
+        "key": "timing",
+        "valueType": "ms",
+        "label": "Timing"
+       }
+      ],
+      "items": [
+       {
+        "phase": "TTFB",
+        "timing": 173.315,
+        "percent": "18%"
+       },
+       {
+        "phase": "Load Delay",
+        "timing": 775.2650545604874,
+        "percent": "79%"
+       },
+       {
+        "phase": "Load Time",
+        "timing": 18.07531507877195,
+        "percent": "2%"
+       },
+       {
+        "phase": "Render Delay",
+        "timing": 13.393630360740644,
+        "percent": "1%"
+       }
+      ]
+     }
+    ]
+   },
+   "guidanceLevel": 1
+  },
+  "lcp-lazy-loaded": {
+   "id": "lcp-lazy-loaded",
+   "title": "Largest Contentful Paint image was not lazily loaded",
+   "description": "Above-the-fold images that are lazily loaded render later in the page lifecycle, which can delay the largest contentful paint. [Learn more about optimal lazy loading](https://web.dev/articles/lcp-lazy-loading).",
+   "score": 1,
+   "scoreDisplayMode": "metricSavings",
+   "metricSavings": {
+    "LCP": 0
+   },
+   "details": {
+    "type": "table",
+    "headings": [
+     {
+      "key": "node",
+      "valueType": "node",
+      "label": "Element"
+     }
+    ],
+    "items": [
+     {
+      "node": {
+       "type": "node",
+       "lhId": "1-3-IMG",
+       "path": "1,HTML,1,BODY,3,DIV,1,DIV,0,MDN-PLACEMENT-HP-MAIN,a,#document-fragment,1,DIV,0,SECTION,0,A,0,IMG",
+       "selector": "div.hp-main-placement > section.placement-container > a.placement-link > img",
+       "boundingRect": {
+        "top": 509,
+        "bottom": 759,
+        "left": 142,
+        "right": 1112,
+        "width": 970,
+        "height": 250
+       },
+       "snippet": "<img width=\"970\" height=\"250\" src=\"/pimg/aHR0cHM6Ly9zdGF0aWM0LmJ1eXNlbGxhZHMubmV0L3V1LzIvMTc5MTY0LzE3OTM0NTk2…\" aria-hidden=\"false\" alt=\"MongoDB\">",
+       "nodeLabel": "MongoDB"
+      }
+     }
+    ]
+   },
+   "guidanceLevel": 3
+  },
+  "layout-shifts": {
+   "id": "layout-shifts",
+   "title": "Avoid large layout shifts",
+   "description": "These are the largest layout shifts observed on the page. Each table item represents a single layout shift, and shows the element that shifted the most. Below each item are possible root causes that led to the layout shift. Some of these layout shifts may not be included in the CLS metric value due to [windowing](https://web.dev/articles/cls#what_is_cls). [Learn how to improve CLS](https://web.dev/articles/optimize-cls)",
+   "score": 1,
+   "scoreDisplayMode": "informative",
+   "displayValue": "3 layout shifts found",
+   "metricSavings": {
+    "CLS": 0.05
+   },
+   "details": {
+    "type": "table",
+    "headings": [
+     {
+      "key": "node",
+      "valueType": "node",
+      "subItemsHeading": {
+       "key": "extra"
+      },
+      "label": "Element"
+     },
+     {
+      "key": "score",
+      "valueType": "numeric",
+      "subItemsHeading": {
+       "key": "cause",
+       "valueType": "text"
+      },
+      "granularity": 0.001,
+      "label": "Layout shift score"
+     }
+    ],
+    "items": [
+     {
+      "node": {
+       "type": "node",
+       "lhId": "page-5-DIV",
+       "path": "1,HTML,1,BODY,3,DIV,1,DIV,1,DIV",
+       "selector": "body.page-layout > div.page-layout__main > div.homepage > div.homepage-body",
+       "boundingRect": {
+        "top": 759,
+        "bottom": 2378,
+        "left": 284,
+        "right": 1052,
+        "width": 768,
+        "height": 1619
+       },
+       "snippet": "<div class=\"homepage-body\">",
+       "nodeLabel": "Featured articles\nBlog\nCelebrating 20 years of MDN\n\nMDN turns 20! Let's look at…"
+      },
+      "score": 0.04939558279857565,
+      "subItems": {
+       "type": "subitems",
+       "items": [
+        {
+         "extra": {
+          "type": "node",
+          "lhId": "page-10-IMG",
+          "path": "1,HTML,1,BODY,3,DIV,2,DIV,0,DIV,0,SECTION,1,FIGURE,0,IMG",
+          "selector": "div.homepage-footer > section.homepage-contributor-spotlight > figure.homepage-contributor-spotlight__logo > img",
+          "boundingRect": {
+           "top": 2484,
+           "bottom": 2612,
+           "left": 849,
+           "right": 1052,
+           "width": 203,
+           "height": 128
+          },
+          "snippet": "<img loading=\"lazy\" width=\"512\" height=\"323\" src=\"/static/ssr/mdn_contributor.9e2a105f50828d5a.png\" alt=\"Tiled Mozilla Logo\">",
+          "nodeLabel": "Tiled Mozilla Logo"
+         },
+         "cause": "Media element lacking an explicit size"
+        }
+       ]
+      }
+     },
+     {
+      "node": {
+       "type": "node",
+       "lhId": "page-1-DIV",
+       "path": "1,HTML,1,BODY,3,DIV,0,DIV,0,DIV,2,DIV",
+       "selector": "div.page-layout__main > div#content > div.homepage-header > div.homepage-header__mandala",
+       "boundingRect": {
+        "top": 189,
+        "bottom": 509,
+        "left": 891,
+        "right": 1335,
+        "width": 444,
+        "height": 320
+       },
+       "snippet": "<div class=\"homepage-header__mandala\">",
+       "nodeLabel": "   / / / / / / / / / / / /    / / / / / / / / / / / /    / / / / / / / / / / / …"
+      },
+      "score": 0.00333245654562206
+     },
+     {
+      "node": {
+       "type": "node",
+       "lhId": "page-8-SPAN",
+       "path": "1,HTML,1,BODY,1,DIV,0,MDN-PLACEMENT-TOP,a,#document-fragment,1,DIV,0,SECTION,0,DIV,0,A,0,DIV,1,SPAN",
+       "selector": "div.placement-inner > a.placement-link > div.placement-content > span",
+       "boundingRect": {
+        "top": 18,
+        "bottom": 36,
+        "left": 68,
+        "right": 713,
+        "width": 645,
+        "height": 18
+       },
+       "snippet": "<span>",
+       "nodeLabel": "Up to 35% faster reads and 30% faster update-one queries vs. 8.0. Register free…"
+      },
+      "score": 0.0004837964019992939,
+      "subItems": {
+       "type": "subitems",
+       "items": [
+        {
+         "extra": {
+          "type": "node",
+          "lhId": "page-11-IMG",
+          "path": "1,HTML,1,BODY,1,DIV,0,MDN-PLACEMENT-TOP,a,#document-fragment,1,DIV,0,SECTION,0,DIV,0,A,0,DIV,0,IMG",
+          "selector": "div.placement-inner > a.placement-link > div.placement-content > img",
+          "boundingRect": {
+           "top": 2,
+           "bottom": 52,
+           "left": 18,
+           "right": 68,
+           "width": 50,
+           "height": 50
+          },
+          "snippet": "<img height=\"50\" src=\"/pimg/aHR0cHM6Ly9zdGF0aWM0LmJ1eXNlbGxhZHMubmV0L3V1LzIvMTc5MTY0LzE3OTM0NjAw…\" aria-hidden=\"false\" alt=\"MongoDB\">",
+          "nodeLabel": "MongoDB"
+         },
+         "cause": "Media element lacking an explicit size"
+        }
+       ]
+      }
+     }
+    ]
+   },
+   "guidanceLevel": 2
+  },
+  "long-tasks": {
+   "id": "long-tasks",
+   "title": "Avoid long main-thread tasks",
+   "description": "Lists the longest tasks on the main thread, useful for identifying worst contributors to input delay. [Learn how to avoid long main-thread tasks](https://web.dev/articles/optimize-long-tasks)",
+   "score": null,
+   "scoreDisplayMode": "notApplicable",
+   "metricSavings": {
+    "TBT": 0
+   },
+   "details": {
+    "type": "table",
+    "headings": [
+     {
+      "key": "url",
+      "valueType": "url",
+      "label": "URL"
+     },
+     {
+      "key": "startTime",
+      "valueType": "ms",
+      "granularity": 1,
+      "label": "Start Time"
+     },
+     {
+      "key": "duration",
+      "valueType": "ms",
+      "granularity": 1,
+      "label": "Duration"
+     }
+    ],
+    "items": []
+   },
+   "guidanceLevel": 1
+  },
+  "non-composited-animations": {
+   "id": "non-composited-animations",
+   "title": "Avoid non-composited animations",
+   "description": "Animations which are not composited can be janky and increase CLS. [Learn how to avoid non-composited animations](https://developer.chrome.com/docs/lighthouse/performance/non-composited-animations/)",
+   "score": null,
+   "scoreDisplayMode": "notApplicable",
+   "metricSavings": {
+    "CLS": 0
+   },
+   "details": {
+    "type": "table",
+    "headings": [
+     {
+      "key": "node",
+      "valueType": "node",
+      "subItemsHeading": {
+       "key": "failureReason",
+       "valueType": "text"
+      },
+      "label": "Element"
+     }
+    ],
+    "items": []
+   },
+   "guidanceLevel": 2
+  },
+  "unsized-images": {
+   "id": "unsized-images",
+   "title": "Image elements have explicit `width` and `height`",
+   "description": "Set an explicit width and height on image elements to reduce layout shifts and improve CLS. [Learn how to set image dimensions](https://web.dev/articles/optimize-cls#images_without_dimensions)",
+   "score": 1,
+   "scoreDisplayMode": "metricSavings",
+   "metricSavings": {
+    "CLS": 0
+   },
+   "details": {
+    "type": "table",
+    "headings": [
+     {
+      "key": "node",
+      "valueType": "node",
+      "label": ""
+     },
+     {
+      "key": "url",
+      "valueType": "url",
+      "label": "URL"
+     }
+    ],
+    "items": []
+   },
+   "guidanceLevel": 4
+  },
+  "prioritize-lcp-image": {
+   "id": "prioritize-lcp-image",
+   "title": "Preload Largest Contentful Paint image",
+   "description": "If the LCP element is dynamically added to the page, you should preload the image in order to improve LCP. [Learn more about preloading LCP elements](https://web.dev/articles/optimize-lcp#optimize_when_the_resource_is_discovered).",
+   "score": 1,
+   "scoreDisplayMode": "metricSavings",
+   "numericValue": 0,
+   "numericUnit": "millisecond",
+   "displayValue": "",
+   "metricSavings": {
+    "LCP": 0
+   },
+   "details": {
+    "type": "opportunity",
+    "headings": [],
+    "items": [],
+    "overallSavingsMs": 0,
+    "sortedBy": [
+     "wastedMs"
+    ]
+   },
+   "guidanceLevel": 4
+  },
+  "script-treemap-data": {
+   "id": "script-treemap-data",
+   "title": "Script Treemap Data",
+   "description": "Used for treemap app",
+   "score": 1,
+   "scoreDisplayMode": "informative"
+  },
+  "uses-long-cache-ttl": {
+   "id": "uses-long-cache-ttl",
+   "title": "Serve static assets with an efficient cache policy",
+   "description": "A long cache lifetime can speed up repeat visits to your page. [Learn more about efficient cache policies](https://developer.chrome.com/docs/lighthouse/performance/uses-long-cache-ttl/).",
+   "score": 0.5,
+   "scoreDisplayMode": "metricSavings",
+   "numericValue": 37845.600000000006,
+   "numericUnit": "byte",
+   "displayValue": "3 resources found",
+   "details": {
+    "type": "table",
+    "headings": [
+     {
+      "key": "url",
+      "valueType": "url",
+      "label": "URL"
+     },
+     {
+      "key": "cacheLifetimeMs",
+      "valueType": "ms",
+      "label": "Cache TTL",
+      "displayUnit": "duration"
+     },
+     {
+      "key": "totalBytes",
+      "valueType": "bytes",
+      "label": "Transfer Size",
+      "displayUnit": "kb",
+      "granularity": 1
+     }
+    ],
+    "items": [
+     {
+      "url": "https://developer.mozilla.org/pimg/aHR0cHM6Ly9zdGF0aWM0LmJ1eXNlbGxhZHMubmV0L3V1LzIvMTc5MTY0LzE3OTM0NjAyNDAtTURCXzkuMF8tX01ETl8xNDU2eDE4MC5wbmc%3D.RL1FdPOILLyNLA%2FO7SHiCu6Egwwibpgo8ZslpCzg8eg%3D",
+      "debugData": {
+       "type": "debugdata",
+       "max-age": 86400
+      },
+      "cacheLifetimeMs": 86400000,
+      "cacheHitProbability": 0.6,
+      "totalBytes": 56339,
+      "wastedBytes": 22535.600000000002
+     },
+     {
+      "url": "https://developer.mozilla.org/pimg/aHR0cHM6Ly9zdGF0aWM0LmJ1eXNlbGxhZHMubmV0L3V1LzIvMTc5MTY0LzE3OTM0NTk2NzEtTUROXy1fMTk0MHg1MDBfMl8ucG5n.HCuWe%2FQLN517F8ZQjD2JEZU05yKoKL%2Bbe83J1pM7HKA%3D",
+      "debugData": {
+       "type": "debugdata",
+       "max-age": 86400
+      },
+      "cacheLifetimeMs": 86400000,
+      "cacheHitProbability": 0.6,
+      "totalBytes": 35482,
+      "wastedBytes": 14192.800000000001
+     },
+     {
+      "url": "https://developer.mozilla.org/pimg/aHR0cHM6Ly9zdGF0aWM0LmJ1eXNlbGxhZHMubmV0L3V1LzIvMTc5MTY0LzE3OTM0NjAwNDUtTW9uZ29EQl9TbGF0ZUJsdWVfcmVzaXplZC5wbmc%3D.JK%2FfrwCX%2BTkf2LuU7ps5oQfb4z%2Fw%2FPrKMr5NHx%2FDvDM%3D",
+      "debugData": {
+       "type": "debugdata",
+       "max-age": 86400
+      },
+      "cacheLifetimeMs": 86400000,
+      "cacheHitProbability": 0.6,
+      "totalBytes": 2793,
+      "wastedBytes": 1117.2
+     }
+    ],
+    "summary": {
+     "wastedBytes": 37845.600000000006
+    },
+    "sortedBy": [
+     "totalBytes"
+    ],
+    "skipSumming": [
+     "cacheLifetimeMs"
+    ]
+   },
+   "guidanceLevel": 3
+  },
+  "total-byte-weight": {
+   "id": "total-byte-weight",
+   "title": "Avoids enormous network payloads",
+   "description": "Large network payloads cost users real money and are highly correlated with long load times. [Learn how to reduce payload sizes](https://developer.chrome.com/docs/lighthouse/performance/total-byte-weight/).",
+   "score": 1,
+   "scoreDisplayMode": "metricSavings",
+   "numericValue": 527020,
+   "numericUnit": "byte",
+   "displayValue": "Total size was 515 KiB",
+   "details": {
+    "type": "table",
+    "headings": [
+     {
+      "key": "url",
+      "valueType": "url",
+      "label": "URL"
+     },
+     {
+      "key": "totalBytes",
+      "valueType": "bytes",
+      "label": "Transfer Size"
+     }
+    ],
+    "items": [
+     {
+      "url": "https://developer.mozilla.org/static/client/inter-italic-latin.fd2627ec16333c05.woff2",
+      "totalBytes": 116532
+     },
+     {
+      "url": "https://developer.mozilla.org/static/client/inter-latin.9a3b1bc220d426ef.woff2",
+      "totalBytes": 106318
+     },
+     {
+      "url": "https://developer.mozilla.org/pimg/aHR0cHM6Ly9zdGF0aWM0LmJ1eXNlbGxhZHMubmV0L3V1LzIvMTc5MTY0LzE3OTM0NjAyNDAtTURCXzkuMF8tX01ETl8xNDU2eDE4MC5wbmc%3D.RL1FdPOILLyNLA%2FO7SHiCu6Egwwibpgo8ZslpCzg8eg%3D",
+      "totalBytes": 56339
+     },
+     {
+      "url": "https://developer.mozilla.org/pimg/aHR0cHM6Ly9zdGF0aWM0LmJ1eXNlbGxhZHMubmV0L3V1LzIvMTc5MTY0LzE3OTM0NTk2NzEtTUROXy1fMTk0MHg1MDBfMl8ucG5n.HCuWe%2FQLN517F8ZQjD2JEZU05yKoKL%2Bbe83J1pM7HKA%3D",
+      "totalBytes": 35482
+     },
+     {
+      "url": "https://developer.mozilla.org/static/ssr/mdn_contributor.9e2a105f50828d5a.png",
+      "totalBytes": 31877
+     },
+     {
+      "url": "https://developer.mozilla.org/static/client/jetbrains-mono-latin.119994ed445212c7.woff2",
+      "totalBytes": 28947
+     },
+     {
+      "url": "https://developer.mozilla.org/static/client/4585.7535b1f199327a48.js",
+      "totalBytes": 24030
+     },
+     {
+      "url": "https://developer.mozilla.org/en-US/",
+      "totalBytes": 16259
+     }
+    ],
+    "sortedBy": [
+     "totalBytes"
+    ]
+   },
+   "guidanceLevel": 1
+  },
+  "offscreen-images": {
+   "id": "offscreen-images",
+   "title": "Defer offscreen images",
+   "description": "Consider lazy-loading offscreen and hidden images after all critical resources have finished loading to lower time to interactive. [Learn how to defer offscreen images](https://developer.chrome.com/docs/lighthouse/performance/offscreen-images/).",
+   "score": 1,
+   "scoreDisplayMode": "metricSavings",
+   "numericValue": 0,
+   "numericUnit": "millisecond",
+   "displayValue": "",
+   "warnings": [],
+   "metricSavings": {
+    "FCP": 0,
+    "LCP": 0
+   },
+   "details": {
+    "type": "opportunity",
+    "headings": [],
+    "items": [],
+    "overallSavingsMs": 0,
+    "overallSavingsBytes": 0,
+    "sortedBy": [
+     "wastedBytes"
+    ]
+   },
+   "guidanceLevel": 2
+  },
+  "render-blocking-resources": {
+   "id": "render-blocking-resources",
+   "title": "Eliminate render-blocking resources",
+   "description": "Resources are blocking the first paint of your page. Consider delivering critical JS/CSS inline and deferring all non-critical JS/styles. [Learn how to eliminate render-blocking resources](https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/).",
+   "score": 1,
+   "scoreDisplayMode": "metricSavings",
+   "numericValue": 0,
+   "numericUnit": "millisecond",
+   "metricSavings": {
+    "FCP": 0,
+    "LCP": 0
+   },
+   "details": {
+    "type": "opportunity",
+    "headings": [],
+    "items": [],
+    "overallSavingsMs": 0
+   },
+   "guidanceLevel": 2
+  },
+  "unminified-css": {
+   "id": "unminified-css",
+   "title": "Minify CSS",
+   "description": "Minifying CSS files can reduce network payload sizes. [Learn how to minify CSS](https://developer.chrome.com/docs/lighthouse/performance/unminified-css/).",
+   "score": 1,
+   "scoreDisplayMode": "metricSavings",
+   "numericValue": 0,
+   "numericUnit": "millisecond",
+   "displayValue": "",
+   "metricSavings": {
+    "FCP": 0,
+    "LCP": 0
+   },
+   "details": {
+    "type": "opportunity",
+    "headings": [],
+    "items": [],
+    "overallSavingsMs": 0,
+    "overallSavingsBytes": 0,
+    "sortedBy": [
+     "wastedBytes"
+    ]
+   },
+   "guidanceLevel": 3
+  },
+  "unminified-javascript": {
+   "id": "unminified-javascript",
+   "title": "Minify JavaScript",
+   "description": "Minifying JavaScript files can reduce payload sizes and script parse time. [Learn how to minify JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unminified-javascript/).",
+   "score": 1,
+   "scoreDisplayMode": "metricSavings",
+   "numericValue": 0,
+   "numericUnit": "millisecond",
+   "displayValue": "",
+   "warnings": [],
+   "metricSavings": {
+    "FCP": 0,
+    "LCP": 0
+   },
+   "details": {
+    "type": "opportunity",
+    "headings": [],
+    "items": [],
+    "overallSavingsMs": 0,
+    "overallSavingsBytes": 0,
+    "sortedBy": [
+     "wastedBytes"
+    ]
+   },
+   "guidanceLevel": 3
+  },
+  "unused-css-rules": {
+   "id": "unused-css-rules",
+   "title": "Reduce unused CSS",
+   "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
+   "score": 1,
+   "scoreDisplayMode": "metricSavings",
+   "numericValue": 0,
+   "numericUnit": "millisecond",
+   "displayValue": "",
+   "metricSavings": {
+    "FCP": 0,
+    "LCP": 0
+   },
+   "details": {
+    "type": "opportunity",
+    "headings": [],
+    "items": [],
+    "overallSavingsMs": 0,
+    "overallSavingsBytes": 0,
+    "sortedBy": [
+     "wastedBytes"
+    ]
+   },
+   "guidanceLevel": 1
+  },
+  "unused-javascript": {
+   "id": "unused-javascript",
+   "title": "Reduce unused JavaScript",
+   "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+   "score": 1,
+   "scoreDisplayMode": "metricSavings",
+   "numericValue": 0,
+   "numericUnit": "millisecond",
+   "displayValue": "",
+   "metricSavings": {
+    "FCP": 0,
+    "LCP": 0
+   },
+   "details": {
+    "type": "opportunity",
+    "headings": [],
+    "items": [],
+    "overallSavingsMs": 0,
+    "overallSavingsBytes": 0,
+    "sortedBy": [
+     "wastedBytes"
+    ]
+   },
+   "guidanceLevel": 1
+  },
+  "modern-image-formats": {
+   "id": "modern-image-formats",
+   "title": "Serve images in next-gen formats",
+   "description": "Image formats like WebP and AVIF often provide better compression than PNG or JPEG, which means faster downloads and less data consumption. [Learn more about modern image formats](https://developer.chrome.com/docs/lighthouse/performance/uses-webp-images/).",
+   "score": 0.5,
+   "scoreDisplayMode": "metricSavings",
+   "numericValue": 0,
+   "numericUnit": "millisecond",
+   "displayValue": "Est savings of 47 KiB",
+   "warnings": [],
+   "metricSavings": {
+    "FCP": 0,
+    "LCP": 0
+   },
+   "details": {
+    "type": "opportunity",
+    "headings": [
+     {
+      "key": "node",
+      "valueType": "node",
+      "label": ""
+     },
+     {
+      "key": "url",
+      "valueType": "url",
+      "label": "URL"
+     },
+     {
+      "key": "totalBytes",
+      "valueType": "bytes",
+      "label": "Resource Size"
+     },
+     {
+      "key": "wastedBytes",
+      "valueType": "bytes",
+      "label": "Est Savings"
+     }
+    ],
+    "items": [
+     {
+      "node": {
+       "type": "node",
+       "lhId": "1-5-IMG",
+       "path": "1,HTML,1,BODY,4,DIV,0,MDN-PLACEMENT-BOTTOM,a,#document-fragment,1,DIV,0,SECTION,0,A,0,IMG",
+       "selector": "div.bottom-placement > section.placement-container > a.placement-link > img",
+       "boundingRect": {
+        "top": 2718,
+        "bottom": 2808,
+        "left": 263,
+        "right": 991,
+        "width": 728,
+        "height": 90
+       },
+       "snippet": "<img width=\"728\" height=\"90\" src=\"/pimg/aHR0cHM6Ly9zdGF0aWM0LmJ1eXNlbGxhZHMubmV0L3V1LzIvMTc5MTY0LzE3OTM0NjAy…\" aria-hidden=\"false\" alt=\"MongoDB\">",
+       "nodeLabel": "MongoDB"
+      },
+      "url": "https://developer.mozilla.org/pimg/aHR0cHM6Ly9zdGF0aWM0LmJ1eXNlbGxhZHMubmV0L3V1LzIvMTc5MTY0LzE3OTM0NjAyNDAtTURCXzkuMF8tX01ETl8xNDU2eDE4MC5wbmc%3D.RL1FdPOILLyNLA%2FO7SHiCu6Egwwibpgo8ZslpCzg8eg%3D",
+      "fromProtocol": true,
+      "isCrossOrigin": false,
+      "totalBytes": 56107,
+      "wastedBytes": 35012.6,
+      "wastedWebpBytes": 34191
+     },
+     {
+      "node": {
+       "type": "node",
+       "lhId": "1-4-IMG",
+       "path": "1,HTML,1,BODY,3,DIV,2,DIV,0,DIV,0,SECTION,1,FIGURE,0,IMG",
+       "selector": "div.homepage-footer > section.homepage-contributor-spotlight > figure.homepage-contributor-spotlight__logo > img",
+       "boundingRect": {
+        "top": 2484,
+        "bottom": 2612,
+        "left": 849,
+        "right": 1052,
+        "width": 203,
+        "height": 128
+       },
+       "snippet": "<img loading=\"lazy\" width=\"512\" height=\"323\" src=\"/static/ssr/mdn_contributor.9e2a105f50828d5a.png\" alt=\"Tiled Mozilla Logo\">",
+       "nodeLabel": "Tiled Mozilla Logo"
+      },
+      "url": "https://developer.mozilla.org/static/ssr/mdn_contributor.9e2a105f50828d5a.png",
+      "fromProtocol": true,
+      "isCrossOrigin": false,
+      "totalBytes": 31099,
+      "wastedBytes": 12847.849999999999,
+      "wastedWebpBytes": 7913
+     }
+    ],
+    "overallSavingsMs": 0,
+    "overallSavingsBytes": 47860.45,
+    "sortedBy": [
+     "wastedBytes"
+    ]
+   },
+   "guidanceLevel": 3
+  },
+  "uses-optimized-images": {
+   "id": "uses-optimized-images",
+   "title": "Efficiently encode images",
+   "description": "Optimized images load faster and consume less cellular data. [Learn how to efficiently encode images](https://developer.chrome.com/docs/lighthouse/performance/uses-optimized-images/).",
+   "score": 1,
+   "scoreDisplayMode": "metricSavings",
+   "numericValue": 0,
+   "numericUnit": "millisecond",
+   "displayValue": "",
+   "warnings": [],
+   "metricSavings": {
+    "FCP": 0,
+    "LCP": 0
+   },
+   "details": {
+    "type": "opportunity",
+    "headings": [],
+    "items": [],
+    "overallSavingsMs": 0,
+    "overallSavingsBytes": 0,
+    "sortedBy": [
+     "wastedBytes"
+    ]
+   },
+   "guidanceLevel": 2
+  },
+  "uses-text-compression": {
+   "id": "uses-text-compression",
+   "title": "Enable text compression",
+   "description": "Text-based resources should be served with compression (gzip, deflate or brotli) to minimize total network bytes. [Learn more about text compression](https://developer.chrome.com/docs/lighthouse/performance/uses-text-compression/).",
+   "score": 0.5,
+   "scoreDisplayMode": "metricSavings",
+   "numericValue": 0,
+   "numericUnit": "millisecond",
+   "displayValue": "Est savings of 2 KiB",
+   "metricSavings": {
+    "FCP": 0,
+    "LCP": 0
+   },
+   "details": {
+    "type": "opportunity",
+    "headings": [
+     {
+      "key": "url",
+      "valueType": "url",
+      "label": "URL"
+     },
+     {
+      "key": "totalBytes",
+      "valueType": "bytes",
+      "label": "Transfer Size"
+     },
+     {
+      "key": "wastedBytes",
+      "valueType": "bytes",
+      "label": "Est Savings"
+     }
+    ],
+    "items": [
+     {
+      "url": "https://developer.mozilla.org/pong/get",
+      "totalBytes": 2795,
+      "wastedBytes": 1673
+     }
+    ],
+    "overallSavingsMs": 0,
+    "overallSavingsBytes": 1673,
+    "sortedBy": [
+     "wastedBytes"
+    ]
+   },
+   "guidanceLevel": 3
+  },
+  "uses-responsive-images": {
+   "id": "uses-responsive-images",
+   "title": "Properly size images",
+   "description": "Serve images that are appropriately-sized to save cellular data and improve load time. [Learn how to size images](https://developer.chrome.com/docs/lighthouse/performance/uses-responsive-images/).",
+   "score": 0.5,
+   "scoreDisplayMode": "metricSavings",
+   "numericValue": 20,
+   "numericUnit": "millisecond",
+   "displayValue": "Est savings of 93 KiB",
+   "metricSavings": {
+    "FCP": 0,
+    "LCP": 0
+   },
+   "details": {
+    "type": "opportunity",
+    "headings": [
+     {
+      "key": "node",
+      "valueType": "node",
+      "label": ""
+     },
+     {
+      "key": "url",
+      "valueType": "url",
+      "label": "URL"
+     },
+     {
+      "key": "totalBytes",
+      "valueType": "bytes",
+      "label": "Resource Size"
+     },
+     {
+      "key": "wastedBytes",
+      "valueType": "bytes",
+      "label": "Est Savings"
+     }
+    ],
+    "items": [
+     {
+      "node": {
+       "type": "node",
+       "lhId": "1-5-IMG",
+       "path": "1,HTML,1,BODY,4,DIV,0,MDN-PLACEMENT-BOTTOM,a,#document-fragment,1,DIV,0,SECTION,0,A,0,IMG",
+       "selector": "div.bottom-placement > section.placement-container > a.placement-link > img",
+       "boundingRect": {
+        "top": 2718,
+        "bottom": 2808,
+        "left": 263,
+        "right": 991,
+        "width": 728,
+        "height": 90
+       },
+       "snippet": "<img width=\"728\" height=\"90\" src=\"/pimg/aHR0cHM6Ly9zdGF0aWM0LmJ1eXNlbGxhZHMubmV0L3V1LzIvMTc5MTY0LzE3OTM0NjAy…\" aria-hidden=\"false\" alt=\"MongoDB\">",
+       "nodeLabel": "MongoDB"
+      },
+      "url": "https://developer.mozilla.org/pimg/aHR0cHM6Ly9zdGF0aWM0LmJ1eXNlbGxhZHMubmV0L3V1LzIvMTc5MTY0LzE3OTM0NjAyNDAtTURCXzkuMF8tX01ETl8xNDU2eDE4MC5wbmc%3D.RL1FdPOILLyNLA%2FO7SHiCu6Egwwibpgo8ZslpCzg8eg%3D",
+      "totalBytes": 56107,
+      "wastedBytes": 42080,
+      "wastedPercent": 75
+     },
+     {
+      "node": {
+       "type": "node",
+       "lhId": "1-3-IMG",
+       "path": "1,HTML,1,BODY,3,DIV,1,DIV,0,MDN-PLACEMENT-HP-MAIN,a,#document-fragment,1,DIV,0,SECTION,0,A,0,IMG",
+       "selector": "div.hp-main-placement > section.placement-container > a.placement-link > img",
+       "boundingRect": {
+        "top": 509,
+        "bottom": 759,
+        "left": 142,
+        "right": 1112,
+        "width": 970,
+        "height": 250
+       },
+       "snippet": "<img width=\"970\" height=\"250\" src=\"/pimg/aHR0cHM6Ly9zdGF0aWM0LmJ1eXNlbGxhZHMubmV0L3V1LzIvMTc5MTY0LzE3OTM0NTk2…\" aria-hidden=\"false\" alt=\"MongoDB\">",
+       "nodeLabel": "MongoDB"
+      },
+      "url": "https://developer.mozilla.org/pimg/aHR0cHM6Ly9zdGF0aWM0LmJ1eXNlbGxhZHMubmV0L3V1LzIvMTc5MTY0LzE3OTM0NTk2NzEtTUROXy1fMTk0MHg1MDBfMl8ucG5n.HCuWe%2FQLN517F8ZQjD2JEZU05yKoKL%2Bbe83J1pM7HKA%3D",
+      "totalBytes": 35281,
+      "wastedBytes": 26461,
+      "wastedPercent": 75
+     },
+     {
+      "node": {
+       "type": "node",
+       "lhId": "1-4-IMG",
+       "path": "1,HTML,1,BODY,3,DIV,2,DIV,0,DIV,0,SECTION,1,FIGURE,0,IMG",
+       "selector": "div.homepage-footer > section.homepage-contributor-spotlight > figure.homepage-contributor-spotlight__logo > img",
+       "boundingRect": {
+        "top": 2484,
+        "bottom": 2612,
+        "left": 849,
+        "right": 1052,
+        "width": 203,
+        "height": 128
+       },
+       "snippet": "<img loading=\"lazy\" width=\"512\" height=\"323\" src=\"/static/ssr/mdn_contributor.9e2a105f50828d5a.png\" alt=\"Tiled Mozilla Logo\">",
+       "nodeLabel": "Tiled Mozilla Logo"
+      },
+      "url": "https://developer.mozilla.org/static/ssr/mdn_contributor.9e2a105f50828d5a.png",
+      "totalBytes": 31099,
+      "wastedBytes": 26213,
+      "wastedPercent": 84.28792569659443
+     }
+    ],
+    "overallSavingsMs": 20,
+    "overallSavingsBytes": 94754,
+    "sortedBy": [
+     "wastedBytes"
+    ]
+   },
+   "guidanceLevel": 2
+  },
+  "efficient-animated-content": {
+   "id": "efficient-animated-content",
+   "title": "Use video formats for animated content",
+   "description": "Large GIFs are inefficient for delivering animated content. Consider using MPEG4/WebM videos for animations and PNG/WebP for static images instead of GIF to save network bytes. [Learn more about efficient video formats](https://developer.chrome.com/docs/lighthouse/performance/efficient-animated-content/)",
+   "score": 1,
+   "scoreDisplayMode": "metricSavings",
+   "numericValue": 0,
+   "numericUnit": "millisecond",
+   "displayValue": "",
+   "metricSavings": {
+    "FCP": 0,
+    "LCP": 0
+   },
+   "details": {
+    "type": "opportunity",
+    "headings": [],
+    "items": [],
+    "overallSavingsMs": 0,
+    "overallSavingsBytes": 0,
+    "sortedBy": [
+     "wastedBytes"
+    ]
+   },
+   "guidanceLevel": 3
+  },
+  "duplicated-javascript": {
+   "id": "duplicated-javascript",
+   "title": "Remove duplicate modules in JavaScript bundles",
+   "description": "Remove large, duplicate JavaScript modules from bundles to reduce unnecessary bytes consumed by network activity. ",
+   "score": 1,
+   "scoreDisplayMode": "metricSavings",
+   "numericValue": 0,
+   "numericUnit": "millisecond",
+   "displayValue": "",
+   "metricSavings": {
+    "FCP": 0,
+    "LCP": 0
+   },
+   "details": {
+    "type": "opportunity",
+    "headings": [],
+    "items": [],
+    "overallSavingsMs": 0,
+    "overallSavingsBytes": 0,
+    "sortedBy": [
+     "wastedBytes"
+    ]
+   },
+   "guidanceLevel": 2
+  },
+  "legacy-javascript": {
+   "id": "legacy-javascript",
+   "title": "Avoid serving legacy JavaScript to modern browsers",
+   "description": "Polyfills and transforms enable legacy browsers to use new JavaScript features. However, many aren't necessary for modern browsers. Consider modifying your JavaScript build process to not transpile [Baseline](https://web.dev/baseline) features, unless you know you must support legacy browsers. [Learn why most sites can deploy ES6+ code without transpiling](https://philipwalton.com/articles/the-state-of-es5-on-the-web/)",
+   "score": 1,
+   "scoreDisplayMode": "metricSavings",
+   "numericValue": 0,
+   "numericUnit": "millisecond",
+   "displayValue": "",
+   "warnings": [],
+   "metricSavings": {
+    "FCP": 0,
+    "LCP": 0
+   },
+   "details": {
+    "type": "opportunity",
+    "headings": [],
+    "items": [],
+    "overallSavingsMs": 0,
+    "overallSavingsBytes": 0,
+    "sortedBy": [
+     "wastedBytes"
+    ]
+   },
+   "guidanceLevel": 2
+  },
+  "dom-size": {
+   "id": "dom-size",
+   "title": "Avoid an excessive DOM size",
+   "description": "A large DOM will increase memory usage, cause longer [style calculations](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations), and produce costly [layout reflows](https://developers.google.com/speed/articles/reflow). [Learn how to avoid an excessive DOM size](https://developer.chrome.com/docs/lighthouse/performance/dom-size/).",
+   "score": 0.5,
+   "scoreDisplayMode": "metricSavings",
+   "numericValue": 822,
+   "numericUnit": "element",
+   "displayValue": "822 elements",
+   "metricSavings": {
+    "TBT": 0
+   },
+   "details": {
+    "type": "table",
+    "headings": [
+     {
+      "key": "statistic",
+      "valueType": "text",
+      "label": "Statistic"
+     },
+     {
+      "key": "node",
+      "valueType": "node",
+      "label": "Element"
+     },
+     {
+      "key": "value",
+      "valueType": "numeric",
+      "label": "Value"
+     }
+    ],
+    "items": [
+     {
+      "statistic": "Total DOM Elements",
+      "value": {
+       "type": "numeric",
+       "granularity": 1,
+       "value": 822
+      }
+     },
+     {
+      "node": {
+       "type": "node",
+       "lhId": "1-0-A",
+       "path": "1,HTML,1,BODY,2,HEADER,0,NAV,3,DIV,0,DIV,0,NAV,0,DIV,0,MDN-DROPDOWN,1,DIV,1,DIV,0,DL,1,DD,0,UL,0,LI,0,A",
+       "selector": "dd > ul > li > a",
+       "boundingRect": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0,
+        "width": 0,
+        "height": 0
+       },
+       "snippet": "<a href=\"/en-US/docs/Web/HTML/Reference/Elements\" data-glean-id=\"menu_click_submenu: html -&gt; /en-US/docs/Web/HTML/Reference/Elements\">",
+       "nodeLabel": "Elements"
+      },
+      "statistic": "Maximum DOM Depth",
+      "value": {
+       "type": "numeric",
+       "granularity": 1,
+       "value": 15
+      }
+     },
+     {
+      "node": {
+       "type": "node",
+       "lhId": "1-1-textPath",
+       "path": "1,HTML,1,BODY,3,DIV,0,DIV,0,DIV,2,DIV,0,DIV,0,svg,2,text,0,textPath",
+       "selector": "div.mandala > svg.mandala > text > textpath",
+       "boundingRect": {
+        "top": 62,
+        "bottom": 596,
+        "left": 904,
+        "right": 1437,
+        "width": 533,
+        "height": 533
+       },
+       "snippet": "<textPath textLength=\"2010\" href=\"#circle1\">",
+       "nodeLabel": "div.mandala > svg.mandala > text > textpath"
+      },
+      "statistic": "Maximum Child Elements",
+      "value": {
+       "type": "numeric",
+       "granularity": 1,
+       "value": 42
+      }
+     }
+    ]
+   },
+   "guidanceLevel": 1
+  },
+  "no-document-write": {
+   "id": "no-document-write",
+   "title": "Avoids `document.write()`",
+   "description": "For users on slow connections, external scripts dynamically injected via `document.write()` can delay page load by tens of seconds. [Learn how to avoid document.write()](https://developer.chrome.com/docs/lighthouse/best-practices/no-document-write/).",
+   "score": 1,
+   "scoreDisplayMode": "metricSavings",
+   "details": {
+    "type": "table",
+    "headings": [
+     {
+      "key": "source",
+      "valueType": "source-location",
+      "label": "Source"
+     }
+    ],
+    "items": []
+   },
+   "guidanceLevel": 2
+  },
+  "uses-http2": {
+   "id": "uses-http2",
+   "title": "Use HTTP/2",
+   "description": "HTTP/2 offers many benefits over HTTP/1.1, including binary headers and multiplexing. [Learn more about HTTP/2](https://developer.chrome.com/docs/lighthouse/best-practices/uses-http2/).",
+   "score": 1,
+   "scoreDisplayMode": "metricSavings",
+   "numericValue": 0,
+   "numericUnit": "millisecond",
+   "metricSavings": {
+    "LCP": 0,
+    "FCP": 0
+   },
+   "details": {
+    "type": "opportunity",
+    "headings": [],
+    "items": [],
+    "overallSavingsMs": 0
+   },
+   "guidanceLevel": 3
+  },
+  "uses-passive-event-listeners": {
+   "id": "uses-passive-event-listeners",
+   "title": "Uses passive listeners to improve scrolling performance",
+   "description": "Consider marking your touch and wheel event listeners as `passive` to improve your page's scroll performance. [Learn more about adopting passive event listeners](https://developer.chrome.com/docs/lighthouse/best-practices/uses-passive-event-listeners/).",
+   "score": 1,
+   "scoreDisplayMode": "metricSavings",
+   "details": {
+    "type": "table",
+    "headings": [
+     {
+      "key": "source",
+      "valueType": "source-location",
+      "label": "Source"
+     }
+    ],
+    "items": []
+   },
+   "guidanceLevel": 3
+  },
+  "bf-cache": {
+   "id": "bf-cache",
+   "title": "Page didn't prevent back/forward cache restoration",
+   "description": "Many navigations are performed by going back to a previous page, or forwards again. The back/forward cache (bfcache) can speed up these return navigations. [Learn more about the bfcache](https://developer.chrome.com/docs/lighthouse/performance/bf-cache/)",
+   "score": 1,
+   "scoreDisplayMode": "binary",
+   "guidanceLevel": 4
+  },
+  "cache-insight": {
+   "id": "cache-insight",
+   "title": "Use efficient cache lifetimes",
+   "description": "A long cache lifetime can speed up repeat visits to your page. [Learn more](https://web.dev/uses-long-cache-ttl/).",
+   "score": 0.5,
+   "scoreDisplayMode": "metricSavings",
+   "displayValue": "Est savings of 37 KiB",
+   "metricSavings": {
+    "FCP": 0,
+    "LCP": 0
+   },
+   "details": {
+    "type": "table",
+    "headings": [
+     {
+      "key": "url",
+      "valueType": "url",
+      "label": "Request"
+     },
+     {
+      "key": "cacheLifetimeMs",
+      "valueType": "ms",
+      "label": "Cache TTL",
+      "displayUnit": "duration"
+     },
+     {
+      "key": "totalBytes",
+      "valueType": "bytes",
+      "label": "Transfer Size",
+      "displayUnit": "kb",
+      "granularity": 1
+     }
+    ],
+    "items": [
+     {
+      "url": "https://developer.mozilla.org/pimg/aHR0cHM6Ly9zdGF0aWM0LmJ1eXNlbGxhZHMubmV0L3V1LzIvMTc5MTY0LzE3OTM0NjAyNDAtTURCXzkuMF8tX01ETl8xNDU2eDE4MC5wbmc%3D.RL1FdPOILLyNLA%2FO7SHiCu6Egwwibpgo8ZslpCzg8eg%3D",
+      "cacheLifetimeMs": 86400000,
+      "totalBytes": 56339,
+      "wastedBytes": 22535.600000000002
+     },
+     {
+      "url": "https://developer.mozilla.org/pimg/aHR0cHM6Ly9zdGF0aWM0LmJ1eXNlbGxhZHMubmV0L3V1LzIvMTc5MTY0LzE3OTM0NTk2NzEtTUROXy1fMTk0MHg1MDBfMl8ucG5n.HCuWe%2FQLN517F8ZQjD2JEZU05yKoKL%2Bbe83J1pM7HKA%3D",
+      "cacheLifetimeMs": 86400000,
+      "totalBytes": 35482,
+      "wastedBytes": 14192.800000000001
+     },
+     {
+      "url": "https://developer.mozilla.org/pimg/aHR0cHM6Ly9zdGF0aWM0LmJ1eXNlbGxhZHMubmV0L3V1LzIvMTc5MTY0LzE3OTM0NjAwNDUtTW9uZ29EQl9TbGF0ZUJsdWVfcmVzaXplZC5wbmc%3D.JK%2FfrwCX%2BTkf2LuU7ps5oQfb4z%2Fw%2FPrKMr5NHx%2FDvDM%3D",
+      "cacheLifetimeMs": 86400000,
+      "totalBytes": 2793,
+      "wastedBytes": 1117.2
+     }
+    ],
+    "sortedBy": [
+     "wastedBytes"
+    ],
+    "skipSumming": [
+     "cacheLifetimeMs"
+    ]
+   },
+   "guidanceLevel": 3,
+   "replacesAudits": [
+    "uses-long-cache-ttl"
+   ]
+  },
+  "cls-culprits-insight": {
+   "id": "cls-culprits-insight",
+   "title": "Layout shift culprits",
+   "description": "Layout shifts occur when elements move absent any user interaction. [Investigate the causes of layout shifts](https://web.dev/articles/optimize-cls), such as elements being added, removed, or their fonts changing as the page loads.",
+   "score": 1,
+   "scoreDisplayMode": "informative",
+   "metricSavings": {
+    "CLS": 0
+   },
+   "details": {
+    "type": "list",
+    "items": [
+     {
+      "type": "table",
+      "headings": [
+       {
+        "key": "node",
+        "valueType": "node",
+        "subItemsHeading": {
+         "key": "extra"
+        },
+        "label": "Element"
+       },
+       {
+        "key": "score",
+        "valueType": "numeric",
+        "subItemsHeading": {
+         "key": "cause",
+         "valueType": "text"
+        },
+        "granularity": 0.001,
+        "label": "Layout shift score"
+       }
+      ],
+      "items": [
+       {
+        "node": {
+         "type": "text",
+         "value": "Total"
+        },
+        "score": 0.00333245654562206
+       },
+       {
+        "node": {
+         "type": "node",
+         "lhId": "page-1-DIV",
+         "path": "1,HTML,1,BODY,3,DIV,0,DIV,0,DIV,2,DIV",
+         "selector": "div.page-layout__main > div#content > div.homepage-header > div.homepage-header__mandala",
+         "boundingRect": {
+          "top": 189,
+          "bottom": 509,
+          "left": 891,
+          "right": 1335,
+          "width": 444,
+          "height": 320
+         },
+         "snippet": "<div class=\"homepage-header__mandala\">",
+         "nodeLabel": "   / / / / / / / / / / / /    / / / / / / / / / / / /    / / / / / / / / / / / …"
+        },
+        "score": 0.00333245654562206
+       }
+      ]
+     },
+     {
+      "type": "table",
+      "headings": [
+       {
+        "key": "node",
+        "valueType": "node",
+        "subItemsHeading": {
+         "key": "extra"
+        },
+        "label": "Element"
+       },
+       {
+        "key": "score",
+        "valueType": "numeric",
+        "subItemsHeading": {
+         "key": "cause",
+         "valueType": "text"
+        },
+        "granularity": 0.001,
+        "label": "Layout shift score"
+       }
+      ],
+      "items": [
+       {
+        "node": {
+         "type": "text",
+         "value": "Total"
+        },
+        "score": 0.04987937920057495
+       },
+       {
+        "node": {
+         "type": "node",
+         "lhId": "page-5-DIV",
+         "path": "1,HTML,1,BODY,3,DIV,1,DIV,1,DIV",
+         "selector": "body.page-layout > div.page-layout__main > div.homepage > div.homepage-body",
+         "boundingRect": {
+          "top": 759,
+          "bottom": 2378,
+          "left": 284,
+          "right": 1052,
+          "width": 768,
+          "height": 1619
+         },
+         "snippet": "<div class=\"homepage-body\">",
+         "nodeLabel": "Featured articles\nBlog\nCelebrating 20 years of MDN\n\nMDN turns 20! Let's look at…"
+        },
+        "score": 0.04939558279857565,
+        "subItems": {
+         "type": "subitems",
+         "items": [
+          {
+           "extra": {
+            "type": "node",
+            "lhId": "page-10-IMG",
+            "path": "1,HTML,1,BODY,3,DIV,2,DIV,0,DIV,0,SECTION,1,FIGURE,0,IMG",
+            "selector": "div.homepage-footer > section.homepage-contributor-spotlight > figure.homepage-contributor-spotlight__logo > img",
+            "boundingRect": {
+             "top": 2484,
+             "bottom": 2612,
+             "left": 849,
+             "right": 1052,
+             "width": 203,
+             "height": 128
+            },
+            "snippet": "<img loading=\"lazy\" width=\"512\" height=\"323\" src=\"/static/ssr/mdn_contributor.9e2a105f50828d5a.png\" alt=\"Tiled Mozilla Logo\">",
+            "nodeLabel": "Tiled Mozilla Logo"
+           },
+           "cause": "Unsized image element"
+          }
+         ]
+        }
+       },
+       {
+        "node": {
+         "type": "node",
+         "lhId": "page-8-SPAN",
+         "path": "1,HTML,1,BODY,1,DIV,0,MDN-PLACEMENT-TOP,a,#document-fragment,1,DIV,0,SECTION,0,DIV,0,A,0,DIV,1,SPAN",
+         "selector": "div.placement-inner > a.placement-link > div.placement-content > span",
+         "boundingRect": {
+          "top": 18,
+          "bottom": 36,
+          "left": 68,
+          "right": 713,
+          "width": 645,
+          "height": 18
+         },
+         "snippet": "<span>",
+         "nodeLabel": "Up to 35% faster reads and 30% faster update-one queries vs. 8.0. Register free…"
+        },
+        "score": 0.0004837964019992939,
+        "subItems": {
+         "type": "subitems",
+         "items": [
+          {
+           "extra": {
+            "type": "node",
+            "lhId": "page-11-IMG",
+            "path": "1,HTML,1,BODY,1,DIV,0,MDN-PLACEMENT-TOP,a,#document-fragment,1,DIV,0,SECTION,0,DIV,0,A,0,DIV,0,IMG",
+            "selector": "div.placement-inner > a.placement-link > div.placement-content > img",
+            "boundingRect": {
+             "top": 2,
+             "bottom": 52,
+             "left": 18,
+             "right": 68,
+             "width": 50,
+             "height": 50
+            },
+            "snippet": "<img height=\"50\" src=\"/pimg/aHR0cHM6Ly9zdGF0aWM0LmJ1eXNlbGxhZHMubmV0L3V1LzIvMTc5MTY0LzE3OTM0NjAw…\" aria-hidden=\"false\" alt=\"MongoDB\">",
+            "nodeLabel": "MongoDB"
+           },
+           "cause": "Unsized image element"
+          }
+         ]
+        }
+       }
+      ]
+     }
+    ]
+   },
+   "guidanceLevel": 3,
+   "replacesAudits": [
+    "layout-shifts",
+    "non-composited-animations",
+    "unsized-images"
+   ]
+  },
+  "document-latency-insight": {
+   "id": "document-latency-insight",
+   "title": "Document request latency",
+   "description": "Your first network request is the most important.  Reduce its latency by avoiding redirects, ensuring a fast server response, and enabling text compression.",
+   "score": 1,
+   "scoreDisplayMode": "metricSavings",
+   "metricSavings": {
+    "FCP": 0,
+    "LCP": 0
+   },
+   "details": {
+    "type": "checklist",
+    "items": {
+     "noRedirects": {
+      "label": "Avoids redirects",
+      "value": true
+     },
+     "serverResponseIsFast": {
+      "label": "Server responds quickly (observed 8 ms)",
+      "value": true
+     },
+     "usesCompression": {
+      "label": "Applies text compression",
+      "value": true
+     }
+    }
+   },
+   "guidanceLevel": 3,
+   "replacesAudits": [
+    "redirects",
+    "server-response-time",
+    "uses-text-compression"
+   ]
+  },
+  "dom-size-insight": {
+   "id": "dom-size-insight",
+   "title": "Optimize DOM size",
+   "description": "A large DOM can increase the duration of style calculations and layout reflows, impacting page responsiveness. A large DOM will also increase memory usage. [Learn how to avoid an excessive DOM size](https://developer.chrome.com/docs/lighthouse/performance/dom-size/).",
+   "score": 1,
+   "scoreDisplayMode": "informative",
+   "metricSavings": {
+    "INP": 0
+   },
+   "details": {
+    "type": "table",
+    "headings": [
+     {
+      "key": "statistic",
+      "valueType": "text",
+      "label": "Statistic"
+     },
+     {
+      "key": "node",
+      "valueType": "node",
+      "label": "Element"
+     },
+     {
+      "key": "value",
+      "valueType": "numeric",
+      "label": "Value"
+     }
+    ],
+    "items": [
+     {
+      "statistic": "Total elements",
+      "value": {
+       "type": "numeric",
+       "granularity": 1,
+       "value": 824
+      }
+     },
+     {
+      "statistic": "Most children",
+      "node": {
+       "type": "node",
+       "lhId": "page-14-textPath",
+       "path": "1,HTML,1,BODY,3,DIV,0,DIV,0,DIV,2,DIV,0,DIV,0,svg,2,text,0,textPath",
+       "selector": "div.mandala > svg.mandala > text > textpath",
+       "boundingRect": {
+        "top": 62,
+        "bottom": 596,
+        "left": 904,
+        "right": 1437,
+        "width": 533,
+        "height": 533
+       },
+       "snippet": "<textPath textLength=\"2010\" href=\"#circle1\">",
+       "nodeLabel": "div.mandala > svg.mandala > text > textpath"
+      },
+      "value": {
+       "type": "numeric",
+       "granularity": 1,
+       "value": 42
+      }
+     },
+     {
+      "statistic": "DOM depth",
+      "node": {
+       "type": "node",
+       "lhId": "page-15-A",
+       "path": "1,HTML,1,BODY,2,HEADER,0,NAV,3,DIV,0,DIV,0,NAV,0,DIV,0,MDN-DROPDOWN,1,DIV,1,DIV,0,DL,1,DD,0,UL,0,LI,0,A",
+       "selector": "dd > ul > li > a",
+       "boundingRect": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0,
+        "width": 0,
+        "height": 0
+       },
+       "snippet": "<a href=\"/en-US/docs/Web/HTML/Reference/Elements\" data-glean-id=\"menu_click_submenu: html -&gt; /en-US/docs/Web/HTML/Reference/Elements\">",
+       "nodeLabel": "Elements"
+      },
+      "value": {
+       "type": "numeric",
+       "granularity": 1,
+       "value": 15
+      }
+     }
+    ]
+   },
+   "guidanceLevel": 3,
+   "replacesAudits": [
+    "dom-size"
+   ]
+  },
+  "duplicated-javascript-insight": {
+   "id": "duplicated-javascript-insight",
+   "title": "Duplicated JavaScript",
+   "description": "Remove large, duplicate JavaScript modules from bundles to reduce unnecessary bytes consumed by network activity.",
+   "score": 1,
+   "scoreDisplayMode": "metricSavings",
+   "metricSavings": {
+    "FCP": 0,
+    "LCP": 0
+   },
+   "details": {
+    "type": "table",
+    "headings": [
+     {
+      "key": "source",
+      "valueType": "code",
+      "subItemsHeading": {
+       "key": "url",
+       "valueType": "url"
+      },
+      "label": "Source"
+     },
+     {
+      "key": "wastedBytes",
+      "valueType": "bytes",
+      "subItemsHeading": {
+       "key": "sourceTransferBytes"
+      },
+      "granularity": 10,
+      "label": "Duplicated bytes"
+     }
+    ],
+    "items": []
+   },
+   "guidanceLevel": 2,
+   "replacesAudits": [
+    "duplicated-javascript"
+   ]
+  },
+  "font-display-insight": {
+   "id": "font-display-insight",
+   "title": "Font display",
+   "description": "Consider setting [font-display](https://developer.chrome.com/blog/font-display) to swap or optional to ensure text is consistently visible. swap can be further optimized to mitigate layout shifts with [font metric overrides](https://developer.chrome.com/blog/font-fallbacks).",
+   "score": 1,
+   "scoreDisplayMode": "metricSavings",
+   "metricSavings": {
+    "INP": 0
+   },
+   "details": {
+    "type": "table",
+    "headings": [
+     {
+      "key": "url",
+      "valueType": "url",
+      "label": "URL"
+     },
+     {
+      "key": "wastedMs",
+      "valueType": "ms",
+      "label": "Est Savings"
+     }
+    ],
+    "items": []
+   },
+   "guidanceLevel": 3,
+   "replacesAudits": [
+    "font-display"
+   ]
+  },
+  "forced-reflow-insight": {
+   "id": "forced-reflow-insight",
+   "title": "Forced reflow",
+   "description": "A forced reflow occurs when JavaScript queries geometric properties (such as offsetWidth) after styles have been invalidated by a change to the DOM state. This can result in poor performance. Learn more about [forced reflows](https://developers.google.com/web/fundamentals/performance/rendering/avoid-large-complex-layouts-and-layout-thrashing#avoid-forced-synchronous-layouts) and possible mitigations.",
+   "score": 1,
+   "scoreDisplayMode": "numeric",
+   "details": {
+    "type": "list",
+    "items": [
+     {
+      "type": "table",
+      "headings": [
+       {
+        "key": "source",
+        "valueType": "source-location",
+        "label": "Source"
+       },
+       {
+        "key": "reflowTime",
+        "valueType": "ms",
+        "granularity": 1,
+        "label": "Total reflow time"
+       }
+      ],
+      "items": []
+     }
+    ]
+   },
+   "guidanceLevel": 3
+  },
+  "image-delivery-insight": {
+   "id": "image-delivery-insight",
+   "title": "Improve image delivery",
+   "description": "Reducing the download time of images can improve the perceived load time of the page and LCP. [Learn more about optimizing image size](https://developer.chrome.com/docs/lighthouse/performance/uses-optimized-images/)",
+   "score": 0.5,
+   "scoreDisplayMode": "metricSavings",
+   "displayValue": "Est savings of 96 KiB",
+   "metricSavings": {
+    "FCP": 0,
+    "LCP": 0
+   },
+   "details": {
+    "type": "table",
+    "headings": [
+     {
+      "key": "url",
+      "valueType": "url",
+      "label": "URL",
+      "subItemsHeading": {
+       "key": "reason",
+       "valueType": "text"
+      }
+     },
+     {
+      "key": "totalBytes",
+      "valueType": "bytes",
+      "label": "Resource Size"
+     },
+     {
+      "key": "wastedBytes",
+      "valueType": "bytes",
+      "label": "Est Savings",
+      "subItemsHeading": {
+       "key": "wastedBytes",
+       "valueType": "bytes"
+      }
+     }
+    ],
+    "items": [
+     {
+      "url": "https://developer.mozilla.org/pimg/aHR0cHM6Ly9zdGF0aWM0LmJ1eXNlbGxhZHMubmV0L3V1LzIvMTc5MTY0LzE3OTM0NjAyNDAtTURCXzkuMF8tX01ETl8xNDU2eDE4MC5wbmc%3D.RL1FdPOILLyNLA%2FO7SHiCu6Egwwibpgo8ZslpCzg8eg%3D",
+      "totalBytes": 56107,
+      "wastedBytes": 45187,
+      "subItems": {
+       "type": "subitems",
+       "items": [
+        {
+         "reason": "Using a modern image format (WebP, AVIF) or increasing the image compression could improve this image's download size.",
+         "wastedBytes": 12427
+        },
+        {
+         "reason": "This image file is larger than it needs to be (1456x180) for its displayed dimensions (728x90). Use responsive images to reduce the image download size.",
+         "wastedBytes": 42080
+        }
+       ]
+      }
+     },
+     {
+      "url": "https://developer.mozilla.org/static/ssr/mdn_contributor.9e2a105f50828d5a.png",
+      "totalBytes": 31099,
+      "wastedBytes": 26771,
+      "subItems": {
+       "type": "subitems",
+       "items": [
+        {
+         "reason": "This image file is larger than it needs to be (512x323) for its displayed dimensions (203x128). Use responsive images to reduce the image download size.",
+         "wastedBytes": 26216
+        }
+       ]
+      }
+     },
+     {
+      "url": "https://developer.mozilla.org/pimg/aHR0cHM6Ly9zdGF0aWM0LmJ1eXNlbGxhZHMubmV0L3V1LzIvMTc5MTY0LzE3OTM0NTk2NzEtTUROXy1fMTk0MHg1MDBfMl8ucG5n.HCuWe%2FQLN517F8ZQjD2JEZU05yKoKL%2Bbe83J1pM7HKA%3D",
+      "totalBytes": 35281,
+      "wastedBytes": 26461,
+      "subItems": {
+       "type": "subitems",
+       "items": [
+        {
+         "reason": "This image file is larger than it needs to be (1940x500) for its displayed dimensions (970x250). Use responsive images to reduce the image download size.",
+         "wastedBytes": 26461
+        }
+       ]
+      }
+     }
+    ]
+   },
+   "guidanceLevel": 3,
+   "replacesAudits": [
+    "modern-image-formats",
+    "uses-optimized-images",
+    "efficient-animated-content",
+    "uses-responsive-images"
+   ]
+  },
+  "inp-breakdown-insight": {
+   "id": "inp-breakdown-insight",
+   "title": "INP breakdown",
+   "description": "Start investigating with the longest subpart. [Delays can be minimized](https://web.dev/articles/optimize-inp#optimize_interactions). To reduce processing duration, [optimize the main-thread costs](https://web.dev/articles/optimize-long-tasks), often JS.",
+   "score": null,
+   "scoreDisplayMode": "notApplicable",
+   "guidanceLevel": 3,
+   "replacesAudits": [
+    "work-during-interaction"
+   ]
+  },
+  "lcp-breakdown-insight": {
+   "id": "lcp-breakdown-insight",
+   "title": "LCP breakdown",
+   "description": "Each [subpart has specific improvement strategies](https://web.dev/articles/optimize-lcp#lcp-breakdown). Ideally, most of the LCP time should be spent on loading the resources, not within delays.",
+   "score": 1,
+   "scoreDisplayMode": "informative",
+   "metricSavings": {
+    "LCP": 0
+   },
+   "details": {
+    "type": "list",
+    "items": [
+     {
+      "type": "table",
+      "headings": [
+       {
+        "key": "label",
+        "valueType": "text",
+        "label": "Subpart"
+       },
+       {
+        "key": "duration",
+        "valueType": "ms",
+        "label": "Duration"
+       }
+      ],
+      "items": [
+       {
+        "subpart": "timeToFirstByte",
+        "label": "Time to first byte",
+        "duration": 98.81999987792969
+       },
+       {
+        "subpart": "resourceLoadDelay",
+        "label": "Resource load delay",
+        "duration": 1295.8110001220703
+       },
+       {
+        "subpart": "resourceLoadDuration",
+        "label": "Resource load duration",
+        "duration": 26.956
+       },
+       {
+        "subpart": "elementRenderDelay",
+        "label": "Element render delay",
+        "duration": 19.697
+       }
+      ]
+     },
+     {
+      "type": "node",
+      "lhId": "page-0-IMG",
+      "path": "1,HTML,1,BODY,3,DIV,1,DIV,0,MDN-PLACEMENT-HP-MAIN,a,#document-fragment,1,DIV,0,SECTION,0,A,0,IMG",
+      "selector": "div.hp-main-placement > section.placement-container > a.placement-link > img",
+      "boundingRect": {
+       "top": 509,
+       "bottom": 759,
+       "left": 142,
+       "right": 1112,
+       "width": 970,
+       "height": 250
+      },
+      "snippet": "<img width=\"970\" height=\"250\" src=\"/pimg/aHR0cHM6Ly9zdGF0aWM0LmJ1eXNlbGxhZHMubmV0L3V1LzIvMTc5MTY0LzE3OTM0NTk2…\" aria-hidden=\"false\" alt=\"MongoDB\">",
+      "nodeLabel": "MongoDB"
+     }
+    ]
+   },
+   "guidanceLevel": 3,
+   "replacesAudits": [
+    "largest-contentful-paint-element"
+   ]
+  },
+  "lcp-discovery-insight": {
+   "id": "lcp-discovery-insight",
+   "title": "LCP request discovery",
+   "description": "Optimize LCP by making the LCP image [discoverable](https://web.dev/articles/optimize-lcp#1_eliminate_resource_load_delay) from the HTML immediately, and [avoiding lazy-loading](https://web.dev/articles/lcp-lazy-loading)",
+   "score": 0,
+   "scoreDisplayMode": "numeric",
+   "metricSavings": {
+    "LCP": 0
+   },
+   "details": {
+    "type": "list",
+    "items": [
+     {
+      "type": "checklist",
+      "items": {
+       "priorityHinted": {
+        "label": "fetchpriority=high should be applied",
+        "value": false
+       },
+       "requestDiscoverable": {
+        "label": "Request is discoverable in initial document",
+        "value": false
+       },
+       "eagerlyLoaded": {
+        "label": "lazy load not applied",
+        "value": true
+       }
+      }
+     },
+     {
+      "type": "node",
+      "lhId": "page-0-IMG",
+      "path": "1,HTML,1,BODY,3,DIV,1,DIV,0,MDN-PLACEMENT-HP-MAIN,a,#document-fragment,1,DIV,0,SECTION,0,A,0,IMG",
+      "selector": "div.hp-main-placement > section.placement-container > a.placement-link > img",
+      "boundingRect": {
+       "top": 509,
+       "bottom": 759,
+       "left": 142,
+       "right": 1112,
+       "width": 970,
+       "height": 250
+      },
+      "snippet": "<img width=\"970\" height=\"250\" src=\"/pimg/aHR0cHM6Ly9zdGF0aWM0LmJ1eXNlbGxhZHMubmV0L3V1LzIvMTc5MTY0LzE3OTM0NTk2…\" aria-hidden=\"false\" alt=\"MongoDB\">",
+      "nodeLabel": "MongoDB"
+     }
+    ]
+   },
+   "guidanceLevel": 3,
+   "replacesAudits": [
+    "prioritize-lcp-image",
+    "lcp-lazy-loaded"
+   ]
+  },
+  "legacy-javascript-insight": {
+   "id": "legacy-javascript-insight",
+   "title": "Legacy JavaScript",
+   "description": "Polyfills and transforms enable older browsers to use new JavaScript features. However, many aren't necessary for modern browsers. Consider modifying your JavaScript build process to not transpile [Baseline](https://web.dev/articles/baseline-and-polyfills) features, unless you know you must support older browsers. [Learn why most sites can deploy ES6+ code without transpiling](https://philipwalton.com/articles/the-state-of-es5-on-the-web/)",
+   "score": 1,
+   "scoreDisplayMode": "metricSavings",
+   "metricSavings": {
+    "FCP": 0,
+    "LCP": 0
+   },
+   "details": {
+    "type": "table",
+    "headings": [
+     {
+      "key": "url",
+      "valueType": "url",
+      "subItemsHeading": {
+       "key": "location",
+       "valueType": "source-location"
+      },
+      "label": "URL"
+     },
+     {
+      "key": null,
+      "valueType": "code",
+      "subItemsHeading": {
+       "key": "signal"
+      },
+      "label": ""
+     },
+     {
+      "key": "wastedBytes",
+      "valueType": "bytes",
+      "label": "Wasted bytes"
+     }
+    ],
+    "items": []
+   },
+   "guidanceLevel": 2
+  },
+  "modern-http-insight": {
+   "id": "modern-http-insight",
+   "title": "Modern HTTP",
+   "description": "HTTP/2 and HTTP/3 offer many benefits over HTTP/1.1, such as multiplexing. [Learn more about using modern HTTP](https://developer.chrome.com/docs/lighthouse/best-practices/uses-http2/).",
+   "score": 1,
+   "scoreDisplayMode": "metricSavings",
+   "metricSavings": {
+    "FCP": 0,
+    "LCP": 0
+   },
+   "details": {
+    "type": "table",
+    "headings": [
+     {
+      "key": "url",
+      "valueType": "url",
+      "label": "URL"
+     },
+     {
+      "key": "protocol",
+      "valueType": "text",
+      "label": "Protocol"
+     }
+    ],
+    "items": []
+   },
+   "guidanceLevel": 3
+  },
+  "network-dependency-tree-insight": {
+   "id": "network-dependency-tree-insight",
+   "title": "Network dependency tree",
+   "description": "[Avoid chaining critical requests](https://developer.chrome.com/docs/lighthouse/performance/critical-request-chains) by reducing the length of chains, reducing the download size of resources, or deferring the download of unnecessary resources to improve page load.",
+   "score": 0,
+   "scoreDisplayMode": "numeric",
+   "metricSavings": {
+    "LCP": 0
+   },
+   "details": {
+    "type": "list",
+    "items": [
+     {
+      "type": "list-section",
+      "value": {
+       "type": "network-tree",
+       "chains": {
+        "8ACA781C64DAE2C33E8598B149C661C8": {
+         "url": "https://developer.mozilla.org/en-US/",
+         "navStartToEndTime": 119,
+         "transferSize": 16259,
+         "isLongest": true,
+         "children": {
+          "34668.28": {
+           "url": "https://developer.mozilla.org/static/client/index.9a23287b67b7af93.js",
+           "navStartToEndTime": 158,
+           "transferSize": 15420,
+           "isLongest": true,
+           "children": {
+            "34668.61": {
+             "url": "https://developer.mozilla.org/static/client/8280.886a46d50dae66d1.js",
+             "navStartToEndTime": 256,
+             "transferSize": 1888,
+             "isLongest": true,
+             "children": {
+              "34668.108": {
+               "url": "https://developer.mozilla.org/pong/get",
+               "navStartToEndTime": 1389,
+               "transferSize": 2950,
+               "isLongest": true,
+               "children": {}
+              }
+             }
+            },
+            "34668.77": {
+             "url": "https://developer.mozilla.org/api/v1/whoami",
+             "navStartToEndTime": 546,
+             "transferSize": 392,
+             "children": {}
+            },
+            "34668.68": {
+             "url": "https://developer.mozilla.org/static/client/3711.a02766cd28bfcb4e.js",
+             "navStartToEndTime": 257,
+             "transferSize": 2495,
+             "children": {}
+            },
+            "34668.59": {
+             "url": "https://developer.mozilla.org/static/client/7489.879b548e785958fd.js",
+             "navStartToEndTime": 256,
+             "transferSize": 1415,
+             "children": {}
+            },
+            "34668.66": {
+             "url": "https://developer.mozilla.org/static/client/2868.94092d925ac2e38a.js",
+             "navStartToEndTime": 256,
+             "transferSize": 1391,
+             "children": {}
+            },
+            "34668.62": {
+             "url": "https://developer.mozilla.org/static/client/1477.dc89151137e79a91.js",
+             "navStartToEndTime": 256,
+             "transferSize": 1086,
+             "children": {}
+            },
+            "34668.72": {
+             "url": "https://developer.mozilla.org/static/client/8926.5408b5db99481d0e.js",
+             "navStartToEndTime": 255,
+             "transferSize": 991,
+             "children": {}
+            },
+            "34668.65": {
+             "url": "https://developer.mozilla.org/static/client/3690.468d6d760cec108f.js",
+             "navStartToEndTime": 255,
+             "transferSize": 1445,
+             "children": {}
+            },
+            "34668.64": {
+             "url": "https://developer.mozilla.org/static/client/9204.7371f8900325ee2c.js",
+             "navStartToEndTime": 255,
+             "transferSize": 2769,
+             "children": {}
+            },
+            "34668.60": {
+             "url": "https://developer.mozilla.org/static/client/3708.c45faaa59ea2b8df.js",
+             "navStartToEndTime": 255,
+             "transferSize": 1132,
+             "children": {}
+            },
+            "34668.63": {
+             "url": "https://developer.mozilla.org/static/client/4249.d2e47b0c02f472f9.js",
+             "navStartToEndTime": 254,
+             "transferSize": 1225,
+             "children": {}
+            },
+            "34668.73": {
+             "url": "https://developer.mozilla.org/static/client/1996.78831cf29443bcb5.js",
+             "navStartToEndTime": 254,
+             "transferSize": 2542,
+             "children": {}
+            },
+            "34668.70": {
+             "url": "https://developer.mozilla.org/static/client/9099.d3bea934e72e6ef1.js",
+             "navStartToEndTime": 254,
+             "transferSize": 1379,
+             "children": {}
+            },
+            "34668.71": {
+             "url": "https://developer.mozilla.org/static/client/9647.d13ab8d865cfc6dc.js",
+             "navStartToEndTime": 253,
+             "transferSize": 880,
+             "children": {}
+            },
+            "34668.69": {
+             "url": "https://developer.mozilla.org/static/client/5542.3348cd9e5b8dbf9a.js",
+             "navStartToEndTime": 253,
+             "transferSize": 2133,
+             "children": {}
+            },
+            "34668.67": {
+             "url": "https://developer.mozilla.org/static/client/8121.e3543d8dfc473b9c.js",
+             "navStartToEndTime": 253,
+             "transferSize": 934,
+             "children": {}
+            },
+            "34668.76": {
+             "url": "https://developer.mozilla.org/static/client/4060.c4381d5ebc6cacea.js",
+             "navStartToEndTime": 253,
+             "transferSize": 1721,
+             "children": {}
+            },
+            "34668.75": {
+             "url": "https://developer.mozilla.org/static/client/4759.54979af6d4fd4f4f.js",
+             "navStartToEndTime": 252,
+             "transferSize": 1680,
+             "children": {}
+            },
+            "34668.74": {
+             "url": "https://developer.mozilla.org/static/client/7678.78c0e251c48d8f5a.js",
+             "navStartToEndTime": 252,
+             "transferSize": 1453,
+             "children": {}
+            }
+           }
+          },
+          "34668.2": {
+           "url": "https://developer.mozilla.org/static/client/styles-global.19cc0c980e463125.css",
+           "navStartToEndTime": 136,
+           "transferSize": 4531,
+           "children": {
+            "34668.79": {
+             "url": "https://developer.mozilla.org/static/client/inter-italic-latin.fd2627ec16333c05.woff2",
+             "navStartToEndTime": 272,
+             "transferSize": 116532,
+             "children": {}
+            }
+           }
+          },
+          "34668.57": {
+           "url": "https://developer.mozilla.org/manifest.json",
+           "navStartToEndTime": 252,
+           "transferSize": 973,
+           "children": {}
+          },
+          "34668.25": {
+           "url": "https://developer.mozilla.org/static/client/5909.43e719af6373c71b.js",
+           "navStartToEndTime": 159,
+           "transferSize": 10082,
+           "children": {}
+          },
+          "34668.26": {
+           "url": "https://developer.mozilla.org/static/client/4585.7535b1f199327a48.js",
+           "navStartToEndTime": 156,
+           "transferSize": 24030,
+           "children": {}
+          },
+          "34668.24": {
+           "url": "https://developer.mozilla.org/static/client/runtime.c56f5acf3a106051.js",
+           "navStartToEndTime": 156,
+           "transferSize": 9058,
+           "children": {}
+          },
+          "34668.27": {
+           "url": "https://developer.mozilla.org/static/client/1216.adee8e88502c83c4.js",
+           "navStartToEndTime": 145,
+           "transferSize": 1076,
+           "children": {}
+          },
+          "34668.15": {
+           "url": "https://developer.mozilla.org/static/client/styles-a11y-menu.5796ee87cb69f93f.css",
+           "navStartToEndTime": 143,
+           "transferSize": 1039,
+           "children": {}
+          },
+          "34668.16": {
+           "url": "https://developer.mozilla.org/static/client/styles-navigation.c3ebf384e65df345.css",
+           "navStartToEndTime": 143,
+           "transferSize": 1133,
+           "children": {}
+          },
+          "34668.18": {
+           "url": "https://developer.mozilla.org/static/client/styles-menu.e2c5c8a53a8854c2.css",
+           "navStartToEndTime": 143,
+           "transferSize": 1733,
+           "children": {}
+          },
+          "34668.21": {
+           "url": "https://developer.mozilla.org/static/client/styles-footer.66072dd619a4ef50.css",
+           "navStartToEndTime": 143,
+           "transferSize": 1285,
+           "children": {}
+          },
+          "34668.20": {
+           "url": "https://developer.mozilla.org/static/client/styles-breadcrumbs.87eb742f4e711dc3.css",
+           "navStartToEndTime": 143,
+           "transferSize": 841,
+           "children": {}
+          },
+          "34668.19": {
+           "url": "https://developer.mozilla.org/static/client/styles-breadcrumbs-bar.2d1bed1ab424b6b3.css",
+           "navStartToEndTime": 142,
+           "transferSize": 1030,
+           "children": {}
+          },
+          "34668.17": {
+           "url": "https://developer.mozilla.org/static/client/styles-logo.aea5ff6edf1b9cfb.css",
+           "navStartToEndTime": 142,
+           "transferSize": 707,
+           "children": {}
+          },
+          "34668.14": {
+           "url": "https://developer.mozilla.org/static/client/styles-page-layout.5a4354f33e894319.css",
+           "navStartToEndTime": 137,
+           "transferSize": 1048,
+           "children": {}
+          },
+          "34668.11": {
+           "url": "https://developer.mozilla.org/static/client/styles-homepage-footer.5d6588cf8c9b4dc6.css",
+           "navStartToEndTime": 137,
+           "transferSize": 858,
+           "children": {}
+          },
+          "34668.12": {
+           "url": "https://developer.mozilla.org/static/client/3391.b611fbe2dc694a57.css",
+           "navStartToEndTime": 137,
+           "transferSize": 1437,
+           "children": {}
+          },
+          "34668.13": {
+           "url": "https://developer.mozilla.org/static/client/styles-homepage-contributor-spotlight.9d9b306c201f94e2.css",
+           "navStartToEndTime": 136,
+           "transferSize": 1036,
+           "children": {}
+          },
+          "34668.10": {
+           "url": "https://developer.mozilla.org/static/client/styles-recent-contributions.ddcab7ad78446b98.css",
+           "navStartToEndTime": 136,
+           "transferSize": 1133,
+           "children": {}
+          },
+          "34668.9": {
+           "url": "https://developer.mozilla.org/static/client/styles-latest-news.4e8f60fdbf19d588.css",
+           "navStartToEndTime": 136,
+           "transferSize": 1076,
+           "children": {}
+          },
+          "34668.5": {
+           "url": "https://developer.mozilla.org/static/client/styles-homepage-hero.61cf31e2c2f1b72c.css",
+           "navStartToEndTime": 135,
+           "transferSize": 1076,
+           "children": {}
+          },
+          "34668.8": {
+           "url": "https://developer.mozilla.org/static/client/styles-featured-articles.770034368883a9ae.css",
+           "navStartToEndTime": 135,
+           "transferSize": 1013,
+           "children": {}
+          },
+          "34668.7": {
+           "url": "https://developer.mozilla.org/static/client/styles-homepage-body.22274e9a4a78b7ae.css",
+           "navStartToEndTime": 135,
+           "transferSize": 496,
+           "children": {}
+          },
+          "34668.6": {
+           "url": "https://developer.mozilla.org/static/client/styles-mandala.8fbfeb0567dbde40.css",
+           "navStartToEndTime": 134,
+           "transferSize": 1051,
+           "children": {}
+          },
+          "34668.3": {
+           "url": "https://developer.mozilla.org/static/client/styles-homepage.0980eec27925cc11.css",
+           "navStartToEndTime": 134,
+           "transferSize": 624,
+           "children": {}
+          },
+          "34668.4": {
+           "url": "https://developer.mozilla.org/static/client/styles-homepage-header.da8a69fafe1cfb00.css",
+           "navStartToEndTime": 134,
+           "transferSize": 1096,
+           "children": {}
+          }
+         }
+        }
+       },
+       "longestChain": {
+        "duration": 1389
+       }
+      }
+     },
+     {
+      "type": "list-section",
+      "title": "Preconnected origins",
+      "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+      "value": {
+       "type": "text",
+       "value": "no origins were preconnected"
+      }
+     },
+     {
+      "type": "list-section",
+      "title": "Preconnect candidates",
+      "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+      "value": {
+       "type": "table",
+       "headings": [
+        {
+         "key": "origin",
+         "valueType": "text",
+         "label": "Origin"
+        },
+        {
+         "key": "wastedMs",
+         "valueType": "ms",
+         "label": "Est LCP savings"
+        }
+       ],
+       "items": [
+        {
+         "origin": "https://incoming.telemetry.mozilla.org",
+         "wastedMs": 80
+        }
+       ]
+      }
+     }
+    ]
+   },
+   "guidanceLevel": 1,
+   "replacesAudits": [
+    "critical-request-chains",
+    "uses-rel-preconnect"
+   ]
+  },
+  "render-blocking-insight": {
+   "id": "render-blocking-insight",
+   "title": "Render blocking requests",
+   "description": "Requests are blocking the page's initial render, which may delay LCP. [Deferring or inlining](https://web.dev/learn/performance/understanding-the-critical-path#render-blocking_resources) can move these network requests out of the critical path.",
+   "score": 0.5,
+   "scoreDisplayMode": "metricSavings",
+   "metricSavings": {
+    "FCP": 0,
+    "LCP": 0
+   },
+   "details": {
+    "type": "table",
+    "headings": [
+     {
+      "key": "url",
+      "valueType": "url",
+      "label": "URL"
+     },
+     {
+      "key": "totalBytes",
+      "valueType": "bytes",
+      "label": "Transfer Size"
+     },
+     {
+      "key": "wastedMs",
+      "valueType": "timespanMs",
+      "label": "Duration"
+     }
+    ],
+    "items": [
+     {
+      "url": "https://developer.mozilla.org/static/client/styles-a11y-menu.5796ee87cb69f93f.css",
+      "totalBytes": 1039
+     },
+     {
+      "url": "https://developer.mozilla.org/static/client/styles-navigation.c3ebf384e65df345.css",
+      "totalBytes": 1133
+     },
+     {
+      "url": "https://developer.mozilla.org/static/client/styles-menu.e2c5c8a53a8854c2.css",
+      "totalBytes": 1733
+     },
+     {
+      "url": "https://developer.mozilla.org/static/client/styles-footer.66072dd619a4ef50.css",
+      "totalBytes": 1285
+     },
+     {
+      "url": "https://developer.mozilla.org/static/client/styles-breadcrumbs.87eb742f4e711dc3.css",
+      "totalBytes": 841
+     },
+     {
+      "url": "https://developer.mozilla.org/static/client/styles-breadcrumbs-bar.2d1bed1ab424b6b3.css",
+      "totalBytes": 1030
+     },
+     {
+      "url": "https://developer.mozilla.org/static/client/styles-logo.aea5ff6edf1b9cfb.css",
+      "totalBytes": 707
+     },
+     {
+      "url": "https://developer.mozilla.org/static/client/styles-page-layout.5a4354f33e894319.css",
+      "totalBytes": 1048
+     }
+    ]
+   },
+   "guidanceLevel": 3,
+   "replacesAudits": [
+    "render-blocking-resources"
+   ]
+  },
+  "third-parties-insight": {
+   "id": "third-parties-insight",
+   "title": "3rd parties",
+   "description": "3rd party code can significantly impact load performance. [Reduce and defer loading of 3rd party code](https://web.dev/articles/optimizing-content-efficiency-loading-third-party-javascript/) to prioritize your page's content.",
+   "score": 1,
+   "scoreDisplayMode": "numeric",
+   "details": {
+    "type": "table",
+    "headings": [
+     {
+      "key": "entity",
+      "valueType": "text",
+      "label": "3rd party",
+      "subItemsHeading": {
+       "key": "url",
+       "valueType": "url"
+      }
+     },
+     {
+      "key": "transferSize",
+      "granularity": 1,
+      "valueType": "bytes",
+      "label": "Transfer size",
+      "subItemsHeading": {
+       "key": "transferSize"
+      }
+     },
+     {
+      "key": "mainThreadTime",
+      "granularity": 1,
+      "valueType": "ms",
+      "label": "Main thread time",
+      "subItemsHeading": {
+       "key": "mainThreadTime"
+      }
+     }
+    ],
+    "items": []
+   },
+   "guidanceLevel": 3,
+   "replacesAudits": [
+    "third-party-summary"
+   ]
+  },
+  "viewport-insight": {
+   "id": "viewport-insight",
+   "title": "Optimize viewport for mobile",
+   "description": "Tap interactions may be [delayed by up to 300 ms](https://developer.chrome.com/blog/300ms-tap-delay-gone-away/) if the viewport is not optimized for mobile.",
+   "score": 1,
+   "scoreDisplayMode": "numeric",
+   "metricSavings": {
+    "INP": 0
+   },
+   "details": {
+    "type": "table",
+    "headings": [
+     {
+      "key": "node",
+      "valueType": "node",
+      "label": ""
+     }
+    ],
+    "items": [
+     {
+      "node": {
+       "type": "node",
+       "lhId": "page-13-META",
+       "path": "1,HTML,0,HEAD,1,META",
+       "selector": "head > meta",
+       "boundingRect": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0,
+        "width": 0,
+        "height": 0
+       },
+       "snippet": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+       "nodeLabel": "head > meta"
+      }
+     }
+    ]
+   },
+   "guidanceLevel": 3,
+   "replacesAudits": [
+    "viewport"
+   ]
+  }
+ },
+ "configSettings": {
+  "output": "json",
+  "maxWaitForFcp": 30000,
+  "maxWaitForLoad": 45000,
+  "pauseAfterFcpMs": 1000,
+  "pauseAfterLoadMs": 1000,
+  "networkQuietThresholdMs": 1000,
+  "cpuQuietThresholdMs": 1000,
+  "formFactor": "desktop",
+  "throttling": {
+   "rttMs": 40,
+   "throughputKbps": 10240,
+   "requestLatencyMs": 0,
+   "downloadThroughputKbps": 0,
+   "uploadThroughputKbps": 0,
+   "cpuSlowdownMultiplier": 1
+  },
+  "throttlingMethod": "simulate",
+  "screenEmulation": {
+   "mobile": false,
+   "width": 1350,
+   "height": 940,
+   "deviceScaleFactor": 1,
+   "disabled": false
+  },
+  "emulatedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+  "auditMode": false,
+  "gatherMode": false,
+  "clearStorageTypes": [
+   "file_systems",
+   "shader_cache",
+   "service_workers",
+   "cache_storage"
+  ],
+  "disableStorageReset": false,
+  "debugNavigation": false,
+  "channel": "node",
+  "usePassiveGathering": false,
+  "disableFullPageScreenshot": false,
+  "skipAboutBlank": false,
+  "blankPage": "about:blank",
+  "ignoreStatusCode": false,
+  "locale": "en-US",
+  "blockedUrlPatterns": null,
+  "additionalTraceCategories": null,
+  "extraHeaders": null,
+  "precomputedLanternData": null,
+  "onlyAudits": null,
+  "onlyCategories": [
+   "performance"
+  ],
+  "skipAudits": null
+ },
+ "categories": {
+  "performance": {
+   "title": "Performance",
+   "supportedModes": [
+    "navigation",
+    "timespan",
+    "snapshot"
+   ],
+   "auditRefs": [
+    {
+     "id": "first-contentful-paint",
+     "weight": 10,
+     "group": "metrics",
+     "acronym": "FCP"
+    },
+    {
+     "id": "largest-contentful-paint",
+     "weight": 25,
+     "group": "metrics",
+     "acronym": "LCP"
+    },
+    {
+     "id": "total-blocking-time",
+     "weight": 30,
+     "group": "metrics",
+     "acronym": "TBT"
+    },
+    {
+     "id": "cumulative-layout-shift",
+     "weight": 25,
+     "group": "metrics",
+     "acronym": "CLS"
+    },
+    {
+     "id": "speed-index",
+     "weight": 10,
+     "group": "metrics",
+     "acronym": "SI"
+    },
+    {
+     "id": "cache-insight",
+     "weight": 0,
+     "group": "hidden"
+    },
+    {
+     "id": "cls-culprits-insight",
+     "weight": 0,
+     "group": "hidden"
+    },
+    {
+     "id": "document-latency-insight",
+     "weight": 0,
+     "group": "hidden"
+    },
+    {
+     "id": "dom-size-insight",
+     "weight": 0,
+     "group": "hidden"
+    },
+    {
+     "id": "duplicated-javascript-insight",
+     "weight": 0,
+     "group": "hidden"
+    },
+    {
+     "id": "font-display-insight",
+     "weight": 0,
+     "group": "hidden"
+    },
+    {
+     "id": "forced-reflow-insight",
+     "weight": 0,
+     "group": "hidden"
+    },
+    {
+     "id": "image-delivery-insight",
+     "weight": 0,
+     "group": "hidden"
+    },
+    {
+     "id": "inp-breakdown-insight",
+     "weight": 0,
+     "group": "hidden"
+    },
+    {
+     "id": "lcp-breakdown-insight",
+     "weight": 0,
+     "group": "hidden"
+    },
+    {
+     "id": "lcp-discovery-insight",
+     "weight": 0,
+     "group": "hidden"
+    },
+    {
+     "id": "legacy-javascript-insight",
+     "weight": 0,
+     "group": "hidden"
+    },
+    {
+     "id": "modern-http-insight",
+     "weight": 0,
+     "group": "hidden"
+    },
+    {
+     "id": "network-dependency-tree-insight",
+     "weight": 0,
+     "group": "hidden"
+    },
+    {
+     "id": "render-blocking-insight",
+     "weight": 0,
+     "group": "hidden"
+    },
+    {
+     "id": "third-parties-insight",
+     "weight": 0,
+     "group": "hidden"
+    },
+    {
+     "id": "viewport-insight",
+     "weight": 0,
+     "group": "hidden"
+    },
+    {
+     "id": "interactive",
+     "weight": 0,
+     "group": "hidden",
+     "acronym": "TTI"
+    },
+    {
+     "id": "max-potential-fid",
+     "weight": 0,
+     "group": "hidden"
+    },
+    {
+     "id": "first-meaningful-paint",
+     "weight": 0,
+     "acronym": "FMP",
+     "group": "hidden"
+    },
+    {
+     "id": "render-blocking-resources",
+     "weight": 0,
+     "group": "diagnostics"
+    },
+    {
+     "id": "uses-responsive-images",
+     "weight": 0,
+     "group": "diagnostics"
+    },
+    {
+     "id": "offscreen-images",
+     "weight": 0,
+     "group": "diagnostics"
+    },
+    {
+     "id": "unminified-css",
+     "weight": 0,
+     "group": "diagnostics"
+    },
+    {
+     "id": "unminified-javascript",
+     "weight": 0,
+     "group": "diagnostics"
+    },
+    {
+     "id": "unused-css-rules",
+     "weight": 0,
+     "group": "diagnostics"
+    },
+    {
+     "id": "unused-javascript",
+     "weight": 0,
+     "group": "diagnostics"
+    },
+    {
+     "id": "uses-optimized-images",
+     "weight": 0,
+     "group": "diagnostics"
+    },
+    {
+     "id": "modern-image-formats",
+     "weight": 0,
+     "group": "diagnostics"
+    },
+    {
+     "id": "uses-text-compression",
+     "weight": 0,
+     "group": "diagnostics"
+    },
+    {
+     "id": "uses-rel-preconnect",
+     "weight": 0,
+     "group": "diagnostics"
+    },
+    {
+     "id": "server-response-time",
+     "weight": 0,
+     "group": "diagnostics"
+    },
+    {
+     "id": "redirects",
+     "weight": 0,
+     "group": "diagnostics"
+    },
+    {
+     "id": "uses-http2",
+     "weight": 0,
+     "group": "diagnostics"
+    },
+    {
+     "id": "efficient-animated-content",
+     "weight": 0,
+     "group": "diagnostics"
+    },
+    {
+     "id": "duplicated-javascript",
+     "weight": 0,
+     "group": "diagnostics"
+    },
+    {
+     "id": "legacy-javascript",
+     "weight": 0,
+     "group": "diagnostics"
+    },
+    {
+     "id": "prioritize-lcp-image",
+     "weight": 0,
+     "group": "diagnostics"
+    },
+    {
+     "id": "total-byte-weight",
+     "weight": 0,
+     "group": "diagnostics"
+    },
+    {
+     "id": "uses-long-cache-ttl",
+     "weight": 0,
+     "group": "diagnostics"
+    },
+    {
+     "id": "dom-size",
+     "weight": 0,
+     "group": "diagnostics"
+    },
+    {
+     "id": "critical-request-chains",
+     "weight": 0,
+     "group": "diagnostics"
+    },
+    {
+     "id": "user-timings",
+     "weight": 0,
+     "group": "diagnostics"
+    },
+    {
+     "id": "bootup-time",
+     "weight": 0,
+     "group": "diagnostics"
+    },
+    {
+     "id": "mainthread-work-breakdown",
+     "weight": 0,
+     "group": "diagnostics"
+    },
+    {
+     "id": "font-display",
+     "weight": 0,
+     "group": "diagnostics"
+    },
+    {
+     "id": "third-party-summary",
+     "weight": 0,
+     "group": "diagnostics"
+    },
+    {
+     "id": "third-party-facades",
+     "weight": 0,
+     "group": "diagnostics"
+    },
+    {
+     "id": "largest-contentful-paint-element",
+     "weight": 0,
+     "group": "diagnostics"
+    },
+    {
+     "id": "lcp-lazy-loaded",
+     "weight": 0,
+     "group": "diagnostics"
+    },
+    {
+     "id": "layout-shifts",
+     "weight": 0,
+     "group": "diagnostics"
+    },
+    {
+     "id": "uses-passive-event-listeners",
+     "weight": 0,
+     "group": "diagnostics"
+    },
+    {
+     "id": "no-document-write",
+     "weight": 0,
+     "group": "diagnostics"
+    },
+    {
+     "id": "long-tasks",
+     "weight": 0,
+     "group": "diagnostics"
+    },
+    {
+     "id": "non-composited-animations",
+     "weight": 0,
+     "group": "diagnostics"
+    },
+    {
+     "id": "unsized-images",
+     "weight": 0,
+     "group": "diagnostics"
+    },
+    {
+     "id": "viewport",
+     "weight": 0,
+     "group": "diagnostics"
+    },
+    {
+     "id": "bf-cache",
+     "weight": 0,
+     "group": "diagnostics"
+    },
+    {
+     "id": "network-requests",
+     "weight": 0,
+     "group": "hidden"
+    },
+    {
+     "id": "network-rtt",
+     "weight": 0,
+     "group": "hidden"
+    },
+    {
+     "id": "network-server-latency",
+     "weight": 0,
+     "group": "hidden"
+    },
+    {
+     "id": "main-thread-tasks",
+     "weight": 0,
+     "group": "hidden"
+    },
+    {
+     "id": "diagnostics",
+     "weight": 0,
+     "group": "hidden"
+    },
+    {
+     "id": "metrics",
+     "weight": 0,
+     "group": "hidden"
+    },
+    {
+     "id": "screenshot-thumbnails",
+     "weight": 0,
+     "group": "hidden"
+    },
+    {
+     "id": "final-screenshot",
+     "weight": 0,
+     "group": "hidden"
+    },
+    {
+     "id": "script-treemap-data",
+     "weight": 0,
+     "group": "hidden"
+    },
+    {
+     "id": "resource-summary",
+     "weight": 0,
+     "group": "hidden"
+    }
+   ],
+   "id": "performance",
+   "score": 0.99
+  }
+ },
+ "categoryGroups": {
+  "metrics": {
+   "title": "Metrics"
+  },
+  "insights": {
+   "title": "Insights",
+   "description": "These insights are also available in the Chrome DevTools Performance Panel - [record a trace](https://developer.chrome.com/docs/devtools/performance/reference) to view more detailed information."
+  },
+  "diagnostics": {
+   "title": "Diagnostics",
+   "description": "More information about the performance of your application. These numbers don't [directly affect](https://developer.chrome.com/docs/lighthouse/performance/performance-scoring/) the Performance score."
+  },
+  "a11y-best-practices": {
+   "title": "Best practices",
+   "description": "These items highlight common accessibility best practices."
+  },
+  "a11y-color-contrast": {
+   "title": "Contrast",
+   "description": "These are opportunities to improve the legibility of your content."
+  },
+  "a11y-names-labels": {
+   "title": "Names and labels",
+   "description": "These are opportunities to improve the semantics of the controls in your application. This may enhance the experience for users of assistive technology, like a screen reader."
+  },
+  "a11y-navigation": {
+   "title": "Navigation",
+   "description": "These are opportunities to improve keyboard navigation in your application."
+  },
+  "a11y-aria": {
+   "title": "ARIA",
+   "description": "These are opportunities to improve the usage of ARIA in your application which may enhance the experience for users of assistive technology, like a screen reader."
+  },
+  "a11y-language": {
+   "title": "Internationalization and localization",
+   "description": "These are opportunities to improve the interpretation of your content by users in different locales."
+  },
+  "a11y-audio-video": {
+   "title": "Audio and video",
+   "description": "These are opportunities to provide alternative content for audio and video. This may improve the experience for users with hearing or vision impairments."
+  },
+  "a11y-tables-lists": {
+   "title": "Tables and lists",
+   "description": "These are opportunities to improve the experience of reading tabular or list data using assistive technology, like a screen reader."
+  },
+  "seo-mobile": {
+   "title": "Mobile Friendly",
+   "description": "Make sure your pages are mobile friendly so users don’t have to pinch or zoom in order to read the content pages. [Learn how to make pages mobile-friendly](https://developers.google.com/search/mobile-sites/)."
+  },
+  "seo-content": {
+   "title": "Content Best Practices",
+   "description": "Format your HTML in a way that enables crawlers to better understand your app’s content."
+  },
+  "seo-crawl": {
+   "title": "Crawling and Indexing",
+   "description": "To appear in search results, crawlers need access to your app."
+  },
+  "best-practices-trust-safety": {
+   "title": "Trust and Safety"
+  },
+  "best-practices-ux": {
+   "title": "User Experience"
+  },
+  "best-practices-browser-compat": {
+   "title": "Browser Compatibility"
+  },
+  "best-practices-general": {
+   "title": "General"
+  },
+  "hidden": {
+   "title": ""
+  }
+ },
+ "stackPacks": []
+}
