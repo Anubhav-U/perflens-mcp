@@ -3,13 +3,19 @@ name: Release
 # Publishes to npm when a version tag is pushed, e.g.:
 #   npm version patch   (bumps package.json and creates the tag v0.1.1)
 #   git push --follow-tags
+#
+# Uses npm trusted publishing (OIDC): GitHub proves to npm that this workflow is running for this
+# repo, so no npm token is stored anywhere. Configure it once on npmjs.com:
+#   package settings > Trusted publishing > GitHub Actions
+#   owner Anubhav-U, repository perflens-mcp, workflow release.yml, environment npm
+# Provenance is attached automatically.
 on:
   push:
     tags: ["v*"]
 
 permissions:
   contents: read
-  id-token: write # lets npm attach a provenance statement linking the package to this build
+  id-token: write # lets GitHub issue the short-lived identity token npm verifies
 
 jobs:
   publish:
@@ -22,6 +28,9 @@ jobs:
           node-version: 22
           cache: npm
           registry-url: https://registry.npmjs.org
+
+      # Trusted publishing needs a newer npm CLI than the one bundled with Node 22.
+      - run: npm install -g npm@latest
 
       - name: Tag must match package.json version
         run: |
@@ -38,6 +47,4 @@ jobs:
       - run: npm run build
 
       - name: Publish to npm
-        run: npm publish --provenance --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: npm publish --access public
