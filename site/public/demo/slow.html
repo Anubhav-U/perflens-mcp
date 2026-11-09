@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Tidewater Coffee (slow demo)</title>
+    <meta name="robots" content="noindex" />
+    <meta name="description" content="A deliberately slow demo page audited by PerfLens." />
+    <!-- Deliberate problems: render-blocking stylesheet and synchronous script, both mostly unused. -->
+    <link rel="stylesheet" href="/demo/slow/styles.css" />
+    <script src="/demo/slow/vendor.js"></script>
+  </head>
+  <body>
+    <div class="demo-note">
+      Demo page built to be slow on purpose, so PerfLens has something to find.
+      <a href="/demo/fast.html">See the fixed version</a> · <a href="/">Back to PerfLens</a>
+    </div>
+    <header>
+      <span class="brand">Tidewater Coffee</span>
+      <nav>Shop · Subscriptions · About</nav>
+    </header>
+    <!-- The hero image is injected by vendor.js after it runs (late-discovered, lazy-loaded LCP image). -->
+    <section class="hero" id="hero">
+      <h1>Small-batch coffee, roasted by the sea</h1>
+    </section>
+    <main>
+      <p>
+        We roast twice a week in a converted boathouse and ship within 48 hours of roasting. Every bag lists the farm,
+        the altitude and the day it was roasted.
+      </p>
+      <h2>This week's roasts</h2>
+      <!-- Deliberate problems: large PNGs below the fold, eager, no width/height. -->
+      <div class="grid">
+        <div class="card"><img src="/demo/slow/product-1.png" alt="Harbor Blend bag" /><h3>Harbor Blend</h3><p>Chocolate, toasted almond.</p></div>
+        <div class="card"><img src="/demo/slow/product-2.png" alt="Fog Line bag" /><h3>Fog Line</h3><p>Green apple, honey.</p></div>
+        <div class="card"><img src="/demo/slow/product-3.png" alt="Ember Roast bag" /><h3>Ember Roast</h3><p>Dark cherry, cocoa nib.</p></div>
+      </div>
+    </main>
+  </body>
+</html>

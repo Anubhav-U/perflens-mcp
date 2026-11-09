@@ -1,0 +1,1267 @@
+{
+  "generatedAt": "2026-11-09T12:53:59.247Z",
+  "lighthouseVersion": "12.8.2",
+  "runsPerAudit": 3,
+  "averageAuditSeconds": 7.5,
+  "devices": {
+    "mobile": {
+      "slow": {
+        "summary": {
+          "url": "/demo/slow.html",
+          "finalUrl": "/demo/slow.html",
+          "device": "mobile",
+          "fetchTime": "2026-11-09T12:52:32.903Z",
+          "lighthouseVersion": "12.8.2",
+          "performanceScore": 38,
+          "metrics": [
+            {
+              "id": "LCP",
+              "name": "Largest Contentful Paint",
+              "value": 34506,
+              "displayValue": "35 s",
+              "rating": "poor",
+              "lighthouseScore": 0
+            },
+            {
+              "id": "FCP",
+              "name": "First Contentful Paint",
+              "value": 2632,
+              "displayValue": "2.6 s",
+              "rating": "needs-improvement",
+              "lighthouseScore": 62
+            },
+            {
+              "id": "TBT",
+              "name": "Total Blocking Time",
+              "value": 1150,
+              "displayValue": "1.1 s",
+              "rating": "poor",
+              "lighthouseScore": 22
+            },
+            {
+              "id": "CLS",
+              "name": "Cumulative Layout Shift",
+              "value": 0.206,
+              "displayValue": "0.206",
+              "rating": "needs-improvement",
+              "lighthouseScore": 60
+            },
+            {
+              "id": "SI",
+              "name": "Speed Index",
+              "value": 2632,
+              "displayValue": "2.6 s",
+              "rating": "good",
+              "lighthouseScore": 97
+            }
+          ],
+          "opportunities": [
+            {
+              "id": "largest-contentful-paint-element",
+              "title": "Largest Contentful Paint element",
+              "displayValue": "34,510 ms",
+              "score": 0,
+              "metricSavings": {
+                "LCP": 32000
+              },
+              "impact": 25,
+              "evidence": [
+                {
+                  "label": "body > section#hero > img"
+                }
+              ]
+            },
+            {
+              "id": "bootup-time",
+              "title": "Reduce JavaScript execution time",
+              "displayValue": "1.4 s",
+              "score": 0,
+              "metricSavings": {
+                "TBT": 1150
+              },
+              "impact": 23.4,
+              "evidence": [
+                {
+                  "label": "/demo/slow/vendor.js",
+                  "timeMs": 1431
+                },
+                {
+                  "label": "/demo/slow.html",
+                  "timeMs": 180
+                }
+              ]
+            },
+            {
+              "id": "image-delivery-insight",
+              "title": "Improve image delivery",
+              "displayValue": "Est savings of 8,722 KiB",
+              "score": 0,
+              "metricSavings": {
+                "LCP": 25850
+              },
+              "savingsBytes": 7261205,
+              "impact": 20.2,
+              "evidence": [
+                {
+                  "label": "/demo/slow/hero.png",
+                  "wastedBytes": 3366333,
+                  "totalBytes": 3466375
+                },
+                {
+                  "label": "/demo/slow/product-1.png",
+                  "wastedBytes": 1857783,
+                  "totalBytes": 1868833
+                },
+                {
+                  "label": "/demo/slow/product-3.png",
+                  "wastedBytes": 1855637,
+                  "totalBytes": 1866688
+                }
+              ]
+            },
+            {
+              "id": "cls-culprits-insight",
+              "title": "Layout shift culprits",
+              "displayValue": "2 layout shifts found",
+              "score": 0,
+              "metricSavings": {
+                "CLS": 0.206
+              },
+              "impact": 10,
+              "evidence": [
+                {
+                  "label": "body > main"
+                },
+                {
+                  "label": "body > main"
+                }
+              ]
+            },
+            {
+              "id": "lcp-discovery-insight",
+              "title": "LCP request discovery",
+              "score": 0,
+              "metricSavings": {
+                "LCP": 5200
+              },
+              "impact": 4.1,
+              "evidence": [
+                {
+                  "label": "body > section#hero > img"
+                }
+              ]
+            },
+            {
+              "id": "render-blocking-insight",
+              "title": "Render blocking requests",
+              "displayValue": "Est savings of 1,990 ms",
+              "score": 0,
+              "metricSavings": {
+                "FCP": 2000
+              },
+              "impact": 3.8,
+              "evidence": [
+                {
+                  "label": "/demo/slow/vendor.js",
+                  "timeMs": 603,
+                  "totalBytes": 47084
+                },
+                {
+                  "label": "/demo/slow/styles.css",
+                  "timeMs": 453,
+                  "totalBytes": 40418
+                }
+              ]
+            },
+            {
+              "id": "unused-javascript",
+              "title": "Reduce unused JavaScript",
+              "displayValue": "Est savings of 45 KiB",
+              "score": 0,
+              "metricSavings": {
+                "LCP": 450,
+                "FCP": 300
+              },
+              "savingsBytes": 46431,
+              "impact": 1.7,
+              "evidence": [
+                {
+                  "label": "/demo/slow/vendor.js",
+                  "wastedBytes": 46431,
+                  "totalBytes": 46722
+                }
+              ]
+            },
+            {
+              "id": "network-dependency-tree-insight",
+              "title": "Network dependency tree",
+              "score": 0,
+              "metricSavings": {},
+              "impact": 0.5,
+              "evidence": []
+            },
+            {
+              "id": "viewport-insight",
+              "title": "Optimize viewport for mobile",
+              "score": 0,
+              "metricSavings": {
+                "INP": 300
+              },
+              "impact": 0.5,
+              "evidence": []
+            },
+            {
+              "id": "unminified-css",
+              "title": "Minify CSS",
+              "displayValue": "Est savings of 2 KiB",
+              "score": 0,
+              "metricSavings": {
+                "LCP": 150
+              },
+              "savingsBytes": 2470,
+              "impact": 0.5,
+              "evidence": [
+                {
+                  "label": "/demo/slow/styles.css",
+                  "wastedBytes": 2470,
+                  "totalBytes": 40418
+                }
+              ]
+            },
+            {
+              "id": "unused-css-rules",
+              "title": "Reduce unused CSS",
+              "displayValue": "Est savings of 39 KiB",
+              "score": 0,
+              "metricSavings": {
+                "LCP": 300
+              },
+              "savingsBytes": 39965,
+              "impact": 0.5,
+              "evidence": [
+                {
+                  "label": "/demo/slow/styles.css",
+                  "wastedBytes": 39965,
+                  "totalBytes": 40070
+                }
+              ]
+            },
+            {
+              "id": "total-byte-weight",
+              "title": "Avoid enormous network payloads",
+              "displayValue": "Total size was 8,954 KiB",
+              "score": 0.5,
+              "metricSavings": {},
+              "impact": 0.5,
+              "evidence": [
+                {
+                  "label": "/demo/slow/hero.png",
+                  "totalBytes": 3466660
+                },
+                {
+                  "label": "/demo/slow/product-1.png",
+                  "totalBytes": 1869118
+                },
+                {
+                  "label": "/demo/slow/product-3.png",
+                  "totalBytes": 1866973
+                }
+              ]
+            }
+          ],
+          "passedAuditCount": 28,
+          "warnings": [
+            "Median of 3 runs (scores: 38, 38, 38)."
+          ]
+        },
+        "fixes": {
+          "url": "/demo/slow.html",
+          "device": "mobile",
+          "performanceScore": 38,
+          "fixes": [
+            {
+              "rank": 1,
+              "key": "lcp-element",
+              "title": "Load the LCP element sooner",
+              "priority": "high",
+              "effort": "low",
+              "estimatedImpact": "~32 s LCP",
+              "why": "The largest above-the-fold element is what users wait for. If the browser discovers or prioritizes it late, LCP suffers no matter how fast the rest is.",
+              "steps": [
+                "Identify the LCP element (see evidence) and make sure it is in the initial HTML, not injected by JS or set as a CSS background.",
+                "Remove loading=\"lazy\" from the LCP image and add fetchpriority=\"high\".",
+                "If it comes from another origin, add <link rel=\"preconnect\"> for that origin, or <link rel=\"preload\" as=\"image\"> with imagesrcset.",
+                "In Next.js, set priority (or fetchPriority=\"high\") on the hero <Image>."
+              ],
+              "evidence": [
+                {
+                  "label": "body > section#hero > img"
+                }
+              ],
+              "sourceAudits": [
+                "largest-contentful-paint-element",
+                "lcp-discovery-insight"
+              ]
+            },
+            {
+              "rank": 2,
+              "key": "image-delivery",
+              "title": "Serve smaller, modern images",
+              "priority": "high",
+              "effort": "low",
+              "estimatedImpact": "~26 s LCP, 6.9 MB",
+              "why": "Images are usually the heaviest bytes on a page; oversized JPEG/PNG files slow LCP and waste data.",
+              "steps": [
+                "Serve AVIF or WebP with a JPEG fallback (<picture> or an image CDN that negotiates formats).",
+                "Generate several widths and use srcset/sizes so phones don't download desktop-sized images.",
+                "Compress at quality 70-80; it is rarely visible.",
+                "Replace animated GIFs with muted, looping <video> (MP4/WebM).",
+                "In Next.js, use next/image, which handles formats and sizes."
+              ],
+              "evidence": [
+                {
+                  "label": "/demo/slow/hero.png",
+                  "wastedBytes": 3366333,
+                  "totalBytes": 3466375
+                },
+                {
+                  "label": "/demo/slow/product-1.png",
+                  "wastedBytes": 1857783,
+                  "totalBytes": 1868833
+                },
+                {
+                  "label": "/demo/slow/product-3.png",
+                  "wastedBytes": 1855637,
+                  "totalBytes": 1866688
+                }
+              ],
+              "sourceAudits": [
+                "image-delivery-insight"
+              ]
+            },
+            {
+              "rank": 3,
+              "key": "layout-shifts",
+              "title": "Prevent layout shifts",
+              "priority": "high",
+              "effort": "low",
+              "estimatedImpact": "~0.206 CLS",
+              "why": "Content that jumps while loading causes misclicks and hurts the CLS Core Web Vital.",
+              "steps": [
+                "Give every image, video and iframe explicit width/height or a CSS aspect-ratio.",
+                "Reserve space for ads, embeds and late-loading content with min-height or skeleton placeholders.",
+                "Don't insert banners above existing content after load; overlay them or reserve their space.",
+                "Match fallback font metrics (size-adjust, ascent-override) to reduce font-swap shifts."
+              ],
+              "evidence": [
+                {
+                  "label": "body > main"
+                },
+                {
+                  "label": "body > main"
+                }
+              ],
+              "sourceAudits": [
+                "cls-culprits-insight"
+              ]
+            },
+            {
+              "rank": 4,
+              "key": "main-thread",
+              "title": "Reduce main-thread work and long tasks",
+              "priority": "high",
+              "effort": "high",
+              "estimatedImpact": "~1.1 s TBT",
+              "why": "Long tasks block the main thread, so the page can't respond to input (high TBT in the lab, poor INP in the field).",
+              "steps": [
+                "Profile the page in Chrome DevTools Performance panel with CPU throttling and find the longest tasks.",
+                "Defer non-critical initialization until after load or idle time (requestIdleCallback).",
+                "Break up long tasks by yielding to the main thread (scheduler.yield() or setTimeout chunks).",
+                "Reduce hydration cost: hydrate less (islands, server components) or hydrate lazily below the fold.",
+                "Move heavy computation to a Web Worker."
+              ],
+              "evidence": [
+                {
+                  "label": "/demo/slow/vendor.js",
+                  "timeMs": 1431
+                },
+                {
+                  "label": "/demo/slow.html",
+                  "timeMs": 180
+                }
+              ],
+              "sourceAudits": [
+                "bootup-time"
+              ]
+            },
+            {
+              "rank": 5,
+              "key": "render-blocking",
+              "title": "Remove render-blocking CSS and scripts",
+              "priority": "medium",
+              "effort": "medium",
+              "estimatedImpact": "~2.0 s FCP",
+              "why": "Stylesheets and synchronous scripts in the <head> stop the browser from painting anything until they download and run.",
+              "steps": [
+                "Add defer (or type=\"module\") to scripts in the <head>; use async only for independent scripts like analytics.",
+                "Inline the critical above-the-fold CSS and load the rest with media attributes or after first paint.",
+                "Split CSS per route so each page loads only what it uses.",
+                "Self-host third-party CSS (e.g. font CSS) instead of chaining to another origin."
+              ],
+              "evidence": [
+                {
+                  "label": "/demo/slow/vendor.js",
+                  "timeMs": 603,
+                  "totalBytes": 47084
+                },
+                {
+                  "label": "/demo/slow/styles.css",
+                  "timeMs": 453,
+                  "totalBytes": 40418
+                }
+              ],
+              "sourceAudits": [
+                "render-blocking-insight"
+              ]
+            },
+            {
+              "rank": 6,
+              "key": "unused-javascript",
+              "title": "Ship less JavaScript (code-split and remove unused code)",
+              "priority": "low",
+              "effort": "medium",
+              "estimatedImpact": "~450 ms LCP, ~300 ms FCP, 45 KB",
+              "why": "Every kilobyte of JavaScript must be downloaded, parsed and executed, delaying rendering and blocking interaction.",
+              "steps": [
+                "Run a bundle analyzer (e.g. source-map-explorer, @next/bundle-analyzer, rollup-plugin-visualizer) on the largest bundles in the evidence.",
+                "Split code by route and lazy-load heavy components (dynamic import(), React.lazy, next/dynamic) that aren't needed for first render.",
+                "Replace heavy dependencies with lighter ones or import only the functions you use.",
+                "Load widgets such as video players, chat and maps only on interaction or when scrolled into view."
+              ],
+              "evidence": [
+                {
+                  "label": "/demo/slow/vendor.js",
+                  "wastedBytes": 46431,
+                  "totalBytes": 46722
+                }
+              ],
+              "sourceAudits": [
+                "unused-javascript"
+              ]
+            },
+            {
+              "rank": 7,
+              "key": "viewport",
+              "title": "Add a mobile viewport meta tag",
+              "priority": "low",
+              "effort": "low",
+              "estimatedImpact": "~300 ms INP",
+              "why": "Without it, mobile browsers render at desktop width and add tap delays.",
+              "steps": [
+                "Add <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"> to the <head>."
+              ],
+              "evidence": [],
+              "sourceAudits": [
+                "viewport-insight"
+              ]
+            },
+            {
+              "rank": 8,
+              "key": "minify",
+              "title": "Minify CSS and JavaScript",
+              "priority": "low",
+              "effort": "low",
+              "estimatedImpact": "~150 ms LCP, 2 KB",
+              "why": "Unminified files send whitespace and comments over the network.",
+              "steps": [
+                "Enable minification in your production build (it is on by default in Vite, Next.js and webpack production mode).",
+                "Check that third-party or hand-included files are minified versions."
+              ],
+              "evidence": [
+                {
+                  "label": "/demo/slow/styles.css",
+                  "wastedBytes": 2470,
+                  "totalBytes": 40418
+                }
+              ],
+              "sourceAudits": [
+                "unminified-css"
+              ]
+            }
+          ]
+        }
+      },
+      "fast": {
+        "summary": {
+          "url": "/demo/fast.html",
+          "finalUrl": "/demo/fast.html",
+          "device": "mobile",
+          "fetchTime": "2026-11-09T12:52:57.837Z",
+          "lighthouseVersion": "12.8.2",
+          "performanceScore": 100,
+          "metrics": [
+            {
+              "id": "LCP",
+              "name": "Largest Contentful Paint",
+              "value": 1130,
+              "displayValue": "1.1 s",
+              "rating": "good",
+              "lighthouseScore": 100
+            },
+            {
+              "id": "FCP",
+              "name": "First Contentful Paint",
+              "value": 640,
+              "displayValue": "640 ms",
+              "rating": "good",
+              "lighthouseScore": 100
+            },
+            {
+              "id": "TBT",
+              "name": "Total Blocking Time",
+              "value": 0,
+              "displayValue": "0 ms",
+              "rating": "good",
+              "lighthouseScore": 100
+            },
+            {
+              "id": "CLS",
+              "name": "Cumulative Layout Shift",
+              "value": 0,
+              "displayValue": "0",
+              "rating": "good",
+              "lighthouseScore": 100
+            },
+            {
+              "id": "SI",
+              "name": "Speed Index",
+              "value": 640,
+              "displayValue": "640 ms",
+              "rating": "good",
+              "lighthouseScore": 100
+            }
+          ],
+          "opportunities": [],
+          "passedAuditCount": 45,
+          "warnings": [
+            "Median of 3 runs (scores: 100, 100, 100)."
+          ]
+        },
+        "fixes": {
+          "url": "/demo/fast.html",
+          "device": "mobile",
+          "performanceScore": 100,
+          "fixes": [],
+          "note": "All lab metrics are good and no audits failed. Check field data (CrUX/RUM), especially INP, before optimizing further."
+        }
+      },
+      "comparison": {
+        "a": {
+          "url": "/demo/slow.html",
+          "device": "mobile",
+          "fetchTime": "2026-11-09T12:52:32.903Z"
+        },
+        "b": {
+          "url": "/demo/fast.html",
+          "device": "mobile",
+          "fetchTime": "2026-11-09T12:52:57.837Z"
+        },
+        "score": {
+          "a": 38,
+          "b": 100,
+          "delta": 62,
+          "change": "better"
+        },
+        "metrics": [
+          {
+            "id": "LCP",
+            "name": "Largest Contentful Paint",
+            "a": 34506,
+            "b": 1130,
+            "delta": -33376,
+            "percentChange": -96.7,
+            "change": "better",
+            "ratingA": "poor",
+            "ratingB": "good"
+          },
+          {
+            "id": "FCP",
+            "name": "First Contentful Paint",
+            "a": 2632,
+            "b": 640,
+            "delta": -1992,
+            "percentChange": -75.7,
+            "change": "better",
+            "ratingA": "needs-improvement",
+            "ratingB": "good"
+          },
+          {
+            "id": "TBT",
+            "name": "Total Blocking Time",
+            "a": 1150,
+            "b": 0,
+            "delta": -1150,
+            "percentChange": -100,
+            "change": "better",
+            "ratingA": "poor",
+            "ratingB": "good"
+          },
+          {
+            "id": "CLS",
+            "name": "Cumulative Layout Shift",
+            "a": 0.206,
+            "b": 0,
+            "delta": -0.206,
+            "percentChange": -100,
+            "change": "better",
+            "ratingA": "needs-improvement",
+            "ratingB": "good"
+          },
+          {
+            "id": "SI",
+            "name": "Speed Index",
+            "a": 2632,
+            "b": 640,
+            "delta": -1992,
+            "percentChange": -75.7,
+            "change": "better",
+            "ratingA": "good",
+            "ratingB": "good"
+          }
+        ],
+        "resolvedOpportunities": [
+          "Largest Contentful Paint element",
+          "Reduce JavaScript execution time",
+          "Improve image delivery",
+          "Layout shift culprits",
+          "LCP request discovery",
+          "Render blocking requests",
+          "Reduce unused JavaScript",
+          "Network dependency tree",
+          "Optimize viewport for mobile",
+          "Minify CSS",
+          "Reduce unused CSS",
+          "Avoid enormous network payloads"
+        ],
+        "newOpportunities": [],
+        "verdict": "B scores 62 points higher. Better in B: LCP 35 s → 1.1 s, FCP 2.6 s → 640 ms, TBT 1.1 s → 0 ms, CLS 0.206 → 0, SI 2.6 s → 640 ms.",
+        "warnings": []
+      }
+    },
+    "desktop": {
+      "slow": {
+        "summary": {
+          "url": "/demo/slow.html",
+          "finalUrl": "/demo/slow.html",
+          "device": "desktop",
+          "fetchTime": "2026-11-09T12:53:30.004Z",
+          "lighthouseVersion": "12.8.2",
+          "performanceScore": 55,
+          "metrics": [
+            {
+              "id": "LCP",
+              "name": "Largest Contentful Paint",
+              "value": 8045,
+              "displayValue": "8.0 s",
+              "rating": "poor",
+              "lighthouseScore": 1
+            },
+            {
+              "id": "FCP",
+              "name": "First Contentful Paint",
+              "value": 681,
+              "displayValue": "681 ms",
+              "rating": "good",
+              "lighthouseScore": 98
+            },
+            {
+              "id": "TBT",
+              "name": "Total Blocking Time",
+              "value": 110,
+              "displayValue": "110 ms",
+              "rating": "good",
+              "lighthouseScore": 96
+            },
+            {
+              "id": "CLS",
+              "name": "Cumulative Layout Shift",
+              "value": 0.411,
+              "displayValue": "0.411",
+              "rating": "poor",
+              "lighthouseScore": 24
+            },
+            {
+              "id": "SI",
+              "name": "Speed Index",
+              "value": 681,
+              "displayValue": "681 ms",
+              "rating": "good",
+              "lighthouseScore": 100
+            }
+          ],
+          "opportunities": [
+            {
+              "id": "image-delivery-insight",
+              "title": "Improve image delivery",
+              "displayValue": "Est savings of 8,636 KiB",
+              "score": 0,
+              "metricSavings": {
+                "LCP": 7250
+              },
+              "savingsBytes": 7786172,
+              "impact": 24.8,
+              "evidence": [
+                {
+                  "label": "/demo/slow/hero.png",
+                  "wastedBytes": 3280727,
+                  "totalBytes": 3466375
+                },
+                {
+                  "label": "/demo/slow/product-1.png",
+                  "wastedBytes": 1857079,
+                  "totalBytes": 1868833
+                },
+                {
+                  "label": "/demo/slow/product-3.png",
+                  "wastedBytes": 1854934,
+                  "totalBytes": 1866688
+                }
+              ]
+            },
+            {
+              "id": "largest-contentful-paint-element",
+              "title": "Largest Contentful Paint element",
+              "displayValue": "8,040 ms",
+              "score": 0,
+              "metricSavings": {
+                "LCP": 6850
+              },
+              "impact": 24.8,
+              "evidence": [
+                {
+                  "label": "body > section#hero > img"
+                }
+              ]
+            },
+            {
+              "id": "cls-culprits-insight",
+              "title": "Layout shift culprits",
+              "displayValue": "3 layout shifts found",
+              "score": 0,
+              "metricSavings": {
+                "CLS": 0.411
+              },
+              "impact": 19,
+              "evidence": [
+                {
+                  "label": "body > main"
+                },
+                {
+                  "label": "body > main"
+                },
+                {
+                  "label": "main > div.grid > div.card > h3"
+                }
+              ]
+            },
+            {
+              "id": "lcp-discovery-insight",
+              "title": "LCP request discovery",
+              "score": 0,
+              "metricSavings": {
+                "LCP": 1200
+              },
+              "impact": 5.4,
+              "evidence": [
+                {
+                  "label": "body > section#hero > img"
+                }
+              ]
+            },
+            {
+              "id": "network-dependency-tree-insight",
+              "title": "Network dependency tree",
+              "score": 0,
+              "metricSavings": {},
+              "impact": 0.5,
+              "evidence": []
+            },
+            {
+              "id": "render-blocking-insight",
+              "title": "Render blocking requests",
+              "displayValue": "Est savings of 510 ms",
+              "score": 0,
+              "metricSavings": {
+                "FCP": 500
+              },
+              "impact": 0.5,
+              "evidence": [
+                {
+                  "label": "/demo/slow/vendor.js",
+                  "timeMs": 162,
+                  "totalBytes": 47084
+                },
+                {
+                  "label": "/demo/slow/styles.css",
+                  "timeMs": 122,
+                  "totalBytes": 40418
+                }
+              ]
+            },
+            {
+              "id": "unused-css-rules",
+              "title": "Reduce unused CSS",
+              "displayValue": "Est savings of 39 KiB",
+              "score": 0,
+              "metricSavings": {
+                "LCP": 50
+              },
+              "savingsBytes": 39965,
+              "impact": 0.5,
+              "evidence": [
+                {
+                  "label": "/demo/slow/styles.css",
+                  "wastedBytes": 39965,
+                  "totalBytes": 40070
+                }
+              ]
+            },
+            {
+              "id": "unused-javascript",
+              "title": "Reduce unused JavaScript",
+              "displayValue": "Est savings of 45 KiB",
+              "score": 0,
+              "metricSavings": {
+                "LCP": 50,
+                "FCP": 100
+              },
+              "savingsBytes": 46431,
+              "impact": 0.5,
+              "evidence": [
+                {
+                  "label": "/demo/slow/vendor.js",
+                  "wastedBytes": 46431,
+                  "totalBytes": 46722
+                }
+              ]
+            },
+            {
+              "id": "viewport",
+              "title": "Does not have a `<meta name=\"viewport\">` tag with `width` or `initial-scale`",
+              "score": 0,
+              "metricSavings": {
+                "INP": 300
+              },
+              "impact": 0.5,
+              "evidence": []
+            },
+            {
+              "id": "unminified-css",
+              "title": "Minify CSS",
+              "displayValue": "Est savings of 2 KiB",
+              "score": 0.5,
+              "metricSavings": {},
+              "savingsBytes": 2470,
+              "impact": 0.5,
+              "evidence": [
+                {
+                  "label": "/demo/slow/styles.css",
+                  "wastedBytes": 2470,
+                  "totalBytes": 40418
+                }
+              ]
+            },
+            {
+              "id": "total-byte-weight",
+              "title": "Avoid enormous network payloads",
+              "displayValue": "Total size was 8,954 KiB",
+              "score": 0.5,
+              "metricSavings": {},
+              "impact": 0.5,
+              "evidence": [
+                {
+                  "label": "/demo/slow/hero.png",
+                  "totalBytes": 3466660
+                },
+                {
+                  "label": "/demo/slow/product-1.png",
+                  "totalBytes": 1869118
+                },
+                {
+                  "label": "/demo/slow/product-3.png",
+                  "totalBytes": 1866973
+                }
+              ]
+            }
+          ],
+          "passedAuditCount": 30,
+          "warnings": [
+            "Median of 3 runs (scores: 56, 55, 55)."
+          ]
+        },
+        "fixes": {
+          "url": "/demo/slow.html",
+          "device": "desktop",
+          "performanceScore": 55,
+          "fixes": [
+            {
+              "rank": 1,
+              "key": "image-delivery",
+              "title": "Serve smaller, modern images",
+              "priority": "high",
+              "effort": "low",
+              "estimatedImpact": "~7.3 s LCP, 7.4 MB",
+              "why": "Images are usually the heaviest bytes on a page; oversized JPEG/PNG files slow LCP and waste data.",
+              "steps": [
+                "Serve AVIF or WebP with a JPEG fallback (<picture> or an image CDN that negotiates formats).",
+                "Generate several widths and use srcset/sizes so phones don't download desktop-sized images.",
+                "Compress at quality 70-80; it is rarely visible.",
+                "Replace animated GIFs with muted, looping <video> (MP4/WebM).",
+                "In Next.js, use next/image, which handles formats and sizes."
+              ],
+              "evidence": [
+                {
+                  "label": "/demo/slow/hero.png",
+                  "wastedBytes": 3280727,
+                  "totalBytes": 3466375
+                },
+                {
+                  "label": "/demo/slow/product-1.png",
+                  "wastedBytes": 1857079,
+                  "totalBytes": 1868833
+                },
+                {
+                  "label": "/demo/slow/product-3.png",
+                  "wastedBytes": 1854934,
+                  "totalBytes": 1866688
+                }
+              ],
+              "sourceAudits": [
+                "image-delivery-insight"
+              ]
+            },
+            {
+              "rank": 2,
+              "key": "lcp-element",
+              "title": "Load the LCP element sooner",
+              "priority": "high",
+              "effort": "low",
+              "estimatedImpact": "~6.8 s LCP",
+              "why": "The largest above-the-fold element is what users wait for. If the browser discovers or prioritizes it late, LCP suffers no matter how fast the rest is.",
+              "steps": [
+                "Identify the LCP element (see evidence) and make sure it is in the initial HTML, not injected by JS or set as a CSS background.",
+                "Remove loading=\"lazy\" from the LCP image and add fetchpriority=\"high\".",
+                "If it comes from another origin, add <link rel=\"preconnect\"> for that origin, or <link rel=\"preload\" as=\"image\"> with imagesrcset.",
+                "In Next.js, set priority (or fetchPriority=\"high\") on the hero <Image>."
+              ],
+              "evidence": [
+                {
+                  "label": "body > section#hero > img"
+                }
+              ],
+              "sourceAudits": [
+                "largest-contentful-paint-element",
+                "lcp-discovery-insight"
+              ]
+            },
+            {
+              "rank": 3,
+              "key": "layout-shifts",
+              "title": "Prevent layout shifts",
+              "priority": "high",
+              "effort": "low",
+              "estimatedImpact": "~0.411 CLS",
+              "why": "Content that jumps while loading causes misclicks and hurts the CLS Core Web Vital.",
+              "steps": [
+                "Give every image, video and iframe explicit width/height or a CSS aspect-ratio.",
+                "Reserve space for ads, embeds and late-loading content with min-height or skeleton placeholders.",
+                "Don't insert banners above existing content after load; overlay them or reserve their space.",
+                "Match fallback font metrics (size-adjust, ascent-override) to reduce font-swap shifts."
+              ],
+              "evidence": [
+                {
+                  "label": "body > main"
+                },
+                {
+                  "label": "body > main"
+                },
+                {
+                  "label": "main > div.grid > div.card > h3"
+                }
+              ],
+              "sourceAudits": [
+                "cls-culprits-insight"
+              ]
+            },
+            {
+              "rank": 4,
+              "key": "viewport",
+              "title": "Add a mobile viewport meta tag",
+              "priority": "low",
+              "effort": "low",
+              "estimatedImpact": "~300 ms INP",
+              "why": "Without it, mobile browsers render at desktop width and add tap delays.",
+              "steps": [
+                "Add <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"> to the <head>."
+              ],
+              "evidence": [],
+              "sourceAudits": [
+                "viewport"
+              ]
+            },
+            {
+              "rank": 5,
+              "key": "minify",
+              "title": "Minify CSS and JavaScript",
+              "priority": "low",
+              "effort": "low",
+              "estimatedImpact": "2 KB",
+              "why": "Unminified files send whitespace and comments over the network.",
+              "steps": [
+                "Enable minification in your production build (it is on by default in Vite, Next.js and webpack production mode).",
+                "Check that third-party or hand-included files are minified versions."
+              ],
+              "evidence": [
+                {
+                  "label": "/demo/slow/styles.css",
+                  "wastedBytes": 2470,
+                  "totalBytes": 40418
+                }
+              ],
+              "sourceAudits": [
+                "unminified-css"
+              ]
+            },
+            {
+              "rank": 6,
+              "key": "request-chains",
+              "title": "Shorten critical request chains",
+              "priority": "low",
+              "effort": "medium",
+              "estimatedImpact": "No estimate from Lighthouse",
+              "why": "Resources that are discovered only after other resources load (CSS → font, JS → API → image) delay rendering.",
+              "steps": [
+                "Preload resources discovered late in the chain (fonts, hero images, key data).",
+                "Preconnect to critical third-party origins.",
+                "Inline small critical resources instead of chaining requests."
+              ],
+              "evidence": [],
+              "sourceAudits": [
+                "network-dependency-tree-insight"
+              ]
+            },
+            {
+              "rank": 7,
+              "key": "render-blocking",
+              "title": "Remove render-blocking CSS and scripts",
+              "priority": "low",
+              "effort": "medium",
+              "estimatedImpact": "~500 ms FCP",
+              "why": "Stylesheets and synchronous scripts in the <head> stop the browser from painting anything until they download and run.",
+              "steps": [
+                "Add defer (or type=\"module\") to scripts in the <head>; use async only for independent scripts like analytics.",
+                "Inline the critical above-the-fold CSS and load the rest with media attributes or after first paint.",
+                "Split CSS per route so each page loads only what it uses.",
+                "Self-host third-party CSS (e.g. font CSS) instead of chaining to another origin."
+              ],
+              "evidence": [
+                {
+                  "label": "/demo/slow/vendor.js",
+                  "timeMs": 162,
+                  "totalBytes": 47084
+                },
+                {
+                  "label": "/demo/slow/styles.css",
+                  "timeMs": 122,
+                  "totalBytes": 40418
+                }
+              ],
+              "sourceAudits": [
+                "render-blocking-insight"
+              ]
+            },
+            {
+              "rank": 8,
+              "key": "unused-css",
+              "title": "Remove unused CSS",
+              "priority": "low",
+              "effort": "medium",
+              "estimatedImpact": "~50 ms LCP, 39 KB",
+              "why": "Unused CSS still has to be downloaded and parsed before the page can render.",
+              "steps": [
+                "Split CSS by route or component (CSS modules, per-page bundles).",
+                "Purge unused utility classes (Tailwind does this by default when content paths are set correctly).",
+                "Drop leftover styles from removed features and unused UI library themes."
+              ],
+              "evidence": [
+                {
+                  "label": "/demo/slow/styles.css",
+                  "wastedBytes": 39965,
+                  "totalBytes": 40070
+                }
+              ],
+              "sourceAudits": [
+                "unused-css-rules"
+              ]
+            }
+          ]
+        }
+      },
+      "fast": {
+        "summary": {
+          "url": "/demo/fast.html",
+          "finalUrl": "/demo/fast.html",
+          "device": "desktop",
+          "fetchTime": "2026-11-09T12:53:46.142Z",
+          "lighthouseVersion": "12.8.2",
+          "performanceScore": 100,
+          "metrics": [
+            {
+              "id": "LCP",
+              "name": "Largest Contentful Paint",
+              "value": 305,
+              "displayValue": "305 ms",
+              "rating": "good",
+              "lighthouseScore": 100
+            },
+            {
+              "id": "FCP",
+              "name": "First Contentful Paint",
+              "value": 173,
+              "displayValue": "173 ms",
+              "rating": "good",
+              "lighthouseScore": 100
+            },
+            {
+              "id": "TBT",
+              "name": "Total Blocking Time",
+              "value": 0,
+              "displayValue": "0 ms",
+              "rating": "good",
+              "lighthouseScore": 100
+            },
+            {
+              "id": "CLS",
+              "name": "Cumulative Layout Shift",
+              "value": 0,
+              "displayValue": "0",
+              "rating": "good",
+              "lighthouseScore": 100
+            },
+            {
+              "id": "SI",
+              "name": "Speed Index",
+              "value": 173,
+              "displayValue": "173 ms",
+              "rating": "good",
+              "lighthouseScore": 100
+            }
+          ],
+          "opportunities": [],
+          "passedAuditCount": 45,
+          "warnings": [
+            "Median of 3 runs (scores: 100, 100, 100)."
+          ]
+        },
+        "fixes": {
+          "url": "/demo/fast.html",
+          "device": "desktop",
+          "performanceScore": 100,
+          "fixes": [],
+          "note": "All lab metrics are good and no audits failed. Check field data (CrUX/RUM), especially INP, before optimizing further."
+        }
+      },
+      "comparison": {
+        "a": {
+          "url": "/demo/slow.html",
+          "device": "desktop",
+          "fetchTime": "2026-11-09T12:53:30.004Z"
+        },
+        "b": {
+          "url": "/demo/fast.html",
+          "device": "desktop",
+          "fetchTime": "2026-11-09T12:53:46.142Z"
+        },
+        "score": {
+          "a": 55,
+          "b": 100,
+          "delta": 45,
+          "change": "better"
+        },
+        "metrics": [
+          {
+            "id": "LCP",
+            "name": "Largest Contentful Paint",
+            "a": 8045,
+            "b": 305,
+            "delta": -7740,
+            "percentChange": -96.2,
+            "change": "better",
+            "ratingA": "poor",
+            "ratingB": "good"
+          },
+          {
+            "id": "FCP",
+            "name": "First Contentful Paint",
+            "a": 681,
+            "b": 173,
+            "delta": -508,
+            "percentChange": -74.6,
+            "change": "better",
+            "ratingA": "good",
+            "ratingB": "good"
+          },
+          {
+            "id": "TBT",
+            "name": "Total Blocking Time",
+            "a": 110,
+            "b": 0,
+            "delta": -110,
+            "percentChange": -100,
+            "change": "unchanged",
+            "ratingA": "good",
+            "ratingB": "good"
+          },
+          {
+            "id": "CLS",
+            "name": "Cumulative Layout Shift",
+            "a": 0.411,
+            "b": 0,
+            "delta": -0.411,
+            "percentChange": -100,
+            "change": "better",
+            "ratingA": "poor",
+            "ratingB": "good"
+          },
+          {
+            "id": "SI",
+            "name": "Speed Index",
+            "a": 681,
+            "b": 173,
+            "delta": -508,
+            "percentChange": -74.6,
+            "change": "better",
+            "ratingA": "good",
+            "ratingB": "good"
+          }
+        ],
+        "resolvedOpportunities": [
+          "Improve image delivery",
+          "Largest Contentful Paint element",
+          "Layout shift culprits",
+          "LCP request discovery",
+          "Network dependency tree",
+          "Render blocking requests",
+          "Reduce unused CSS",
+          "Reduce unused JavaScript",
+          "Does not have a `<meta name=\"viewport\">` tag with `width` or `initial-scale`",
+          "Minify CSS",
+          "Avoid enormous network payloads"
+        ],
+        "newOpportunities": [],
+        "verdict": "B scores 45 points higher. Better in B: LCP 8.0 s → 305 ms, FCP 681 ms → 173 ms, CLS 0.411 → 0, SI 681 ms → 173 ms.",
+        "warnings": []
+      }
+    }
+  }
+}

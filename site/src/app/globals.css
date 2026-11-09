@@ -1,0 +1,200 @@
+@import "tailwindcss";
+
+/*
+ * "Timing sheet" design: warm off-white page, warm near-black ink, one cobalt brand color,
+ * thin rules, square corners, condensed timing-board numerals. The demo sits on a dark
+ * "timing screen" band. Neutrals are warm in both themes so switching between them is gentle.
+ * Rating colors (good / needs work / poor) are reserved for data.
+ */
+:root {
+  --bg: #fbf9f5;
+  --bg-2: #f1ede6;
+  --ink: #1c1a17;
+  --ink-2: #48433d;
+  --ink-3: #78716a;
+  --hair: #e2ddd4;
+  --rule: #3a352f;
+  --brand: #2a43e8;
+  --brand-ink: #ffffff;
+  --good: #0f8048;
+  --needs: #b86400;
+  --poor: #cc3329;
+  --code-bg: #1d1a17;
+  --code-ink: #f2ede5;
+  --code-dim: #a59c90;
+  --focus: #2a43e8;
+
+  /* The dark timing band looks the same in both themes. */
+  --night: #1a1714;
+  --night-2: #24201c;
+  --night-line: #3a342e;
+  --night-ink: #f2ede5;
+  --night-dim: #a89f93;
+  --night-good: #3cc982;
+  --night-needs: #f4a63a;
+  --night-poor: #f26a5c;
+  --night-brand: #8c98ff;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #181614;
+    --bg-2: #221f1b;
+    --ink: #f0ebe3;
+    --ink-2: #c6beb2;
+    --ink-3: #978e83;
+    --hair: #312d28;
+    --rule: #4d4740;
+    --brand: #8c98ff;
+    --brand-ink: #181614;
+    --good: #3cc982;
+    --needs: #f4a63a;
+    --poor: #f26a5c;
+    --code-bg: #12100e;
+    --focus: #8c98ff;
+    --night: #12100e;
+    --night-2: #1d1a17;
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme="dark"] {
+  --bg: #181614;
+  --bg-2: #221f1b;
+  --ink: #f0ebe3;
+  --ink-2: #c6beb2;
+  --ink-3: #978e83;
+  --hair: #312d28;
+  --rule: #4d4740;
+  --brand: #8c98ff;
+  --brand-ink: #181614;
+  --good: #3cc982;
+  --needs: #f4a63a;
+  --poor: #f26a5c;
+  --code-bg: #12100e;
+  --focus: #8c98ff;
+  --night: #12100e;
+  --night-2: #1d1a17;
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-bg-2: var(--bg-2);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-ink-3: var(--ink-3);
+  --color-hair: var(--hair);
+  --color-rule: var(--rule);
+  --color-brand: var(--brand);
+  --color-brand-ink: var(--brand-ink);
+  --color-good: var(--good);
+  --color-needs: var(--needs);
+  --color-poor: var(--poor);
+  --color-code-bg: var(--code-bg);
+  --color-code-ink: var(--code-ink);
+  --color-code-dim: var(--code-dim);
+  --color-night: var(--night);
+  --color-night-2: var(--night-2);
+  --color-night-line: var(--night-line);
+  --color-night-ink: var(--night-ink);
+  --color-night-dim: var(--night-dim);
+  --color-night-good: var(--night-good);
+  --color-night-needs: var(--night-needs);
+  --color-night-poor: var(--night-poor);
+  --color-night-brand: var(--night-brand);
+  --font-sans: var(--font-archivo), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, monospace;
+}
+
+html {
+  background: var(--bg);
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Condensed, heavy timing-board type for headlines and big numbers. */
+.display {
+  font-family: var(--font-archivo), ui-sans-serif, sans-serif;
+  font-stretch: 72%;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  line-height: 0.92;
+}
+
+.num {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Tailwind v4 resets cursor on buttons; restore it for everything clickable. */
+button,
+[role="button"],
+[role="tab"],
+[role="radio"],
+a[href],
+label[for],
+summary,
+select {
+  cursor: pointer;
+}
+button:disabled,
+[aria-disabled="true"] {
+  cursor: not-allowed;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+::selection {
+  background: var(--brand);
+  color: var(--brand-ink);
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Race lanes grow from the start line once, on load. */
+@keyframes lane-grow {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+.lane-fill {
+  transform-origin: left center;
+  animation: lane-grow var(--lane-duration, 1.6s) cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
+/* The finish time appears once its bar has arrived. */
+@keyframes lane-label {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.lane-label {
+  animation: lane-label 0.3s ease-out var(--lane-duration, 1.6s) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
