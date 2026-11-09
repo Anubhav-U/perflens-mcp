@@ -43,3 +43,4 @@ next-env.d.ts
 # generated demo assets (scripts/make-demo-assets.mjs)
 /public/demo/slow/
 /public/demo/fast/
+/public/demo/fast.html

@@ -2,10 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Tidewater Coffee (slow demo)</title>
+    <title>Tidewater Coffee Roasters (slow demo)</title>
     <meta name="robots" content="noindex" />
     <meta name="description" content="A deliberately slow demo page audited by PerfLens." />
-    <!-- Deliberate problems: render-blocking stylesheet and synchronous script, both mostly unused. -->
+    <!-- Deliberate problems: no viewport tag; render-blocking stylesheet and synchronous script, both mostly unused. -->
     <link rel="stylesheet" href="/demo/slow/styles.css" />
     <script src="/demo/slow/vendor.js"></script>
   </head>
@@ -14,26 +14,68 @@
       Demo page built to be slow on purpose, so PerfLens has something to find.
       <a href="/demo/fast.html">See the fixed version</a> · <a href="/">Back to PerfLens</a>
     </div>
+
     <header>
-      <span class="brand">Tidewater Coffee</span>
-      <nav>Shop · Subscriptions · About</nav>
+      <a class="brand" href="#">Tidewater<small>COFFEE ROASTERS</small></a>
+      <nav><a href="#roasts">Shop</a><a href="#">Subscriptions</a><a href="#">Brew guides</a><a href="#">Bag (0)</a></nav>
     </header>
-    <!-- The hero image is injected by vendor.js after it runs (late-discovered, lazy-loaded LCP image). -->
+
+    <!-- The hero image is injected by vendor.js after it runs (late-discovered, lazy-loaded LCP image, no dimensions). -->
     <section class="hero" id="hero">
-      <h1>Small-batch coffee, roasted by the sea</h1>
+      <div class="hero-copy">
+        <div class="eyebrow">Roasted Tuesdays &amp; Fridays</div>
+        <h1>Small-batch coffee, roasted by the sea</h1>
+        <p>We roast in a converted boathouse and ship within 48 hours, so every bag arrives at its best.</p>
+        <a class="btn" href="#roasts">Shop this week's roasts</a>
+      </div>
     </section>
+
     <main>
-      <p>
-        We roast twice a week in a converted boathouse and ship within 48 hours of roasting. Every bag lists the farm,
-        the altitude and the day it was roasted.
-      </p>
-      <h2>This week's roasts</h2>
-      <!-- Deliberate problems: large PNGs below the fold, eager, no width/height. -->
+      <div class="section-head" id="roasts">
+        <h2>This week's roasts</h2>
+        <p>Every bag lists the farm, the altitude and the day it was roasted.</p>
+      </div>
+      <!-- Deliberate problems: 2 MB PNGs below the fold, loaded eagerly, no width/height. -->
       <div class="grid">
-        <div class="card"><img src="/demo/slow/product-1.png" alt="Harbor Blend bag" /><h3>Harbor Blend</h3><p>Chocolate, toasted almond.</p></div>
-        <div class="card"><img src="/demo/slow/product-2.png" alt="Fog Line bag" /><h3>Fog Line</h3><p>Green apple, honey.</p></div>
-        <div class="card"><img src="/demo/slow/product-3.png" alt="Ember Roast bag" /><h3>Ember Roast</h3><p>Dark cherry, cocoa nib.</p></div>
+        <article class="card">
+          <img src="/demo/slow/product-1.png" alt="Harbor Blend coffee bag" />
+          <div class="card-body">
+            <h3>Harbor Blend</h3>
+            <p class="origin">Colombia &amp; Ethiopia · medium roast</p>
+            <p class="notes">Milk chocolate, toasted almond, a little orange.</p>
+            <div class="buy"><span class="price">$18</span><a class="btn btn-dark add" href="#">Add to bag</a></div>
+          </div>
+        </article>
+        <article class="card">
+          <img src="/demo/slow/product-2.png" alt="Fog Line coffee bag" />
+          <div class="card-body">
+            <h3>Fog Line</h3>
+            <p class="origin">Kenya, 1,800 m · light roast</p>
+            <p class="notes">Green apple, honey, black tea.</p>
+            <div class="buy"><span class="price">$21</span><a class="btn btn-dark add" href="#">Add to bag</a></div>
+          </div>
+        </article>
+        <article class="card">
+          <img src="/demo/slow/product-3.png" alt="Ember Roast coffee bag" />
+          <div class="card-body">
+            <h3>Ember Roast</h3>
+            <p class="origin">Sumatra · dark roast</p>
+            <p class="notes">Dark cherry, cocoa nib, cedar.</p>
+            <div class="buy"><span class="price">$19</span><a class="btn btn-dark add" href="#">Add to bag</a></div>
+          </div>
+        </article>
+      </div>
+
+      <div class="facts">
+        <div class="fact"><strong>48 h</strong><span>from roaster to your door</span></div>
+        <div class="fact"><strong>12</strong><span>partner farms, visited every year</span></div>
+        <div class="fact"><strong>0</strong><span>bags older than two weeks on the shelf</span></div>
       </div>
     </main>
+
+    <footer>
+      <span>Tidewater Coffee Roasters · The Boathouse, Harbor Road</span>
+      <span>A fictional shop made for the PerfLens demo.</span>
+    </footer>
   </body>
 </html>

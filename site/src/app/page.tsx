@@ -159,7 +159,7 @@ export default function Home() {
               </dl>
             </div>
             <div className="lg:pt-2">
-              <Transcript results={mobile} />
+              <Transcript results={mobile} heroBytes={data.slowHeroBytes} />
             </div>
           </div>
         </section>

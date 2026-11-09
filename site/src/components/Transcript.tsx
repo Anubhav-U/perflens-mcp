@@ -1,4 +1,4 @@
-import { formatValue } from "@/lib/metrics";
+import { formatBytes, formatValue } from "@/lib/metrics";
 import type { DeviceResults } from "@/lib/types";
 
 function Tool({ name, args }: { name: string; args: string }) {
@@ -15,7 +15,7 @@ function Tool({ name, args }: { name: string; args: string }) {
  * A chat in an AI coding assistant using PerfLens. The conversation is illustrative;
  * every number in the tool results comes from the real demo audits (mobile).
  */
-export function Transcript({ results }: { results: DeviceResults }) {
+export function Transcript({ results, heroBytes }: { results: DeviceResults; heroBytes: number }) {
   const slow = results.slow.summary;
   const fast = results.fast.summary;
   const metric = (id: string, s = slow) => s.metrics.find((m) => m.id === id)!;
@@ -59,7 +59,7 @@ export function Transcript({ results }: { results: DeviceResults }) {
         </div>
 
         <p className="border-l-2 border-night-brand pl-3 font-sans text-[14px] leading-relaxed text-code-ink">
-          On a phone, the main image shows up after <strong>{formatValue("LCP", lcp.value)}</strong>. It&apos;s a 3.4 MB
+          On a phone, the main image shows up after <strong>{formatValue("LCP", lcp.value)}</strong>. It&apos;s a {formatBytes(heroBytes)}{" "}
           PNG that JavaScript adds late and lazy-loads. I&apos;ll put it in the HTML as a small AVIF with high priority,
           reserve space for the banner, and defer the blocking script…
         </p>

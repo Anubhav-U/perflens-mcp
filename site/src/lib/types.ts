@@ -84,5 +84,6 @@ export interface DemoResults {
   lighthouseVersion: string;
   runsPerAudit: number;
   averageAuditSeconds: number;
+  slowHeroBytes: number;
   devices: Record<Device, DeviceResults>;
 }

@@ -3,7 +3,7 @@
 //   cd site && npm run build && npx next start -p 3123
 // Then, from the repo root:
 //   npm run precompute            (or: npx tsx scripts/precompute-site.ts http://localhost:3123)
-import { mkdirSync, writeFileSync } from "node:fs";
+import { mkdirSync, statSync, writeFileSync } from "node:fs";
 import { dirname } from "node:path";
 import { compareSummaries, pickMedianRun } from "../src/core/diff.js";
 import { suggestFixes } from "../src/core/fixes.js";
@@ -62,6 +62,8 @@ async function main() {
     lighthouseVersion,
     runsPerAudit: RUNS,
     averageAuditSeconds: Math.round(avgSeconds * 10) / 10,
+    // Quoted on the landing page; read from the file so the copy can't drift from the asset.
+    slowHeroBytes: statSync("site/public/demo/slow/hero.png").size,
     devices: result,
   });
   mkdirSync(dirname(OUT), { recursive: true });

@@ -1,0 +1,155 @@
+<!doctype html>
+<!-- Template: scripts/make-demo-assets.mjs renders this to public/demo/fast.html, replacing each double-brace
+     placeholder with the content-hashed asset URL, so the long immutable cache can never serve a stale file. -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- Fix: mobile viewport. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tidewater Coffee Roasters (fixed demo)</title>
+    <meta name="robots" content="noindex" />
+    <meta name="description" content="The fixed version of the PerfLens slow demo page." />
+    <!-- Fix: hero image discoverable in the HTML, preloaded with high priority. -->
+    <link
+      rel="preload"
+      as="image"
+      href="{{hero-1200.avif}}"
+      imagesrcset="{{hero-800.avif}} 800w, {{hero-1200.avif}} 1200w"
+      imagesizes="100vw"
+      type="image/avif"
+      fetchpriority="high"
+    />
+    <!-- Fix: only the CSS this page uses, inlined (same rules as the slow page's stylesheet,
+         minus the unused legacy bundle). No render-blocking requests. -->
+    <style>
+      *{box-sizing:border-box}
+      body{margin:0;font:17px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif;color:#2b211c;background:#f7f1e8}
+      h1,h2,h3,.brand{font-family:"Iowan Old Style","Palatino Linotype",Georgia,serif}
+      a{color:inherit}
+      .demo-note{font:13px/1.4 system-ui,sans-serif;background:#e2f0dd;border-bottom:1px solid #a9cf9f;padding:8px 6vw}
+      header{display:flex;justify-content:space-between;align-items:center;gap:24px;padding:18px 6vw;background:#f7f1e8;border-bottom:1px solid #e3d6c3}
+      .brand{font-size:26px;font-weight:700;letter-spacing:.01em;line-height:1;text-decoration:none}
+      .brand small{display:block;font:600 10px/1.6 system-ui,sans-serif;letter-spacing:.32em;color:#8a6f5c;margin-top:4px}
+      nav{display:flex;gap:26px;font-size:15px}
+      nav a{text-decoration:none}
+      .promo{background:#1f4f5c;color:#f7f1e8;text-align:center;padding:12px 6vw;font-size:15px}
+      .hero{position:relative;min-height:220px;background:#d9b9a0;color:#fff}
+      .hero img{width:100%;height:auto;max-height:78vh;object-fit:cover;display:block}
+      .hero-copy{position:absolute;inset:auto 0 0 0;padding:72px 6vw 56px;background:linear-gradient(transparent,rgba(24,16,12,.72))}
+      .eyebrow{font-size:13px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;opacity:.9}
+      .hero h1{margin:10px 0 12px;font-size:clamp(34px,5.5vw,68px);line-height:1.05;max-width:14ch}
+      .hero p{margin:0 0 22px;max-width:46ch;font-size:18px;opacity:.92}
+      .btn{display:inline-block;background:#f7f1e8;color:#2b211c;padding:13px 24px;border-radius:999px;font-weight:600;text-decoration:none}
+      .btn-dark{background:#1f4f5c;color:#f7f1e8}
+      main{max-width:1120px;margin:0 auto;padding:72px 6vw}
+      .section-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:12px 24px;margin-bottom:28px}
+      .section-head h2{margin:0;font-size:clamp(28px,3.4vw,40px)}
+      .section-head p{margin:0;color:#7a6455;max-width:38ch}
+      .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:28px}
+      .card{background:#fffaf2;border:1px solid #eadfcd;border-radius:14px;overflow:hidden}
+      .card img{width:100%;height:auto;display:block}
+      .card-body{padding:18px 20px 22px}
+      .card h3{margin:0;font-size:24px}
+      .origin{margin:2px 0 10px;color:#8a6f5c;font-size:14px}
+      .notes{margin:0 0 16px}
+      .buy{display:flex;justify-content:space-between;align-items:center}
+      .price{font-weight:700;font-size:18px;color:#8c3b2f}
+      .facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:28px;margin-top:80px;padding-top:40px;border-top:1px solid #e3d6c3}
+      .fact strong{display:block;font-family:"Iowan Old Style",Georgia,serif;font-size:44px;line-height:1;color:#1f4f5c}
+      .fact span{color:#6d5849}
+      footer{background:#2b211c;color:#d9cbb8;padding:40px 6vw;font-size:14px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+      /* Fix: reserve the hero's space up front so nothing below it moves when the image arrives.
+         Same size the slow page ends up with: full width at 8:5, capped at 78% of the viewport height. */
+      .hero{height:min(62.5vw,78vh);overflow:hidden}
+      .hero picture{display:block;width:100%;height:100%}
+      .hero img{height:100%;max-height:none}
+      @media (max-width:640px){nav{display:none}.hero{height:min(125vw,78vh)}}
+    </style>
+    <!-- Fix: small script, deferred, with no blocking startup work. -->
+    <script src="{{app.js}}" defer></script>
+  </head>
+  <body>
+    <div class="demo-note">
+      Fixed version of the slow demo, after applying PerfLens's suggestions.
+      <a href="/demo/slow.html">See the slow version</a> · <a href="/">Back to PerfLens</a>
+    </div>
+
+    <header>
+      <a class="brand" href="#">Tidewater<small>COFFEE ROASTERS</small></a>
+      <nav><a href="#roasts">Shop</a><a href="#">Subscriptions</a><a href="#">Brew guides</a><a href="#">Bag (0)</a></nav>
+    </header>
+
+    <!-- Fix: the promo is in the HTML from the start, so nothing shifts. -->
+    <div class="promo">Free shipping on orders over $40 this week.</div>
+
+    <section class="hero">
+      <!-- Fix: modern formats, responsive sizes, explicit dimensions, eager and high priority. -->
+      <picture>
+        <source type="image/avif" srcset="{{hero-800.avif}} 800w, {{hero-1200.avif}} 1200w" sizes="100vw" />
+        <img
+          src="{{hero-1200.webp}}"
+          srcset="{{hero-800.webp}} 800w, {{hero-1200.webp}} 1200w"
+          sizes="100vw"
+          width="1200"
+          height="750"
+          fetchpriority="high"
+          alt="A boathouse on the coast at dawn"
+        />
+      </picture>
+      <div class="hero-copy">
+        <div class="eyebrow">Roasted Tuesdays &amp; Fridays</div>
+        <h1>Small-batch coffee, roasted by the sea</h1>
+        <p>We roast in a converted boathouse and ship within 48 hours, so every bag arrives at its best.</p>
+        <a class="btn" href="#roasts">Shop this week's roasts</a>
+      </div>
+    </section>
+
+    <main>
+      <div class="section-head" id="roasts">
+        <h2>This week's roasts</h2>
+        <p>Every bag lists the farm, the altitude and the day it was roasted.</p>
+      </div>
+      <!-- Fix: right-sized WebP, lazy-loaded below the fold, explicit dimensions. -->
+      <div class="grid">
+        <article class="card">
+          <img src="{{product-1.webp}}" width="600" height="450" loading="lazy" decoding="async" alt="Harbor Blend coffee bag" />
+          <div class="card-body">
+            <h3>Harbor Blend</h3>
+            <p class="origin">Colombia &amp; Ethiopia · medium roast</p>
+            <p class="notes">Milk chocolate, toasted almond, a little orange.</p>
+            <div class="buy"><span class="price">$18</span><a class="btn btn-dark add" href="#">Add to bag</a></div>
+          </div>
+        </article>
+        <article class="card">
+          <img src="{{product-2.webp}}" width="600" height="450" loading="lazy" decoding="async" alt="Fog Line coffee bag" />
+          <div class="card-body">
+            <h3>Fog Line</h3>
+            <p class="origin">Kenya, 1,800 m · light roast</p>
+            <p class="notes">Green apple, honey, black tea.</p>
+            <div class="buy"><span class="price">$21</span><a class="btn btn-dark add" href="#">Add to bag</a></div>
+          </div>
+        </article>
+        <article class="card">
+          <img src="{{product-3.webp}}" width="600" height="450" loading="lazy" decoding="async" alt="Ember Roast coffee bag" />
+          <div class="card-body">
+            <h3>Ember Roast</h3>
+            <p class="origin">Sumatra · dark roast</p>
+            <p class="notes">Dark cherry, cocoa nib, cedar.</p>
+            <div class="buy"><span class="price">$19</span><a class="btn btn-dark add" href="#">Add to bag</a></div>
+          </div>
+        </article>
+      </div>
+
+      <div class="facts">
+        <div class="fact"><strong>48 h</strong><span>from roaster to your door</span></div>
+        <div class="fact"><strong>12</strong><span>partner farms, visited every year</span></div>
+        <div class="fact"><strong>0</strong><span>bags older than two weeks on the shelf</span></div>
+      </div>
+    </main>
+
+    <footer>
+      <span>Tidewater Coffee Roasters · The Boathouse, Harbor Road</span>
+      <span>A fictional shop made for the PerfLens demo.</span>
+    </footer>
+  </body>
+</html>
