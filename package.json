@@ -38,7 +38,7 @@
     "type": "git",
     "url": "git+https://github.com/Anubhav-U/perflens-mcp.git"
   },
-  "homepage": "https://github.com/Anubhav-U/perflens-mcp#readme",
+  "homepage": "https://perflens-mcp.vercel.app",
   "bugs": {
     "url": "https://github.com/Anubhav-U/perflens-mcp/issues"
   },

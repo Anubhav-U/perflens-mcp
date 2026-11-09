@@ -66,6 +66,9 @@ export default function Home() {
           <a href={LINKS.github} className="px-2 py-1 hover:text-brand">
             GitHub
           </a>
+          <a href={LINKS.npm} className="px-2 py-1 hover:text-brand">
+            npm
+          </a>
           <ThemeToggle />
         </nav>
       </header>

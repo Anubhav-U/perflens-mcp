@@ -6,6 +6,8 @@ PerfLens is an [MCP](https://modelcontextprotocol.io) server that lets Claude Co
 assistants run Google Lighthouse performance audits, understand the results, and fix what matters most, right from
 the chat. It runs on your machine, needs no account or API key, and works on public sites and local dev servers alike.
 
+**[See it fix a slow page →](https://perflens-mcp.vercel.app)**
+
 [![CI](https://github.com/Anubhav-U/perflens-mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/Anubhav-U/perflens-mcp/actions/workflows/ci.yml)
 [![npm](https://img.shields.io/npm/v/perflens-mcp)](https://www.npmjs.com/package/perflens-mcp)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)

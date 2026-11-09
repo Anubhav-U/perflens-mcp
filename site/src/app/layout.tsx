@@ -14,10 +14,18 @@ const jetbrains = JetBrains_Mono({
   subsets: ["latin"],
 });
 
+const title = "PerfLens: website speed audits for AI coding assistants";
+const description =
+  "PerfLens is an MCP server that lets Claude Code and Cursor run Lighthouse performance audits, explain the results in plain English and suggest ranked fixes.";
+
+// The share image comes from opengraph-image.png in this folder (Next.js file convention).
 export const metadata: Metadata = {
-  title: "PerfLens: website speed audits for AI coding assistants",
-  description:
-    "PerfLens is an MCP server that lets Claude Code and Cursor run Lighthouse performance audits, explain the results in plain English and suggest ranked fixes.",
+  metadataBase: new URL("https://perflens-mcp.vercel.app"),
+  title,
+  description,
+  alternates: { canonical: "/" },
+  openGraph: { type: "website", url: "/", siteName: "PerfLens", title, description },
+  twitter: { card: "summary_large_image", title, description },
 };
 
 export const viewport: Viewport = {
